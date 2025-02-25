@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
-  get 'inertia-example', to: 'inertia_example#index'
+  devise_for :users, skip: [:sessions, :passwords, :registrations]
+  as :user do
+    get "login", to: "users/sessions#new", as: :new_user_session
+    post "login", to: "users/sessions#create", as: :user_session
+    match "logout", to: "users/sessions#destroy", as: :destroy_user_session, via: Devise.mappings[:user].sign_out_via
+  end
+
+  get "inertia-example", to: "inertia_example#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -12,5 +18,5 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root to: "home#index"
 end
