@@ -30,6 +30,7 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "check": "tsc -p tsconfig.app.json && tsc -p tsconfig.node.json"
+    "check": "tsc -p tsconfig.app.json && tsc -p tsconfig.node.json",
+    "lint": "eslint --ext .ts,.tsx ./app"
   }
 }
