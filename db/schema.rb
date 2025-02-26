@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_26_131022) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_26_131051) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -113,6 +113,15 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_131022) do
     t.index ["tv_show_id"], name: "index_tv_show_genres_on_tv_show_id"
   end
 
+  create_table "tv_show_writers", force: :cascade do |t|
+    t.integer "tv_show_id", null: false
+    t.integer "person_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["person_id"], name: "index_tv_show_writers_on_person_id"
+    t.index ["tv_show_id"], name: "index_tv_show_writers_on_tv_show_id"
+  end
+
   create_table "tv_shows", force: :cascade do |t|
     t.string "show_id", null: false
     t.string "title"
@@ -159,4 +168,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_131022) do
   add_foreign_key "tv_show_directors", "tv_shows"
   add_foreign_key "tv_show_genres", "genres"
   add_foreign_key "tv_show_genres", "tv_shows"
+  add_foreign_key "tv_show_writers", "people"
+  add_foreign_key "tv_show_writers", "tv_shows"
 end
