@@ -1,0 +1,2161 @@
+show_id,person_id,character_name,role
+tt0070644,nm0880521,Marianne,actress
+tt0070644,nm0430746,Johan,actor
+tt0070644,nm0000761,Katarina,actress
+tt0070644,nm0511458,Eva,actress
+tt0070644,nm0540300,Peter,actor
+tt0070644,nm0287606,Modern,actress
+tt0070644,nm0635959,Arne,actor
+tt0070644,nm0908371,"Fru Palm, journalist",actress
+tt0070644,nm0547140,"Eva, 12 år",actress
+tt0070644,nm0074822,"Karin, syster till Eva",actress
+tt0185906,nm0342241,Donald G. Malarkey,actor
+tt0185906,nm0507073,Richard D. Winters,actor
+tt0185906,nm0515296,Lewis Nixon,actor
+tt0185906,nm0853169,Eugene G. Roe,actor
+tt0185906,nm0005531,C. Carwood Lipton,actor
+tt0185906,nm0950186,Darrell C. (Shifty) Powers,actor
+tt0185906,nm0500614,Floyd M. (Tab) Talbert,actor
+tt0185906,nm1056790,Robert E. (Popeye) Wynn,actor
+tt0185906,nm0053028,Wayne A. (Skinny) Sisk,actor
+tt0185906,nm0191044,Denver (Bull) Randleman,actor
+tt0108906,nm0433495,Stig Helmer,actor
+tt0108906,nm0738231,Sigrid Drusse,actress
+tt0108906,nm0639152,Rigmor Mortensen,actress
+tt0108906,nm0683587,Jørgen Krogshøj,actor
+tt0108906,nm0704644,Judith Petersen,actress
+tt0108906,nm0616910,Morten 'Mogge' Moesgaard,actor
+tt0108906,nm0001424,Age Krüger,actor
+tt0108906,nm0159836,Mona Jensen,actress
+tt0108906,nm0726880,Narrator,actor
+tt0108906,nm0406056,Camilla,actress
+tt0259153,nm0001802,Prof. Joyce Reardon,actress
+tt0259153,nm0444832,Steve Rimbauer,actor
+tt0259153,nm0004782,Annie Wheaton,actress
+tt0259153,nm0241232,Professor Carl Miller,actor
+tt0259153,nm0412382,Cathy Kramer,actress
+tt0259153,nm0001491,Rachel Wheaton,actress
+tt0259153,nm0743671,Emery Waterman,actor
+tt0259153,nm0001696,Nick Hardaway,actor
+tt0259153,nm0001798,Victor Kandinsky,actor
+tt0259153,nm0132610,Ellen Rimbauer,actress
+tt0112130,nm0000147,Mr Darcy,actor
+tt0112130,nm0000383,Elizabeth Bennet,actress
+tt0112130,nm0363117,Jane Bennet,actress
+tt0112130,nm0768018,Lydia Bennet,actress
+tt0112130,nm0824102,Mrs. Bennet,actress
+tt0112130,nm0926368,Mr. Bennet,actor
+tt0112130,nm0094502,Mr Bingley,actor
+tt0112130,nm0531070,Kitty Bennet,actress
+tt0112130,nm0108939,Mary Bennet,actress
+tt0112130,nm0151250,Miss Bingley,actress
+tt0080297,nm0000027,George Smiley,actor
+tt0080297,nm0419785,Peter Guillam,actor
+tt0080297,nm0060766,Sir Oliver Lacon,actor
+tt0080297,nm0786577,Mendel,actor
+tt0080297,nm0378404,Toby Esterhase,actor
+tt0080297,nm0007183,Bill Haydon,actor
+tt0080297,nm0071799,Ricki Tarr,actor
+tt0080297,nm0017739,Percy Alleline,actor
+tt0080297,nm0726600,Roy Bland,actor
+tt0080297,nm0000846,Jim Prideaux,actor
+tt0287839,nm0627995,Muad'Dib,actor
+tt0287839,nm0526749,Alia Atreides,actress
+tt0287839,nm0564215,Leto Atreides II,actor
+tt0287839,nm1140434,Ghanima Atreides,actress
+tt0287839,nm0000481,Lady Jessica Atreides,actress
+tt0287839,nm0041029,Duncan Idaho,actor
+tt0287839,nm0605365,Gurney Halleck,actor
+tt0287839,nm0185107,Irulan Corrino-Atreides,actress
+tt0287839,nm0000215,Princess Wensicia Corrino,actress
+tt0287839,nm0116803,Farad'n Corrino,actor
+tt0142032,nm0000458,Duke Leto Atreides,actor
+tt0142032,nm0627995,Muad'Dib,actor
+tt0142032,nm0316284,Padishah - Emperor Shaddam Corrino IV,actor
+tt0142032,nm0643805,Stilgar,actor
+tt0142032,nm0716293,Lady Jessica Atreides,actress
+tt0142032,nm0914679,Duncan Idaho,actor
+tt0142032,nm0900651,Thufir Hawat,actor
+tt0142032,nm0605365,Gurney Halleck,actor
+tt0142032,nm1503521,Dr. Yueh,actor
+tt0142032,nm0123648,Alia Atreides,actress
+tt0075520,nm0694293,Jesus,actor
+tt0075520,nm0001377,Mary,actress
+tt0075520,nm0000059,Nicodemus,actor
+tt0075520,nm0000051,Joseph of Arimathea,actor
+tt0075520,nm0000843,Mary Magdalene,actress
+tt0075520,nm0000308,The Centurion,actor
+tt0075520,nm0001012,The Adulteress,actress
+tt0075520,nm0181305,Herodias,actress
+tt0075520,nm0267232,Simon Peter,actor
+tt0075520,nm0000469,Balthazar,actor
+tt0081874,nm0429254,Arthur Dent,actor
+tt0081874,nm0228797,Ford Prefect,actor
+tt0081874,nm0429012,The Book,actor
+tt0081874,nm0225549,Trillian,actress
+tt0081874,nm0934983,Zaphod Beeblebrox,actor
+tt0081874,nm0601891,Marvin,actor
+tt0081874,nm0495231,Marvin,actor
+tt0081874,nm0851123,Eddie,actor
+tt0081874,nm0072578,Vogon Captain,actor
+tt0081874,nm0894710,Slartibartfast,actor
+tt0083387,nm0005078,Jonas Steele,actor
+tt0083387,nm0358713,John Geyser,actor
+tt0083387,nm0240564,Mary Hale,actress
+tt0083387,nm0303981,Jacob Hale Sr.,actor
+tt0083387,nm0363842,James Hale,actor
+tt0083387,nm0364918,Preacher,actor
+tt0083387,nm0001344,Lester Bedell,actor
+tt0083387,nm0399590,Matthew Geyser,actor
+tt0083387,nm0429995,Professor Lowe,actor
+tt0083387,nm0450116,Malachy Hale,actor
+tt0083480,nm0000027,George Smiley,actor
+tt0083480,nm0040586,Madame Ostrakova,actress
+tt0083480,nm0665473,Lauder Strickland,actor
+tt0083480,nm0792996,Otto Leipzig,actor
+tt0083480,nm0102991,Ferguson,actor
+tt0083480,nm0378404,Toby Esterhase,actor
+tt0083480,nm0126250,Peter Guillam,actor
+tt0083480,nm0060766,Oliver Lacon,actor
+tt0083480,nm0797860,Alexandra Ostrakova,actress
+tt0083480,nm0216610,Madame La Pierre,actress
+tt0088727,nm0001227,Anne Shirley,actress
+tt0088727,nm0223157,Marilla Cuthbert,actress
+tt0088727,nm0002070,Matthew Cuthbert,actor
+tt0088727,nm0358093,Rachel Lynde,actress
+tt0088727,nm0510032,Miss Muriel Stacy,actress
+tt0088727,nm0335643,Diana Barry,actress
+tt0088727,nm0188592,Gilbert Blythe,actor
+tt0088727,nm0454569,Aunt Josephine,actress
+tt0088727,nm0123201,Mrs. Amelia Evans,actress
+tt0088727,nm0705374,Mrs. Elizabeth Barry,actress
+tt0092337,nm0054007,Young Man,actor
+tt0092337,nm0525557,Andrzej Geller,actor
+tt0092337,nm0523821,Tomek,actor
+tt0092337,nm0054270,Consultant,actor
+tt0092337,nm0417370,Dorota Geller,actress
+tt0092337,nm0532536,Roman,actor
+tt0092337,nm0856227,Taxi Driver,actor
+tt0092337,nm0310702,Postman,actor
+tt0092337,nm0475009,Gynecologist,actor
+tt0092337,nm0686133,Ania,actress
+tt0094791,nm0000328,Jason Bourne,actor
+tt0094791,nm0000646,Marie St. Jacques,actress
+tt0094791,nm0703033,Gen. François Villiers,actor
+tt0094791,nm0595567,David Abbott,actor
+tt0094791,nm0903901,Carlos,actor
+tt0094791,nm0891092,Fritz Koenig,actor
+tt0094791,nm0001186,Dr. Geoffrey Washburn,actor
+tt0094791,nm0352138,The Fat Man,actor
+tt0094791,nm0434759,Gold Glasses,actor
+tt0094791,nm0535053,D'Armacourt,actor
+tt0096639,nm0000380,Augustus 'Gus' McCrae,actor
+tt0096639,nm0000169,Woodrow F. Call,actor
+tt0096639,nm0000418,Joshua Deets,actor
+tt0096639,nm0000178,Lorena Wood,actress
+tt0096639,nm0001810,Jake Spoon,actor
+tt0096639,nm0002078,Blue Duck,actor
+tt0096639,nm0000665,Dish Boggett,actor
+tt0096639,nm0005401,Newt Dobbs,actor
+tt0096639,nm0001378,Clara Allen,actress
+tt0096639,nm0177933,July Johnson,actor
+tt0098898,nm0000545,DCI Jane Tennison,actress
+tt0098898,nm0071007,DSU Michael Kernan,actor
+tt0098898,nm0068552,DS Bill Otley,actor
+tt0098898,nm0265492,DI Frank Burkin,actor
+tt0098898,nm0254879,DI Tony Muddyman,actor
+tt0098898,nm0809417,WPC Maureen Havers,actress
+tt0098898,nm0280416,DC Jones,actor
+tt0098898,nm0862907,DC Rosper,actor
+tt0098898,nm0100764,George Marlow,actor
+tt0098898,nm0942712,DC Lillie,actor
+tt0099864,nm0001796,Bill Denbrough,actor
+tt0099864,nm0005347,Mike Hanlon,actor
+tt0099864,nm0001578,Beverly Marsh,actress
+tt0099864,nm0026789,Richie Tozier,actor
+tt0099864,nm0160550,Eddie Kaspbrak,actor
+tt0099864,nm0557956,Stanley Uris,actor
+tt0099864,nm0000615,Ben Hanscom,actor
+tt0099864,nm0000347,Pennywise,actor
+tt0099864,nm0000970,Bill Denbrough - Age 12,actor
+tt0099864,nm0186315,Ben Hanscom - Age 12,actor
+tt0103516,nm0000545,DCI Jane Tennison,actress
+tt0103516,nm0758760,DS Robert Oswalde,actor
+tt0103516,nm0071007,DSU Michael Kernan,actor
+tt0103516,nm0254879,DI Tony Muddyman,actor
+tt0103516,nm0265492,DI Frank Burkin,actor
+tt0103516,nm0370343,DS Richard Haskons,actor
+tt0103516,nm0942712,DC Lillie,actor
+tt0103516,nm0280416,DC Jones,actor
+tt0103516,nm0862907,DC Rosper,actor
+tt0103516,nm0570247,Sgt Calder,actor
+tt0106112,nm0000685,Captain Woodrow F. Call,actor
+tt0106112,nm0001347,Clara Allen,actress
+tt0106112,nm0005401,Newt Dobbs,actor
+tt0106112,nm0676973,Captain Gideon Walker,actor
+tt0106112,nm0001657,Gregor Dunnigan,actor
+tt0106112,nm0371660,Jack Jackson,actor
+tt0106112,nm0000702,Ferris Dunnigan,actress
+tt0106112,nm0779850,Pea Eye Parker,actor
+tt0106112,nm0177933,July Johnson,actor
+tt0106112,nm0001634,Sara Pickett,actress
+tt0108941,nm0000641,Stu Redman,actor
+tt0108941,nm0000208,Frannie Goldsmith,actress
+tt0108941,nm0792177,Randall Flagg,actor
+tt0108941,nm0000624,Nadine Cross,actress
+tt0108941,nm0002039,Mother Abagail Freemantle,actress
+tt0108941,nm0001115,Judge Richard Farris,actor
+tt0108941,nm0001208,Lloyd Henreid,actor
+tt0108941,nm0005269,Harold Lauder,actor
+tt0108941,nm0001242,Trashcan Man,actor
+tt0108941,nm0832531,Larry Underwood,actor
+tt0110426,nm0543441,Superior (1995),actor
+tt0110426,nm0186505,Isamu Alva Dyson,actor
+tt0110426,nm0148061,,actor
+tt0110426,nm0258268,Guld Goa Bowman,actor
+tt0110426,nm0861558,Chaser 2,actor
+tt0110426,nm0283253,Reporter,actress
+tt0110426,nm0082507,Col. Millard Johnson,actor
+tt0110426,nm0551065,,actress
+tt0110426,nm0002398,,actor
+tt0110426,nm0170555,Council Member,actor
+tt0112040,nm0923210,Laurel Stevenson,actress
+tt0112040,nm0001777,Bob Jenkins,actor
+tt0112040,nm0276169,Harker,actor
+tt0112040,nm0531069,Dinah Bellman,actress
+tt0112040,nm0152464,Nick Hopewell,actor
+tt0112040,nm0514127,Aunt Vicki,actress
+tt0112040,nm0265670,Don Gaffney,actor
+tt0112040,nm0364463,Rudy Warwick,actor
+tt0112040,nm0521681,Richard Logan,actor
+tt0112040,nm0171754,Albert Kaussner,actor
+tt0120570,nm0780678,Deke Slayton,actor
+tt0120570,nm0809031,Emmett Seaborn,actor
+tt0120570,nm0028625,Frank Borman,actor
+tt0120570,nm0446298,Gene Cernan,actor
+tt0120570,nm0740535,Chris Kraft,actor
+tt0120570,nm0139675,Gerry Griffin,actor
+tt0120570,nm0004857,Jim Lovell,actor
+tt0120570,nm0389468,Thomas Stafford,actor
+tt0120570,nm0640970,James McDivitt,actor
+tt0130414,nm0000554,Merlin,actor
+tt0130414,nm0000307,Morgan Le Fey,actress
+tt0130414,nm0000024,King Constant,actor
+tt0130414,nm0000442,King Vortigern,actor
+tt0130414,nm0000469,Mountain King,actor
+tt0130414,nm0001669,Lady of the Lake,actress
+tt0130414,nm0000618,Nimue,actress
+tt0130414,nm0001737,Frik,actor
+tt0130414,nm0192868,Arthur,actor
+tt0130414,nm0372176,Guinevere,actress
+tt0135659,nm0004857,Constable Mike Anderson,actor
+tt0135659,nm0272173,Andre Linoge,actor
+tt0135659,nm0001198,Molly Anderson,actress
+tt0135659,nm0218810,Town Manager Robbie Beals,actor
+tt0135659,nm0629855,Katrina Withers,actress
+tt0135659,nm0048250,Ursula Godsoe,actress
+tt0135659,nm0107748,Donny Beals,actor
+tt0135659,nm0221631,Sandra Beals,actress
+tt0135659,nm0149910,Joanna Stanhope,actress
+tt0135659,nm0710292,Jack Carver,actor
+tt0178145,nm0005447,Joan d'Arc,actress
+tt0178145,nm0929814,Jean de Metz,actor
+tt0178145,nm0000564,Bishop Pierre Cauchon,actor
+tt0178145,nm0000439,King Charles VII of France,actor
+tt0178145,nm0000959,Jacques d'Arc,actor
+tt0178145,nm0005471,La Hire,actor
+tt0178145,nm0040470,Jean d'Estivet,actor
+tt0178145,nm0001156,Mother Babette,actress
+tt0178145,nm0005162,Father Monet,actor
+tt0178145,nm0000302,Isabelle d'Arc,actress
+tt0207275,nm0931090,Virginia Lewis,actress
+tt0207275,nm0169753,Wolf,actor
+tt0207275,nm0001848,Evil Queen,actress
+tt0207275,nm0487406,Prince Wendell,actor
+tt0207275,nm0488662,Tony Lewis,actor
+tt0207275,nm8353188,Troll,actor
+tt0207275,nm0642145,Relish the Troll King,actor
+tt0207275,nm0000442,Huntsman,actor
+tt0207275,nm0507097,Blabberwort the Troll,actress
+tt0207275,nm0641067,Burly the Troll,actor
+tt0244353,nm0001378,Vivianne,actress
+tt0244353,nm0000523,Morgaine,actress
+tt0244353,nm0000260,Morgause,actress
+tt0244353,nm0000526,Gwenwyfar,actress
+tt0244353,nm0328751,Igraine,actress
+tt0244353,nm0041029,Arthur,actor
+tt0244353,nm0890232,Lancelot,actor
+tt0244353,nm0126250,Merlin,actor
+tt0244353,nm0558548,Mordred,actor
+tt0244353,nm0428765,Uther,actor
+tt0314979,nm0001579,Commander Adama,actor
+tt0314979,nm0001521,President Laura Roslin,actress
+tt0314979,nm0755267,Kara 'Starbuck' Thrace,actress
+tt0314979,nm0051397,Lee 'Apollo' Adama,actor
+tt0314979,nm0130536,Gaius Baltar,actor
+tt0314979,nm1065454,Number Six,actress
+tt0314979,nm0719678,Leoben Conoy,actor
+tt0314979,nm0661825,Lt. Sharon 'Boomer' Valerii,actress
+tt0314979,nm0389581,Col. Tigh,actor
+tt0314979,nm0071922,Doral,actor
+tt0324264,nm0830556,Nan Astley,actress
+tt0324264,nm0369954,Kitty Butler,actress
+tt0324264,nm0562003,Florence Banner,actress
+tt0324264,nm0768488,Charles Frobisher,actor
+tt0324264,nm0825231,Mrs. Denby,actress
+tt0324264,nm0100764,Walter Bliss,actor
+tt0324264,nm0151250,Diana Lethaby,actress
+tt0324264,nm1020089,Zena Blake,actress
+tt0324264,nm0376983,Mrs. Jex,actress
+tt0324264,nm0830767,Dickie,actress
+tt0340477,nm0288976,"Cassandra, Princess of Troy",actress
+tt0340477,nm0130536,Menelaus,actor
+tt0340477,nm0487406,Hector,actor
+tt0340477,nm0926205,Odysseus,actor
+tt0340477,nm0001745,Theseus,actor
+tt0340477,nm0598922,Achilles,actor
+tt0340477,nm0086621,Clytemnestra,actress
+tt0340477,nm0446287,Pollux,actor
+tt0340477,nm0146439,Paris' Father,actor
+tt0340477,nm1351439,Iphigenia,actress
+tt0346293,nm0001780,Ernst Röhm,actor
+tt0346293,nm0903110,General Erich Ludendorff,actor
+tt0346293,nm0000564,President Paul von Hindenburg,actor
+tt0346293,nm0854364,Eva Braun,actress
+tt0346293,nm0367731,Gustav von Kahr,actor
+tt0346293,nm0758411,Dr. Joseph Goebbels,actor
+tt0346293,nm0488271,Hermann Göring,actor
+tt0346293,nm1186736,Rudolf Hess,actor
+tt0346293,nm0626757,Sophie Gerlich,actress
+tt0346293,nm0295227,Friedrich Hollaender,actor
+tt0355987,nm0000507,Ben Mears,actor
+tt0355987,nm0105672,Matt Burke,actor
+tt0355987,nm0000661,Richard Straker,actor
+tt0355987,nm0000526,Susan Norton,actress
+tt0355987,nm0541120,Dr. James Cody,actor
+tt0355987,nm0126004,Mark Petrie,actor
+tt0355987,nm0000442,Kurt Barlow,actor
+tt0355987,nm0000342,Father Donald Callahan,actor
+tt0355987,nm0026340,Charlie Rhodes,actor
+tt0355987,nm0344188,Larry Crockett,actor
+tt0097810,nm0004697,Hidimbi,actress
+tt0097810,nm0228091,Bhima,actor
+tt0097810,nm0004248,Duryodhana,actor
+tt0097810,nm0126870,Kitchaka,actor
+tt0097810,nm0162162,Dhritharashtra,actor
+tt0097810,nm0081994,Dushassana,actor
+tt0097810,nm0219259,Nakula,actor
+tt0097810,nm0468130,Bhisma,actor
+tt0097810,nm0583503,Krishna,actor
+tt0097810,nm0583857,Arjuna,actor
+tt0079844,nm0815800,Ben Mears,actor
+tt0079844,nm0000051,Richard K. Straker,actor
+tt0079844,nm0450130,Mark Petrie,actor
+tt0079844,nm0000889,Susan Norton,actress
+tt0079844,nm0000817,Jason Burke,actor
+tt0079844,nm0167784,Bonnie Sawyer,actress
+tt0079844,nm0176879,Gordon 'Weasel' Phillips,actor
+tt0079844,nm0001169,Cully Sawyer,actor
+tt0079844,nm0281130,Dr. Bill Norton,actor
+tt0079844,nm0443420,Majorie Glick,actress
+tt0118641,nm0000101,Crawford Gordon Jr.,actor
+tt0118641,nm0098597,Kate O'Hara,actress
+tt0118641,nm0925406,Jack Woodman,actor
+tt0118641,nm0222593,Jim Chamberlain,actor
+tt0118641,nm0000911,James Floyd,actor
+tt0118641,nm0926439,Fred Smye,actor
+tt0118641,nm0164019,Edward Critchley,actor
+tt0118641,nm0113357,Joe Paloffski,actor
+tt0118641,nm0280002,Ruby Paloffski,actress
+tt0118641,nm0303981,C.D. Howe,actor
+tt0259127,nm0528422,Galen,actress
+tt0259127,nm0000925,King Rua,actor
+tt0259127,nm0687091,Orestes,actor
+tt0259127,nm0281107,Bleda,actor
+tt0259127,nm0593511,Honoria,actress
+tt0259127,nm0404993,Felix,actor
+tt0259127,nm0000347,Theodosius,actor
+tt0259127,nm0376983,Palcharia,actress
+tt0259127,nm0192377,King Theodoric,actor
+tt0259127,nm0917353,Young Attila,actor
+tt0318997,nm0000199,Roy Cohn,actor
+tt0318997,nm0000658,Hannah Pitt,actress
+tt0318997,nm0000668,Nurse Emily,actress
+tt0318997,nm0000571,Harper Pitt,actress
+tt0318997,nm0005095,Prior Walter,actor
+tt0318997,nm0942482,Mr. Lies,actor
+tt0318997,nm0791570,Louis Ironson,actor
+tt0318997,nm0933940,Joe Pitt,actor
+tt0318997,nm0548498,Martin Heller,actor
+tt0318997,nm0000342,Roy's Doctor,actor
+tt0105946,nm0001245,Delenn,actress
+tt0105946,nm0081863,Dr. Stephen Franklin,actor
+tt0105946,nm0299122,Vir Cotto,actor
+tt0105946,nm0441537,G'Kar,actor
+tt0105946,nm0432867,Londo Mollari,actor
+tt0105946,nm0236381,Michael Garibaldi,actor
+tt0105946,nm0612621,Lennier,actor
+tt0105946,nm0000310,Capt. John Sheridan,actor
+tt0105946,nm0160004,Cmdr. Susan Ivanova,actress
+tt0105946,nm0001063,Zack Allan,actor
+tt0423651,nm0144187,Maud Lilly,actress
+tt0423651,nm1020089,Sue Trinder,actress
+tt0423651,nm0001767,Mrs. Sucksby,actress
+tt0423651,nm1140344,Richard 'Gentleman' Rivers,actor
+tt0423651,nm0873739,Mr. Ibbs,actor
+tt0423651,nm1643154,Charles,actor
+tt0423651,nm0916037,John Vroom,actor
+tt0423651,nm0243983,Mr. Hawtrey,actor
+tt0423651,nm0376025,Mrs. Stiles,actress
+tt0423651,nm0997824,Dainty,actress
+tt0164292,nm0925916,Otis Williams,actor
+tt0164292,nm0940851,Melvin Franklin,actor
+tt0164292,nm0112277,Eddie Kendricks,actor
+tt0164292,nm0668109,Paul Williams,actor
+tt0164292,nm0502442,David Ruffin,actor
+tt0164292,nm0742165,Shelly Berger,actor
+tt0164292,nm0509824,Haze,actress
+tt0164292,nm0507338,Mama Rose,actress
+tt0164292,nm0712406,Josephine,actress
+tt0164292,nm0044762,Berry Gordy,actor
+tt0376591,nm0000438,Miles Roby,actor
+tt0376591,nm0000450,Charlie Mayne,actor
+tt0376591,nm0000166,Janine Roby,actress
+tt0376591,nm0000056,Max Roby,actor
+tt0376591,nm0000705,Grace Roby,actress
+tt0376591,nm0001644,David Roby,actor
+tt0376591,nm0940946,Francine Whiting,actress
+tt0376591,nm0001199,Walt Comeau,actor
+tt0376591,nm0001209,Jimmy Minty,actor
+tt0376591,nm0663820,Bea,actress
+tt0118414,nm0000800,Odysseus,actor
+tt0118414,nm0000627,Penelope,actress
+tt0118414,nm0000618,Athena,actress
+tt0118414,nm0001613,Circe,actress
+tt0118414,nm0000616,Eurymachus,actor
+tt0118414,nm0660327,Anticleia,actress
+tt0118414,nm0469103,King Alcinous,actor
+tt0118414,nm0001036,Eurycleia,actress
+tt0118414,nm0000489,Tiresias,actor
+tt0118414,nm0001853,Calypso,actress
+tt0461872,nm0000661,Meehan,actor
+tt0461872,nm0000227,Kate,actress
+tt0461872,nm0001015,Sergei,actor
+tt0461872,nm1965525,Katerina,actress
+tt0461872,nm0495799,Nadia,actress
+tt0461872,nm1436204,Annie,actress
+tt0461872,nm0132441,Samantha,actress
+tt0461872,nm0815257,Mischa,actor
+tt0461872,nm0285603,Helena's Aunt,actress
+tt0461872,nm0320721,Viktor,actor
+tt0461872,nm0903985,Tommy,actor
+tt0137863,nm0850689,Vaimo - Pasi's Wife,actress
+tt0137863,nm0632852,Pasi,actor
+tt0137863,nm0672378,Reiska,actor
+tt0137863,nm0654961,Tanu,actor
+tt0137863,nm0510114,Ellu,actress
+tt0137863,nm0883282,Ari,actor
+tt0137863,nm0034503,Manu,actor
+tt0137863,nm0389960,Sulo Kokki,actor
+tt0137863,nm0683160,Riistapäällikkö - gamekeeper,actor
+tt0137863,nm0509604,Kauppias - Shopkeeper,actor
+tt0088693,nm0339910,Alice,actress
+tt0088693,nm0021052,Mother,actress
+tt0088693,nm0000999,The White Rabbit,actor
+tt0088693,nm0627969,The Mad Hatter,actor
+tt0088693,nm0424527,The Dormouse,actor
+tt0088693,nm0005217,The Queen of Hearts,actress
+tt0088693,nm0605923,The King of Hearts,actor
+tt0088693,nm0301625,The Knave of Hearts,actor
+tt0088693,nm0001522,The March Hare,actor
+tt0088693,nm0572951,The Jabberwocky,actor
+tt0075296,nm0940946,Dr. Cornelia Wilbur,actress
+tt0075296,nm0000398,Sybil,actress
+tt0075296,nm0001113,Richard,actor
+tt0075296,nm0058856,Hattie,actress
+tt0075296,nm0388939,Frieda Dorsett,actress
+tt0075296,nm0485272,Dr. Quinoness,actor
+tt0075296,nm0590390,Grandma Dorsett,actress
+tt0075296,nm0697733,Willard Dorsett,actor
+tt0075296,nm0020897,Miss Penny,actress
+tt0075296,nm0038997,Cam,actress
+tt0109036,nm0001321,Abraham,actor
+tt0109036,nm0001347,Sarah,actress
+tt0109036,nm0001703,Pharaoh,actor
+tt0109036,nm0698438,Lot,actor
+tt0109036,nm0424167,Eliezer,actor
+tt0109036,nm0573618,Nahor,actor
+tt0109036,nm0274194,Lot's Wife,actress
+tt0109036,nm0705378,Serug,actor
+tt0109036,nm0017582,Mikah,actress
+tt0109036,nm0576316,Reumah,actress
+tt0090608,nm0384908,Lady Slane,actress
+tt0090608,nm0028674,Fitzgeorge,actor
+tt0090608,nm0219062,Bucktrout,actor
+tt0090608,nm0130829,Carrie,actress
+tt0090608,nm0189561,Herbert,actor
+tt0090608,nm0291599,Kay,actor
+tt0090608,nm0811355,Deborah,actress
+tt0090608,nm0556739,Edith,actress
+tt0090608,nm0915427,Genoux,actress
+tt0090608,nm0111623,Lavinia,actress
+tt0463850,nm0001126,Dr. Samantha Hill,actress
+tt0463850,nm0001002,Brad Malloy,actor
+tt0463850,nm0190931,Dr. Jordan Fisher,actor
+tt0463850,nm0005029,Will Malloy,actor
+tt0463850,nm0004731,Natalie Warner,actress
+tt0463850,nm0076167,Dr. Miguel Garcia,actor
+tt0463850,nm0005318,Laura Malloy,actress
+tt0463850,nm0364458,"Stacy Warner, FEMA Director",actress
+tt0463850,nm0653660,Alec Becker,actor
+tt0463850,nm0144307,"Sean Morris, Hollister's Aide",actor
+tt0070904,nm0530594,Fred Stiller,actor
+tt0070904,nm0884157,Gloria Fromm,actress
+tt0070904,nm0704770,Eva Vollmer,actress
+tt0070904,nm0903646,Herbert Siskins,actor
+tt0070904,nm0770859,Franz Hahn,actor
+tt0070904,nm0483945,Fritz Walfang,actor
+tt0070904,nm0518579,"Rupp, Journalist",actor
+tt0070904,nm0396998,Professor Henri Vollmer,actor
+tt0070904,nm0221527,Günther Lause,actor
+tt0070904,nm0360889,Hans Edelkern,actor
+tt0424600,nm0000973,Dr. Jeremy Stone,actor
+tt0424600,nm0588096,Dr. Angela Noyce,actress
+tt0424600,nm0005401,Major Bill Keane MD,actor
+tt0424600,nm0274371,Colonel James C. Ferrus,actor
+tt0424600,nm0837095,Lance Stone,actor
+tt0424600,nm0005202,Jack Nash,actor
+tt0424600,nm0196654,Dr. Tsi Chou,actor
+tt0424600,nm0281284,Charles 'Chuck' Beeter,actor
+tt0424600,nm0926471,President William J. Scott,actor
+tt0424600,nm0040470,Edward 'Ed' Dewitt,actor
+tt1079959,nm0419248,Rincewind,actor
+tt1079959,nm0000276,Twoflower,actor
+tt1079959,nm0000347,Trymon,actor
+tt1079959,nm0000460,Patrician,actor
+tt1079959,nm0004051,Narrator,actor
+tt1079959,nm0000489,Death,actor
+tt1079959,nm0404232,Picture Imp,actor
+tt1079959,nm2257390,Death,actor
+tt1079959,nm0575223,Jiglad Wert,actor
+tt1079959,nm0004355,Lumuel Panter,actor
+tt0472027,nm0316079,John Adams,actor
+tt0472027,nm0001473,Abigail Adams,actress
+tt0472027,nm0234440,Benjamin Rush,actor
+tt0472027,nm0226820,Thomas Jefferson,actor
+tt0472027,nm0001631,Abigail Adams Smith,actress
+tt0472027,nm1154650,Thomas Adams,actor
+tt0472027,nm0001556,George Washington,actor
+tt0472027,nm0778831,Colonel William Smith,actor
+tt0472027,nm0396812,Samuel Adams,actor
+tt0472027,nm0609114,John Quincy Adams,actor
+tt0279077,nm0594659,Naota Nandaba,actress
+tt0279077,nm0794027,Haruko Haruhara,actress
+tt0279077,nm0440374,Mamimi Samejima,actress
+tt0279077,nm0559618,Kamon Nandaba,actor
+tt0279077,nm0411696,Shigekuni Nandaba,actor
+tt0279077,nm1523588,Eri Ninamori,actress
+tt0279077,nm1501450,Masashi Masamune,actor
+tt0279077,nm7271268,Gaku Manabe,actor
+tt0279077,nm1217490,Amarao,actor
+tt0279077,nm0157115,Kiturubami,actress
+tt0871427,nm0000310,President John Sheridan,actor
+tt0871427,nm0001712,Colonel Elizabeth Lochley,actress
+tt0871427,nm0940974,Galen,actor
+tt0871427,nm0769154,Father Cassidy,actor
+tt0871427,nm0708873,Simon Burke,actor
+tt0871427,nm0532857,Prince Regent Dius Vintari,actor
+tt0871427,nm0745186,Ms. Chambers,actress
+tt0871427,nm0998268,Guard,actor
+tt0871427,nm0912714,Minbari,actress
+tt0871427,nm0441537,G'Kar,actor
+tt0910812,nm0221046,DG,actress
+tt0910812,nm0001086,Glitch,actor
+tt0910812,nm0568180,Wyatt Cain,actor
+tt0910812,nm0005370,Azkadellia,actress
+tt0910812,nm0874232,Raw,actor
+tt0910812,nm0719678,Zero,actor
+tt0910812,nm0000377,Mystic Man,actor
+tt0910812,nm0542558,Toto,actor
+tt0910812,nm0303442,Lavender Eyes,actress
+tt0910812,nm0926471,Ahamo,actor
+tt0409572,nm1954728,Old Indian,actor
+tt0409572,nm0065942,Margaret Light Shines Wheeler,actress
+tt0409572,nm0083655,Older Dog Star,actor
+tt0409572,nm0856012,Older Jacob Wheeler,actor
+tt0409572,nm1913412,Artillery Major,actor
+tt0409572,nm0138371,Thunder Heart Woman,actress
+tt0409572,nm0160637,Jacob Wheeler Jr.,actor
+tt0409572,nm0000337,Clara Wheeler,actress
+tt0409572,nm0565647,Running Fox,actor
+tt0409572,nm0869721,Older Thunder Heart Woman,actress
+tt0387736,nm0112871,John Crichton,actor
+tt0387736,nm0085227,Aeryn Sun,actress
+tt0387736,nm0799402,Ka D'Argo,actor
+tt0387736,nm0249319,Chiana,actress
+tt0387736,nm0701460,Harvey,actor
+tt0387736,nm0384584,Sikozu Svala Shanti Sugaysi Shanu,actress
+tt0387736,nm0415513,Utu-Noranti Pralatong,actress
+tt0387736,nm0323822,Stark,actor
+tt0387736,nm0570695,Joolushko Tunai Fenta Hovalis,actress
+tt0387736,nm0291401,Capt. Meeklo Braca,actor
+tt0233044,nm0000667,Cyrus Crabb,actor
+tt0233044,nm0139772,Marion Waldo,actress
+tt0233044,nm0141697,Mayor Waldo,actor
+tt0233044,nm0000481,Rosemary Waldo,actress
+tt0233044,nm0500739,Karl Scott,actor
+tt0233044,nm0589505,David Scott,actor
+tt0233044,nm0758760,Oonu,actor
+tt0233044,nm0800939,Sunstone Restorer,actor
+tt0233044,nm0947380,Romana Denison,actress
+tt0233044,nm0536551,Samantha,actress
+tt0407384,nm0039162,Ged,actor
+tt0407384,nm0471036,Tenar,actress
+tt0407384,nm0000618,Thar,actress
+tt0407384,nm0003067,Tygath,actor
+tt0407384,nm0310240,Vetch,actor
+tt0407384,nm0130810,Kossil,actress
+tt0407384,nm0358922,Rosa,actress
+tt0407384,nm0383926,Jasper,actor
+tt0407384,nm0769154,Arch Magus,actor
+tt0407384,nm0432228,Skiorch,actor
+tt0208629,nm0000285,Justice Robert H. Jackson,actor
+tt0208629,nm0004051,Reichsmarschall Hermann Göring,actor
+tt0208629,nm0001626,Sir David Maxwell-Fyfe,actor
+tt0208629,nm0005007,Elsie Douglas,actress
+tt0208629,nm0382216,Ernst Kaltenbrunner,actor
+tt0208629,nm0242750,Col. Robert Storey,actor
+tt0208629,nm0570546,Col. John Harlan Amen,actor
+tt0208629,nm0796125,Gen. Telford Taylor,actor
+tt0208629,nm0558645,Thomas J. Dodd,actor
+tt0208629,nm0460578,Albert Speer,actor
+tt1227926,nm0000439,Billy (Dr. Horrible),actor
+tt1227926,nm0277213,Captain Hammer,actor
+tt1227926,nm1260407,Penny,actress
+tt1227926,nm0374865,Moist,actor
+tt1227926,nm1870313,Bad Horse Chorus #1,actor
+tt1227926,nm1871590,Bad Horse Chorus #2,actor
+tt1227926,nm0718216,Bad Horse Chorus #3,actor
+tt1227926,nm0672436,Driver,actor
+tt1227926,nm0663999,Mayor,actor
+tt1227926,nm1315990,Groupie #1,actress
+tt1117667,nm0001151,Ross Tanner,actor
+tt1117667,nm1166528,Sam,actress
+tt1117667,nm0117374,Colonel Amos,actor
+tt1117667,nm0565569,General Carrington,actor
+tt1117667,nm0205061,Jones,actress
+tt1117667,nm0383425,Calvin Wax,actor
+tt1117667,nm0040470,Wally Sheridan,actor
+tt1117667,nm0099909,President Galbrain,actor
+tt1117667,nm0319698,Kim Rowland,actress
+tt1117667,nm0476906,Sally Sheridan,actress
+tt1264363,nm0004895,John Serragoth,actor
+tt1264363,nm0853573,Perfidia,actress
+tt1264363,nm0000502,Tesselink,actor
+tt1264363,nm0415066,Adric,actor
+tt1264363,nm1617355,Ber-Lak,actor
+tt1264363,nm0117206,Swope,actor
+tt1264363,nm0316515,Dragon Eye,actor
+tt1264363,nm0336797,Lord Splayven,actor
+tt1264363,nm0396406,Malcolm,actor
+tt1264363,nm1976541,Orion,actress
+tt0080196,nm0483945,Franz Biberkopf,actor
+tt0080196,nm0391485,Wirt,actor
+tt0080196,nm0778016,Eva,actress
+tt0080196,nm0118268,Gottfried Meck,actor
+tt0080196,nm0591930,Frau Bast,actress
+tt0080196,nm0296064,Herbert,actor
+tt0080196,nm0424167,Reinhold Hoffmann,actor
+tt0080196,nm0837784,Mieze,actress
+tt0080196,nm0442316,Theo,actor
+tt0080196,nm0221527,Pums,actor
+tt0075572,nm0000996,Kunta Kinte,actor
+tt0075572,nm0001658,Dr. William Reynolds,actor
+tt0075572,nm0025309,Older Kunta Kinte,actor
+tt0075572,nm0001283,Fiddler,actor
+tt0075572,nm0313519,Mrs. Reynolds,actress
+tt0075572,nm0170724,Mathilda,actress
+tt0075572,nm0801672,Bell Reynolds,actress
+tt0075572,nm0893965,Chicken George Moore,actor
+tt0075572,nm0880081,Kizzy Reynolds,actress
+tt0075572,nm0000978,Evan Brent,actor
+tt0087400,nm0108032,Maria,actress
+tt0087400,nm0917826,Eduard,actor
+tt0087400,nm0905985,Glasisch,actor
+tt0087400,nm0106606,Katharina,actress
+tt0087400,nm0711102,Lucie,actress
+tt0087400,nm0121241,Mathias,actor
+tt0087400,nm0516482,Wiegand,actor
+tt0087400,nm0582707,Pieritz,actor
+tt0087400,nm0770221,Wilfried,actor
+tt0087400,nm0773802,Marie-Goot,actress
+tt1117666,nm0740383,Amanda Price,actress
+tt1117666,nm1410360,Jane Bennet,actress
+tt1117666,nm0005094,Mrs Bennet,actress
+tt1117666,nm0095017,Mr Bennet,actor
+tt1117666,nm0917347,Lydia Bennet,actress
+tt1117666,nm2070427,Mr Bingley,actor
+tt1117666,nm1259002,Mr Darcy,actor
+tt1117666,nm1268047,Caroline Bingley,actress
+tt1117666,nm0387524,Kitty Bennet,actress
+tt1117666,nm2182161,Mary Bennet,actress
+tt1260995,nm0001004,Detective Jack Crowe,actor
+tt1260995,nm0005448,Imogene O'Neil,actress
+tt1260995,nm0000502,Prof. Daniel Lehman,actor
+tt1260995,nm0740264,Calvin Stark,actor
+tt1260995,nm0005078,Sheriff Crowe,actor
+tt1260995,nm0004517,Dr. Chetwyn,actor
+tt1260995,nm0001368,Gen. Brasser,actor
+tt1260995,nm1483657,Jenny Crowe,actress
+tt1260995,nm0034492,Commander Murphy,actor
+tt1260995,nm0183158,Chelsea Hapscomb,actress
+tt1104746,nm0345018,Speaker,actor
+tt1461312,nm0778741,Alice,actress
+tt1461312,nm0498517,Hatter,actor
+tt1461312,nm0001242,White Knight,actor
+tt1461312,nm0000870,Queen of Hearts,actress
+tt1461312,nm0934618,Jack Chase,actor
+tt1461312,nm0000538,King of Hearts,actor
+tt1461312,nm0000347,Dodo,actor
+tt1461312,nm0001765,Caterpillar,actor
+tt1461312,nm0916448,Carpenter,actor
+tt1461312,nm0015865,10 of Clubs,actor
+tt0085101,nm0000328,Ralph de Bricassart,actor
+tt0085101,nm0001829,Meggie Cleary,actress
+tt0085101,nm0001626,Archbishop Vittorio Contini-Verchese,actor
+tt0085101,nm0000986,Luke O'Neill,actor
+tt0085101,nm0191442,Bob Cleary,actor
+tt0085101,nm0266995,Judy,actress
+tt0085101,nm0179224,Pete,actor
+tt0085101,nm0209496,Alastair MacQueen,actor
+tt0085101,nm0001766,Mary Carson,actress
+tt0085101,nm0001739,Fiona 'Fee' Cleary,actress
+tt0495212,nm1209832,Seras Victoria,actress
+tt0495212,nm0293342,Alucard,actor
+tt0495212,nm0367846,Sir Integra Fairbrook Wingates Hellsing,actress
+tt0495212,nm1079863,Walter C. Dornez,actor
+tt0495212,nm0620124,Alucard,actor
+tt0495212,nm1046347,Seras Victoria,actress
+tt0495212,nm0757058,Sir Integra Fairbrook Wingates Hellsing,actress
+tt0495212,nm0413556,The Major,actor
+tt0495212,nm1072611,Enrico Maxwell,actor
+tt0495212,nm0906696,Alexander Anderson,actor
+tt0092571,nm0001227,Anne Shirley,actress
+tt0092571,nm0223157,Marilla Cuthbert,actress
+tt0092571,nm0510032,Miss Muriel Stacey,actress
+tt0092571,nm0335643,Diana Barry,actress
+tt0092571,nm0243024,Katherine Brooke,actress
+tt0092571,nm0528367,Pauline Harris,actress
+tt0092571,nm0032426,Emmeline Harris,actress
+tt0092571,nm0389100,Jen Pringle,actress
+tt0092571,nm0870721,Essie,actress
+tt0092571,nm0705374,Mrs. Elizabeth Barry,actress
+tt1329539,nm0000453,Storyteller,actor
+tt1329539,nm2354239,Tofi,actor
+tt1329539,nm0535837,Ordgar,actor
+tt1329539,nm1043031,Leofric,actor
+tt1329539,nm0125745,Snorri,actor
+tt1329539,nm2460517,Ealfrith,actress
+tt1329539,nm1555557,Judith,actress
+tt1329539,nm2925627,Aelf,actress
+tt1329539,nm1477058,Alfeid,actress
+tt1329539,nm3946799,Edith,actress
+tt1358383,nm0035700,Shylock,actor
+tt1358383,nm0513201,Bassanio,actor
+tt0081846,nm0361570,Johannes Kepler,actor
+tt0081846,nm0153068,Young Champollion,actor
+tt0081846,nm0153364,Betty Hill,actress
+tt0081846,nm2684383,Tinget Indian,actress
+tt0081846,nm0381934,Fourier,actor
+tt0081846,nm12995614,Barney Hill,actor
+tt0081846,nm4580639,Tinget Indian,actor
+tt0081846,nm4580095,Jean-Francois Champollion,actor
+tt0081846,nm4580476,Tinget Indian,actor
+tt1438437,nm1408453,Chris Moore,actor
+tt1438437,nm0002142,Guran,actress
+tt1438437,nm2110814,Renny Davidson,actress
+tt1438437,nm0545391,Abel Vandermaark,actor
+tt1438437,nm0031679,Raatib Singh,actor
+tt1438437,nm0494784,Detective Sgt. Sean Davidson,actor
+tt1438437,nm3588633,Jordy Acevedo,actor
+tt1438437,nm1716062,Jacquot,actor
+tt1438437,nm0000618,Dr. Bella Lithia,actress
+tt1438437,nm0808519,Dr. Deepak Baboor,actor
+tt0115109,nm0676973,Whip Dalton,actor
+tt0115109,nm0798076,Lt. Kathryn Marcus,actress
+tt0115109,nm0001747,Schuyler Graves,actor
+tt0115109,nm0349749,Dr. Herbert Talley,actor
+tt0115109,nm0187811,Dana Dalton,actress
+tt0115109,nm0532160,Mike Newcombe,actor
+tt0115109,nm0036127,Osborne Manning,actor
+tt0115109,nm0424458,Nell Newcombe,actress
+tt0115109,nm0236952,Lucas Coven,actor
+tt0115109,nm0058864,Christopher Lane,actor
+tt0172202,nm0000755,Narrator,actor
+tt1453159,nm0574534,Waleran Bigod,actor
+tt1453159,nm0532193,Philip,actor
+tt1453159,nm1519666,Jack,actor
+tt1453159,nm2017943,Aliena,actress
+tt1453159,nm0661703,Regan Hamleigh,actress
+tt1453159,nm0944255,Ellen,actress
+tt1453159,nm0851458,Remigius,actor
+tt1453159,nm0682196,Cuthbert,actor
+tt1453159,nm0061106,Percy Hamleigh,actor
+tt1453159,nm0939619,King Henry I,actor
+tt1321865,nm1183149,Ilich Ramírez Sánchez 'Carlos',actor
+tt1321865,nm0770449,Johannes Weinrich,actor
+tt1321865,nm1885176,Michel Moukharbel,actor
+tt1321865,nm3936429,Feday chez Wadie Haddad,actor
+tt1321865,nm2790797,Épouse Steff,actress
+tt1321865,nm3927269,Épouse religieux syrien,actress
+tt1321865,nm1708506,Feday Orly,actor
+tt1321865,nm3907948,Wadie Haddad,actor
+tt1321865,nm1287142,Kamal al-Issawi 'Ali',actor
+tt1321865,nm0010207,Amie de Carlos,actress
+tt0465326,nm0000545,Elizabeth I,actress
+tt0465326,nm0429363,Robert Cecil,actor
+tt0465326,nm0199215,Earl of Essex,actor
+tt0465326,nm0538869,Sir Francis Walsingham,actor
+tt0465326,nm0001519,Lord Burghley,actor
+tt0465326,nm0757476,Dr Lopez,actor
+tt0465326,nm0278615,Lady Anne,actress
+tt0465326,nm0000460,Earl of Leicester,actor
+tt0465326,nm0001971,King James VI,actor
+tt0465326,nm0283409,Mary Queen of Scots,actress
+tt1366312,nm0304801,Emma,actress
+tt1366312,nm0002091,Mr. Woodhouse,actor
+tt1366312,nm0001538,Mr. Knightley,actor
+tt1366312,nm0562003,Anne Weston,actress
+tt1366312,nm0061106,Mr. Weston,actor
+tt1366312,nm3009279,Harriet Smith,actress
+tt1366312,nm0728682,Mr. Elton,actor
+tt1366312,nm0340067,Miss Bates,actress
+tt1366312,nm0510370,Mrs. Bates,actress
+tt1366312,nm0292744,John Knightley,actor
+tt0078588,nm0447611,Newsreader,actor
+tt0078588,nm0090124,Newsreader,actor
+tt0078588,nm0934983,Henry V,actor
+tt0078588,nm0122441,Man Carrying Barrel,actor
+tt0078588,nm3393041,Saxon Child,actor
+tt0199208,nm0043280,Judge,actor
+tt0199208,nm0819841,Preacher,actor
+tt0199208,nm0685173,William Buckland,actor
+tt0199208,nm2807298,Witch,actress
+tt0199208,nm0300237,Minister,actor
+tt0199208,nm0540697,John Den,actor
+tt0199208,nm0601379,Old Man,actor
+tt0199208,nm2796584,Kirk Elder,actor
+tt0199208,nm0263189,Will Falconer,actor
+tt1492030,nm0000701,Mildred Pierce,actress
+tt1492030,nm0001602,Monty Beragon,actor
+tt1492030,nm0939697,Veda Pierce,actress
+tt1492030,nm0639928,Bert Pierce,actor
+tt1492030,nm0502425,Lucy Gessler,actress
+tt1492030,nm0001457,Wally Burgan,actor
+tt1492030,nm0001858,Ida Corwin,actress
+tt1492030,nm1677477,Letty,actress
+tt1492030,nm0349881,Mr. Pierce,actor
+tt1492030,nm0434565,Mrs. Pierce,actress
+tt0780362,nm2235721,Jane Eyre,actress
+tt0780362,nm0827170,Rochester,actor
+tt0780362,nm0038690,Mrs. Fairfax,actress
+tt0780362,nm1264521,John Eshton,actor
+tt0780362,nm0274913,Grace Poole,actress
+tt0780362,nm0001216,Mrs. Reed,actress
+tt0780362,nm0184913,Colonel Dent,actor
+tt0780362,nm0329249,Sir George Lynn,actor
+tt0780362,nm1502348,George,actor
+tt0780362,nm1770860,Mason,actor
+tt0112041,nm0001258,Captain Woodrow Call,actor
+tt0112041,nm0000651,Lorena,actress
+tt0112041,nm0001731,Pea Eye,actor
+tt0112041,nm0000885,Judge Roy Bean,actor
+tt0112041,nm0001642,John Wesley Hardin,actor
+tt0112041,nm0836071,Famous Shoes,actor
+tt0112041,nm0001747,Ned Brookshire,actor
+tt0112041,nm0137506,Billy Williams,actor
+tt0112041,nm0004850,Joey Garza,actor
+tt0112041,nm0176723,Mox Mox,actor
+tt0783328,nm0001872,Gus McCrae,actor
+tt0783328,nm0581365,Jake Spoon,actor
+tt0783328,nm0732803,Joshua Deets,actor
+tt0783328,nm0836071,Buffalo Hump,actor
+tt0783328,nm0063440,Blue Duck,actor
+tt0783328,nm0714310,Gov. Elisha Marshall Pease,actor
+tt0783328,nm0001491,Pearl Coleman,actress
+tt0783328,nm0341737,Inez Scull,actress
+tt0783328,nm1684869,Pea Eye Parker,actor
+tt0783328,nm0585651,Famous Shoes,actor
+tt0115238,nm0000719,Caleb Cobb,actor
+tt0115238,nm0001018,Bigfoot Wallace,actor
+tt0115238,nm0157540,Matilda Jane,actress
+tt0115238,nm0001579,Captain Salazar,actor
+tt0115238,nm0777760,Buffalo Hump,actor
+tt0115238,nm0001765,Shadrach,actor
+tt0115238,nm0000274,Augustus McCrae,actor
+tt0115238,nm0571964,Long Bill Coleman,actor
+tt0115238,nm0625789,Johnny Carthage,actor
+tt0115238,nm0339159,Kirker,actor
+tt1236371,nm0527735,Padre Diniz,actor
+tt1236371,nm1120597,Ângela de Lima,actress
+tt1236371,nm0673204,Alberto de Magalhães,actor
+tt1236371,nm2394494,Pedro da Silva (adolescente),actor
+tt1236371,nm3562242,Dona Antónia,actress
+tt1236371,nm2417108,Eugénia,actress
+tt1236371,nm0605706,Marquês de Montezelos,actor
+tt1236371,nm3696607,Criado,actor
+tt1236371,nm2128444,Condessa de Viso,actress
+tt1236371,nm1202905,Elisa de Montfort,actress
+tt0979263,nm0193231,Narrator,actor
+tt0222581,nm0455797,Kertoja,actor
+tt0222581,nm0514382,Rinteelän Aleksi,actor
+tt0222581,nm0447486,Lääkäri,actress
+tt0222581,nm0631741,Autoilija Toivo Kesseli,actor
+tt0222581,nm0815250,Pankinjohtaja Joona Hukkanen,actor
+tt0222581,nm0676028,Siljander,actor
+tt0222581,nm1738304,Pankkineiti,actor
+tt0222581,nm0874830,Kauppias Kake Kurkkumaa,actor
+tt0222581,nm0815251,Mielikki Hukkanen,actress
+tt0222581,nm0014273,Opettaja Touko Savukoski,actor
+tt1718776,nm0475969,Molesch,actor
+tt1718776,nm0559326,Johannes,actor
+tt1718776,nm1955385,Ana,actress
+tt1718776,nm0456249,Kreil,actor
+tt1718776,nm0354198,Jo,actress
+tt1718776,nm1898387,Dimitros Katalmas,actor
+tt1718776,nm0450328,Jürgen,actor
+tt1718776,nm3893379,Frank,actor
+tt1718776,nm1632961,Vera,actress
+tt1718776,nm0559052,Bruno,actor
+tt1759871,nm1715025,Eno,actor
+tt1759871,nm0685726,Myrsky,actor
+tt1759871,nm0802629,Jussin äiti,actress
+tt1759871,nm0036833,Isoäiti,actress
+tt1759871,nm1268706,Jussin isä,actor
+tt1759871,nm3544542,Jussin täti,actress
+tt1759871,nm0683171,Suku,actor
+tt1759871,nm3578583,Jussi,actor
+tt1759871,nm4152662,Jussi,actor
+tt1759871,nm2673544,Sari,actress
+tt0231626,nm0068407,Dr. Vandermeer,actor
+tt0231626,nm0121386,Destro,actor
+tt0231626,nm0065159,Announcer,actor
+tt0231626,nm0490383,Cobra Commander,actor
+tt0231626,nm0911389,Scarlett,actress
+tt0231626,nm0191520,Ramar,actor
+tt0231626,nm0517456,Baroness,actress
+tt0231626,nm0278142,Selena,actress
+tt0231626,nm0827267,Gen. Flagg,actor
+tt0231626,nm0919798,Timber,actor
+tt0231626,nm0041413,Cover Girl,actress
+tt0231626,nm0289710,Ace,actor
+tt0231626,nm0427665,Doc,actor
+tt0231626,nm0667326,Tripwire,actor
+tt0231627,nm0919798,Torch,actor
+tt0231627,nm0391063,Roadblock,actor
+tt0231627,nm0068407,Duke,actor
+tt0231627,nm0074185,Cutter,actor
+tt0231627,nm0568056,Lady Jaye,actress
+tt0231627,nm0490383,Cobra Commander,actor
+tt0231627,nm0743719,Shipwreck,actor
+tt0231627,nm0752900,Rock 'n Roll,actor
+tt0231627,nm0711839,Flint,actor
+tt0231627,nm0121386,Destro,actor
+tt0231627,nm0065159,Narrator,actor
+tt0231627,nm0004371,Col. Sharp,actor
+tt0231627,nm0389134,Zartan,actor
+tt0231627,nm0427665,Doc,actor
+tt0231627,nm0432217,Honda Lou West,actress
+tt1226036,nm0073088,Scoop,actor
+tt1226036,nm0126325,Alley Viper,actor
+tt1226036,nm0176724,Rock 'n Roll,actor
+tt1226036,nm0003944,Gnawgahyde,actor
+tt1226036,nm1268087,Zarana,actress
+tt1226036,nm0420255,Stalker,actor
+tt1226036,nm0005606,Destro,actor
+tt1226036,nm0517456,Baroness,actress
+tt1226036,nm0933232,Mutt,actor
+tt1226036,nm0719052,Sgt. Slaughter,actor
+tt0482857,nm0000380,Prentice Ritter,actor
+tt0482857,nm0002006,Tom Harte,actor
+tt0482857,nm0000627,Nola Johns,actress
+tt0482857,nm0611889,Big Ears,actor
+tt0482857,nm0005404,Big Rump Kate,actress
+tt0482857,nm1290102,Sun Foy 'aka' #3,actress
+tt0482857,nm0178376,Gilpin,actor
+tt0482857,nm1197845,Ging Wa 'aka' #5,actress
+tt0482857,nm2138746,Ye Fung 'aka' #4,actress
+tt0482857,nm2144240,Ghee Moon 'aka' #1,actress
+tt1541777,nm1795048,Jerry Masucci,actor
+tt2033193,nm2023050,Harry Potter,actor
+tt2033193,nm4013413,Ron Weasley,actor
+tt2033193,nm4583863,Hermione Granger,actress
+tt2033193,nm2311252,Draco Malfoy,actress
+tt2033193,nm4583855,Lavender Brown,actress
+tt2033193,nm4583819,Gregory Goyle,actor
+tt2033193,nm4583827,Ravenclaw Student,actress
+tt2033193,nm2326212,Ginny Weasley,actress
+tt2033193,nm4583803,Severus Snape,actor
+tt2033193,nm4583807,Cedric Diggory,actor
+tt0098769,nm0001832,President Abraham Lincoln,actor
+tt0098769,nm0364915,Mary Chestnut,actress
+tt0098769,nm0001673,Ulysses S. Grant,actor
+tt0098769,nm0000151,Frederick Douglass,actor
+tt0098769,nm0736259,Joshua L. Chamberlain,actor
+tt0098769,nm0445087,Walt Whitman,actor
+tt0098769,nm2716065,Robert E. Lee,actor
+tt0098769,nm0007186,William Tecumseh Sherman,actor
+tt0098769,nm0613997,Pvt. Elijah Hunt Rhodes,actor
+tt1212452,nm0000112,Mike Noonan,actor
+tt1212452,nm0313534,Mattie Devore,actress
+tt1212452,nm0001272,Jo Noonan,actress
+tt1212452,nm0741242,Sara Tidwell,actress
+tt1212452,nm0001242,Sid Noonan,actor
+tt1212452,nm0000594,Marty,actor
+tt1212452,nm2965079,Kyra Devore,actress
+tt1212452,nm0534132,Bill Dean,actor
+tt1212452,nm0769974,Max Devore,actor
+tt1212452,nm0344010,Rogette Whitmore,actress
+tt0337898,nm0080115,Sasha Belov,actor
+tt0337898,nm1282927,Kosmos,actor
+tt0337898,nm1285135,Viktor Pchyolkin (Pchyola),actor
+tt0337898,nm1284690,Fil,actor
+tt0337898,nm1285394,Olya,actress
+tt0337898,nm0659521,Detective,actor
+tt0337898,nm0854368,Sasha Belov's Mom,actress
+tt0337898,nm0470385,Vvedensky,actor
+tt0337898,nm1482612,Maks,actor
+tt0337898,nm1115009,Toma,actress
+tt1866426,nm1642004,Josmael,actor
+tt1866426,nm1985495,Nyree,actress
+tt1866426,nm1260407,Tallis,actress
+tt1866426,nm1501374,Cairn,actor
+tt1866426,nm0427964,Saarebas,actor
+tt1866426,nm0931798,Burly Laborer,actor
+tt1866426,nm2706388,Lune,actress
+tt1866426,nm1352845,Tinker,actor
+tt1866426,nm1469230,Innkeeper,actress
+tt1866426,nm2125367,Fina,actress
+tt0417349,nm0218923,Margaret Hale,actress
+tt0417349,nm0035514,John Thornton,actor
+tt0417349,nm0683116,Richard Hale,actor
+tt0417349,nm0193661,Hannah Thornton,actress
+tt0417349,nm0185354,Nicholas Higgins,actor
+tt0417349,nm0704351,Dixon,actress
+tt0417349,nm1126318,Fanny Thornton,actress
+tt0417349,nm1888062,Mary Higgins,actress
+tt0417349,nm0544334,Maria Hale,actress
+tt0417349,nm1269412,Bessy Higgins,actress
+tt1831575,nm0001833,Janet Leach,actress
+tt1831575,nm0922035,Fred West,actor
+tt1831575,nm0322563,Detective Superintendent John Bennett,actor
+tt1831575,nm0494649,Detective Constable Hazel Savage,actress
+tt1831575,nm0230826,Rosemary West,actress
+tt1831575,nm1340424,Mike,actor
+tt1831575,nm1717183,Detective Constable Darren Law,actor
+tt1831575,nm0394531,Howard Ogden,actor
+tt1831575,nm4271607,Mae West,actress
+tt1831575,nm4574630,Stephen West,actor
+tt0078683,nm0001236,Hester Prynne,actress
+tt0078683,nm0001334,Arthur Dimmesdale,actor
+tt0078683,nm0176723,Roger Chillingworth,actor
+tt0078683,nm0813977,Nathaniel Hawthorne,actor
+tt0078683,nm0552327,Mister Wilson,actor
+tt0078683,nm0020897,Mistress Hibbins,actress
+tt0078683,nm0270948,Town Beadle,actor
+tt0078683,nm1036470,Pearl,actress
+tt0078683,nm1028816,Goodie Salter,actress
+tt0078683,nm1035023,Governor Bellingham,actor
+tt2085059,nm2148911,Katie,actress
+tt2085059,nm0230826,CS Linda Grace,actress
+tt2085059,nm0487406,Dawson,actor
+tt2085059,nm4789912,Selma Telse,actress
+tt2085059,nm3948190,Airport Stewardess,actress
+tt2085059,nm0666739,Cliff Stanfield,actor
+tt2085059,nm4696728,Nida Huq,actress
+tt2085059,nm0171674,Doctor Dmitri Babich,actor
+tt2085059,nm1685971,Chris Holligan,actor
+tt2085059,nm7379039,Older May Double,actress
+tt0286285,nm0000110,Narrator,actor
+tt0286285,nm0000330,Narrator (U.S.A Version),actress
+tt0490048,nm0000110,Narrator,actor
+tt0490048,nm0314652,Narrator US,actor
+tt0107228,nm0386752,Iria,actress
+tt0107228,nm0719609,Iria,actress
+tt0107228,nm0849773,Child A,actress
+tt0107228,nm1249880,Child B,actress
+tt0107228,nm1073433,Passenger,actor
+tt0107228,nm0407497,Announcer,actress
+tt0107228,nm4391722,Passenger,actress
+tt0107228,nm0412641,Child C,actress
+tt0107228,nm0594276,Kei (Japanese version),actress
+tt0107228,nm0559551,Komanisa (Japanese version),actress
+tt0086667,nm0000587,Septimus Harding,actor
+tt0086667,nm0561446,Eleanor,actress
+tt0086667,nm0001329,Dr. Grantly,actor
+tt0086667,nm0687081,Mrs. Grantly,actress
+tt0086667,nm0283409,Mary Bold,actress
+tt0086667,nm0842578,Dr. Proudie,actor
+tt0086667,nm0000614,Obadiah Slope,actor
+tt0086667,nm0568603,Mrs. Proudie,actress
+tt0086667,nm0358925,La Signora Madeline Vesey Neroni,actress
+tt0086667,nm0249569,Charlotte Stanhope,actress
+tt0996994,nm0000158,Al McIntosh,actor
+tt0996994,nm2773459,Reader,actress
+tt0118489,nm0000569,Jefferson's Grandaughter,actress
+tt0118489,nm0001832,Thomas Jefferson,actor
+tt0118489,nm0693446,Isaac,actor
+tt0118489,nm0001115,Narrator,actor
+tt1820723,nm0442997,Tom Morgan,actor
+tt1820723,nm0000704,Ben Gunn,actor
+tt1820723,nm2639934,Dick Johnson,actor
+tt1820723,nm0990547,Dr. Livesey,actor
+tt1820723,nm1052141,Israel Hands,actor
+tt1820723,nm0412850,Silver,actress
+tt1820723,nm0672303,Trelawney,actor
+tt1820723,nm0648285,Job Anderson,actor
+tt1820723,nm0000661,Flint,actor
+tt1820723,nm0932837,William O'Brien,actor
+tt0497298,nm0626362,Dr. Tom Jackman,actor
+tt0497298,nm0069109,Claire Jackman,actress
+tt0497298,nm0493200,Peter Syme,actor
+tt0497298,nm0752740,Katherine Reimer,actress
+tt0497298,nm0842934,Miranda,actress
+tt0497298,nm0941211,Min,actress
+tt0497298,nm0455057,Freeman,actor
+tt0497298,nm0549299,Ms Utterson,actress
+tt0497298,nm0430667,Benjamin,actor
+tt0497298,nm2505602,Eddie Jackman,actor
+tt0442632,nm1269412,Esther Summerson,actress
+tt0442632,nm1659547,Ada Clare,actress
+tt0442632,nm0493200,John Jarndyce,actor
+tt0442632,nm0000096,Lady Dedlock,actress
+tt0442632,nm0313702,Clamb,actor
+tt0442632,nm0001097,Mr. Tulkinghorn,actor
+tt0442632,nm1171145,Richard Carstone,actor
+tt0442632,nm0922367,Sir Leicester Dedlock,actor
+tt0442632,nm1218607,Guppy,actor
+tt0442632,nm0817563,Sergeant George,actor
+tt0106104,nm0000545,DCI Jane Tennison,actress
+tt0106104,nm0068552,DS Bill Otley,actor
+tt0106104,nm0866805,WPC Norma Hastings,actress
+tt0106104,nm0000667,James Jackson,actor
+tt0106104,nm0134922,Vera Reynolds,actor
+tt0106104,nm0835016,DI Larry Hall,actor
+tt0106104,nm0734654,Supt. Halliday,actor
+tt0106104,nm0755632,WPC Kathy Bibby,actress
+tt0106104,nm0362202,Commander Chiswick,actor
+tt0106104,nm0940100,DI Brian Dalton,actor
+tt0811026,nm0000545,DSU Jane Tennison,actress
+tt0811026,nm0867017,Sean Philips,actor
+tt0811026,nm1678849,Penny Philips,actress
+tt0811026,nm0078925,Linda Philips,actress
+tt0811026,nm0507207,Tony Sturdy,actor
+tt0811026,nm0614427,Ruth Sturdy,actress
+tt0811026,nm0277975,Arnold Tennison,actor
+tt0811026,nm0068552,Bill Otley,actor
+tt0811026,nm0700059,DS Alun Simms,actor
+tt0811026,nm0185354,DCS Mitchell,actor
+tt0365651,nm0000545,DSU Jane Tennison,actress
+tt0365651,nm0192377,Robert West,actor
+tt0365651,nm0579823,Milan Lukic,actor
+tt0365651,nm0587060,DCI Simon Finch,actor
+tt0365651,nm0700059,DS Alun Simms,actor
+tt0365651,nm0835016,DCS Larry Hall,actor
+tt0365651,nm0867677,Duscan Zigic,actor
+tt0365651,nm0442997,DC Michael Philips,actor
+tt0365651,nm0600439,DC Lorna Greaves,actress
+tt0365651,nm0493687,Kasim,actor
+tt0368520,nm0879936,Keitarou Urashima,actor
+tt0368520,nm0394679,Naru Narusegawa,actress
+tt0368520,nm0950830,Mutsumi Otohime,actress
+tt0368520,nm0475597,Shinobu Maehara,actress
+tt0368520,nm0633788,Mitsune 'Kitsune' Konno,actress
+tt0368520,nm0038324,Motoko Aoyama,actress
+tt0368520,nm0847074,Kaolla Su,actress
+tt0368520,nm0462086,Sarah McDougal,actress
+tt0368520,nm0370677,Haruka Urashima,actress
+tt0368520,nm1385874,Kanako Urashima,actress
+tt0069684,nm0223794,Cosimo de' Medici,actor
+tt0069684,nm0311169,Leon Battista Alberti,actor
+tt0069684,nm0585929,Carlo degli Alberti,actor
+tt0069684,nm0054284,Ciriaco d'Arpaso,actor
+tt0069684,nm0083838,Niccolò Di Cocco Donati,actor
+tt0069684,nm0116277,Cardinale Vitelleschi,actor
+tt0069684,nm0271417,Rinaldo degli Albizzi,actor
+tt0069684,nm0136334,Niccolò Cusano,actor
+tt0069684,nm0146333,Toscanelli,actor
+tt0069684,nm0542030,,actor
+tt0069684,nm0531485,Ubertino de' Bardi,actor
+tt1192431,nm1572716,Borman,actor
+tt1192431,nm2938032,Spirt,actor
+tt1192431,nm2402424,Cherep,actor
+tt1192431,nm2937822,Chukha,actor
+tt1192431,nm1269036,Nina,actress
+tt1192431,nm0302261,Emelyanov,actor
+tt1192431,nm0833213,Demin,actor
+tt1192431,nm0538558,Karpenko,actor
+tt1192431,nm0190703,Zhorin,actor
+tt1192431,nm0771327,Oberst Bonkhof,actor
+tt0929753,nm0879936,Makoto Onoda,actor
+tt0929753,nm0442808,Yura Onoda,actress
+tt0929753,nm8737012,Rika Kawada,actress
+tt0929753,nm0038324,Miyuki Kikuchi,actress
+tt0929753,nm0847042,Makie Sugiyama,actress
+tt0929753,nm1102243,Chief Secretary,actor
+tt0929753,nm0840720,Okahama,actor
+tt0929753,nm1694008,Inagaki,actor
+tt0929753,nm0847672,Hiromi Takai,actress
+tt0929753,nm0847074,Riko Maisaka,actress
+tt0929753,nm0840691,Scout,actor
+tt2262308,nm2964015,Thomas Lasky,actor
+tt2262308,nm0691600,Chyler Silva,actress
+tt2262308,nm3964998,April Orenski,actress
+tt2262308,nm0957909,Colonel Mehaffey,actress
+tt2262308,nm1642004,Michael Sullivan,actor
+tt2262308,nm0233304,General Black,actor
+tt2262308,nm4256622,Walter Vickers,actor
+tt2262308,nm1859543,Junjie Chen,actor
+tt2262308,nm3304127,Dimah Tchakova,actress
+tt2262308,nm1214436,Master Chief,actor
+tt0297994,nm1463305,Mii,actress
+tt0297994,nm0370677,Ongo,actress
+tt0297994,nm0793585,Rongo,actress
+tt0297994,nm0454049,Aham,actor
+tt0297994,nm0945322,Takuma Kusanagi,actor
+tt0297994,nm1840367,Nami Kuki,actress
+tt0297994,nm0959972,Fuyuhiko Rokudo,actor
+tt0297994,nm0405289,Haruka Rokudo,actress
+tt0297994,nm2519237,Itsuki Kusanagi,actor
+tt0297994,nm0944985,Manami Izumikawa,actress
+tt0066674,nm0694293,Jude Fawley,actor
+tt0066674,nm0907731,Sue Bridehead,actress
+tt0066674,nm0291599,Richard Phillotson,actor
+tt0066674,nm0372444,Drusilla Fawley,actress
+tt0066674,nm0550731,Arabella Down,actress
+tt0066674,nm0625401,Mrs. Edlin,actress
+tt0066674,nm6021264,Unknown,actress
+tt0066674,nm0171282,Miss Fontover,actress
+tt0066674,nm0325468,Tinker Taylor,actor
+tt0066674,nm0676331,Poilceman,actor
+tt0066674,nm0745346,Mr. Dawlish,actor
+tt0066674,nm0723649,Juey,actor
+tt0221300,nm0202966,Narrator,actor
+tt0221300,nm0005148,Narrator,actor
+tt0221300,nm0176723,Narrator,actor
+tt0221300,nm0000168,Narrator,actor
+tt0221300,nm0097842,,actor
+tt0230534,nm0000367,Jean Valjean,actor
+tt0230534,nm0002010,Thénardier,actor
+tt0230534,nm0000518,Javert,actor
+tt0230534,nm0001461,Cosette,actress
+tt0230534,nm0516272,Marius,actor
+tt0230534,nm0001250,Fantine,actress
+tt0230534,nm0000782,Éponine Thénardier,actress
+tt0230534,nm0274704,Madame Thénardier,actress
+tt0230534,nm0603402,Mère Innocente,actress
+tt0230534,nm0583856,Soeur Simplice,actress
+tt0089018,nm2218788,Manoel (7 ans),actor
+tt0089018,nm0535166,Mère de Manoel,actress
+tt0089018,nm0374766,Père de Manoel,actor
+tt0089018,nm2214051,Manoel (13 ans),actor
+tt0089018,nm0246822,Capitain Araujo,actor
+tt0089018,nm0683768,Professeur,actor
+tt0089018,nm0347270,Tante,actress
+tt0089018,nm0208469,Pêcheur,actor
+tt0089018,nm0154704,Marilina,actress
+tt0089018,nm0798449,Roque,actor
+tt1806234,nm0000457,Narrator,actor
+tt0427531,nm2263555,Mikura Suzuki,actress
+tt0427531,nm0945726,Harada Tomohisa,actor
+tt0427531,nm0386380,Kurokawa,actor
+tt0427531,nm0959936,Momoi Momokichi,actor
+tt0427531,nm1389919,Momomi Momoi,actress
+tt0427531,nm0906696,Hirooka,actor
+tt0427531,nm0586528,Additional Voices,actor
+tt0427531,nm0741398,Little Girl,actress
+tt0427531,nm0118612,Kurokawa,actor
+tt0427531,nm0485670,Bodyguard,actor
+tt0427531,nm0528936,Bodyguard B,actor
+tt0118248,nm0000323,Captain Nemo,actor
+tt0118248,nm0001131,Pierre Arronax,actor
+tt0118248,nm0000214,Mara,actress
+tt0118248,nm0015382,Cabe Attucks,actor
+tt0118248,nm0000986,Ned Land,actor
+tt0118248,nm0045324,Thierry Arronax,actor
+tt0118248,nm0358749,Saxon,actor
+tt0118248,nm0565518,Admiral McCutcheon,actor
+tt0118248,nm0035788,Lydia,actress
+tt0118248,nm0161128,Imei,actress
+tt0321897,nm0562003,Mirah Lapidoth,actress
+tt0321897,nm0002081,Sir Hugo Mallinger,actor
+tt0321897,nm0740500,Mrs. Davilow,actress
+tt0321897,nm0051394,Lush,actor
+tt0321897,nm0408309,Mrs. Meyrick,actress
+tt0321897,nm0051397,Hans Meyrick,actor
+tt0321897,nm0322510,Lady Mallinger,actress
+tt0321897,nm0199215,Daniel Deronda,actor
+tt0321897,nm0304801,Gwendolen Harleth,actress
+tt0321897,nm0095017,Henleigh Grandcourt,actor
+tt0220924,nm0001773,Narrator,actor
+tt0220924,nm13581061,,actor
+tt0220924,nm8059278,,actor
+tt0220924,nm0097842,,actor
+tt0077159,nm0784727,Simão Botelho,actor
+tt0077159,nm0369514,Teresa de Albuquerque,actress
+tt0077159,nm0908991,Mariana,actress
+tt0077159,nm0182075,João da Cruz,actor
+tt0077159,nm0895669,Tadeu de Albuquerque,actor
+tt0077159,nm0299144,Domingos Botelho,actor
+tt0077159,nm0656932,Baltazar Coutinho,actor
+tt0077159,nm0241302,Dona Rita,actress
+tt0077159,nm0057817,"Madre Superiora, tia de Teresa",actress
+tt0077159,nm0126859,Capitão do barco,actor
+tt1985443,nm0000126,'Devil' Anse Hatfield,actor
+tt1985443,nm0000200,Randall McCoy,actor
+tt1985443,nm1204778,Johnse Hatfield,actor
+tt1985443,nm0000297,Jim Vance,actor
+tt1985443,nm0000959,Judge Valentine 'Wall' Hatfield,actor
+tt1985443,nm0397110,'Bad' Frank Phillips,actor
+tt1985443,nm0540441,Nancy McCoy,actress
+tt1985443,nm0661703,Levicy Hatfield,actress
+tt1985443,nm1272826,Roseanna McCoy,actress
+tt1985443,nm0895812,Perry Cline,actor
+tt0238064,nm0919867,Brian Wilson,actor
+tt0238064,nm0504762,Mike Love,actor
+tt0238064,nm0820903,Dennis Wilson,actor
+tt0238064,nm0891224,Al Jardine,actor
+tt0238064,nm0636092,Carl Wilson,actor
+tt0238064,nm0394992,Marilyn Rovell,actress
+tt0238064,nm0535903,Nik Venet,actor
+tt0238064,nm0680881,,actress
+tt0238064,nm0298281,Mike Love's Dad,actor
+tt0238064,nm0589896,Audree Wilson,actress
+tt0119348,nm0053384,Diana Goode,actress
+tt0119348,nm0017733,Anne Cattrell,actress
+tt0119348,nm0714874,D.C.I. Walsh,actor
+tt0119348,nm0236069,Phoebe Maybury,actress
+tt0119348,nm0185819,D.S. McLoughlin,actor
+tt0119348,nm0585661,D.C. Blackshaw,actor
+tt0119348,nm0394531,D.S. Robinson,actor
+tt0119348,nm0384169,Fred Phillips,actor
+tt0119348,nm0068029,Molly Phillips,actress
+tt0119348,nm0308165,P.C. Williams,actor
+tt0167565,nm0000367,Abbé Busoni,actor
+tt0167565,nm0001560,Mercedes,actress
+tt0167565,nm0734000,Fernand De Morcerf,actor
+tt0167565,nm0034079,Villefort,actor
+tt0167565,nm0748207,Bertuccio,actor
+tt0167565,nm0201151,Camille De La Richardais,actress
+tt0167565,nm0859985,Maximilien Morrel,actor
+tt0167565,nm0580720,Albert De Morcerf,actor
+tt0167565,nm0220017,Valentine De Villefort,actress
+tt0167565,nm0898653,Heloise De Villefort,actress
+tt0061253,nm0692110,Soames Forsyte,actor
+tt0061253,nm0879239,Winifred Dartie,actress
+tt0061253,nm0692239,Irene Forsyte née Heron,actress
+tt0061253,nm0603336,'Young Jolyon' Forsyte,actor
+tt0061253,nm0058060,June Forsyte,actress
+tt0061253,nm0358925,Fleur Mont née Forsyte,actress
+tt0061253,nm0672077,Michael Mont,actor
+tt0061253,nm0428723,Smither,actress
+tt0061253,nm0920555,James Forsyte,actor
+tt0061253,nm0054114,George Forsyte,actor
+tt0077025,nm0098733,Rudi Weiss,actor
+tt0077025,nm0271165,Helena Slomova,actress
+tt0077025,nm0365281,Berta Palitz Weiss,actress
+tt0077025,nm0371304,Heinz Muller,actor
+tt0077025,nm0605363,Erik Dorf,actor
+tt0077025,nm0636193,Marta Dorf,actress
+tt0077025,nm0741394,Franz Lowy,actor
+tt0077025,nm0827137,Uncle Kurt Dorf,actor
+tt0077025,nm0910737,Moses Weiss,actor
+tt0077025,nm0001831,Heydrich,actor
+tt0384013,nm0304801,Sugar,actress
+tt0384013,nm1483369,William Rackham,actor
+tt0384013,nm2380918,Mrs. Agnes Rackham,actress
+tt0384013,nm0376602,Mrs. Emmeline Fox,actress
+tt0384013,nm0529098,Clara,actress
+tt0384013,nm4416062,Letty,actress
+tt0384013,nm0077397,Lady Constance Bridgelow,actress
+tt0384013,nm0001290,Doctor Curlew,actor
+tt0384013,nm2948818,Christopher,actor
+tt0384013,nm2463762,Janey,actress
+tt0432232,nm0193231,Narrator,actor
+tt2510620,nm5380196,Human Computer,actress
+tt2262456,nm0504320,Exeter,actor
+tt2262456,nm0750971,Falstaff,actor
+tt2262456,nm0313702,Bardolph,actor
+tt2262456,nm0533174,Brakenbury,actor
+tt2262456,nm1089991,Prince Hal,actor
+tt2262456,nm0645683,Margaret,actress
+tt2262456,nm0491190,Westmoreland,actor
+tt2262456,nm0836432,Henry VI,actor
+tt2262456,nm0910278,Mistress Quickly,actress
+tt2262456,nm0035605,Northumberland,actor
+tt0108956,nm0000323,Joseph Stalin,actor
+tt0108956,nm0001364,Winston Churchill,actor
+tt0108956,nm0001475,Franklin D. Roosevelt,actor
+tt0108956,nm0000893,Harry Hopkins,actor
+tt0108956,nm0873131,Vyacheslav Molatov,actor
+tt0158591,nm0875442,Leona,actress
+tt0158591,nm0959991,Al,actor
+tt0158591,nm0946344,Brenten,actor
+tt0158591,nm0619077,The Chief,actor
+tt0158591,nm0157133,Megane,actor
+tt0158591,nm0869301,Mohican,actor
+tt0158591,nm0411112,The Chaplain,actor
+tt0158591,nm0849776,The Doctor,actor
+tt0158591,nm0945881,Buaku,actor
+tt0158591,nm0593047,Annapuma,actress
+tt1285482,nm1010789,Paul 'Bubble' Ferguson,actor
+tt1285482,nm1785575,Kelly Povell,actress
+tt1285482,nm0638762,Patrick Goad,actor
+tt1285482,nm1981893,Riq Rahman,actor
+tt1285482,nm0564635,Davina McCall,actress
+tt1285482,nm2746067,Brian Belo,actor
+tt1285482,nm1546206,Marky,actor
+tt1285482,nm0179596,Veronica,actress
+tt1285482,nm0253126,Joplin,actor
+tt1285482,nm0108510,Alex,actress
+tt0401019,nm0716293,Cassie Mahy,actress
+tt0401019,nm0853583,PC Wilf Jonas,actor
+tt0401019,nm0285726,Kathleen Jonas,actress
+tt0401019,nm0391600,Felicity Dorr,actress
+tt0401019,nm0928134,Sen. James Dorr,actor
+tt0401019,nm0302491,Sheldon Leveque,actor
+tt0401019,nm0296219,Angelique Mahy,actress
+tt0401019,nm1495742,June Mahy,actress
+tt0401019,nm0753219,Ada Jonas,actress
+tt0401019,nm0322562,Oberst Heinrich Baron Von Rheingarten,actor
+tt2707792,nm0386472,Clyde Barrow,actor
+tt2707792,nm0334441,Bonnie Parker,actress
+tt2707792,nm0405103,Blanche Barrow,actress
+tt2707792,nm0714147,P.J. Lane,actress
+tt2707792,nm1460812,Buck Barrow,actor
+tt2707792,nm0225460,Cummie Barrow,actress
+tt2707792,nm3332884,Ted Hinton,actor
+tt2707792,nm0860233,Warden,actor
+tt2707792,nm0000456,Emma Parker,actress
+tt2707792,nm0000458,Frank Hamer,actor
+tt0086723,nm0348860,Alisa Seleznyova,actress
+tt0086723,nm0284469,Kolya Gerasimov,actor
+tt0086723,nm0622638,Fima Korolyov,actor
+tt0086723,nm0627511,Veselchak U - kosmicheskiy pirat,actor
+tt0086723,nm0465244,Krys - kosmicheskiy pirat,actor
+tt0086723,nm0314048,Robot Verter,actor
+tt0086723,nm0582666,Polina,actress
+tt0086723,nm0636467,Ded Pavel,actor
+tt0086723,nm0409594,Yulya Gribkova,actress
+tt0086723,nm0102481,Mama Koli Gerasimova,actress
+tt0086723,nm4874483,Alla Sergeevna - uchitelnitsa angliyskogo yazyka,actress
+tt0086723,nm0827982,Shurochka - medsestra,actress
+tt1450364,nm0266713,Jonah Fa'auigaese,actor
+tt1450364,nm0662164,Leighton Mills,actor
+tt1450364,nm2788229,Leilani Fa'auigaese,actress
+tt1450364,nm0500237,Mick Fa'auigaese,actor
+tt1450364,nm0301138,Malepe Fa'auigaese,actor
+tt1450364,nm1438992,Suga Fa'auigaese,actress
+tt1450364,nm2544715,Kirsty,actress
+tt1450364,nm3062445,Grace,actress
+tt1450364,nm0535741,Prince To'omai,actor
+tt1450364,nm0759819,Agent Amy Bickler,actress
+tt0362192,nm0799591,Cal McCaffrey,actor
+tt0362192,nm0607375,Stephen Collins,actor
+tt0362192,nm0531808,Della Smith,actress
+tt0362192,nm0631490,Cameron Foster,actor
+tt0362192,nm0120111,Helen Preger,actress
+tt0362192,nm0938950,Pete Cheng,actor
+tt0362192,nm1368934,Liz,actress
+tt0362192,nm0322562,DCI William Bell,actor
+tt0362192,nm0908116,Anne Collins,actress
+tt0362192,nm0564215,Dan Foster,actor
+tt1081731,nm1929945,Serrallonga,actor
+tt1081731,nm0783591,Antic,actor
+tt1081731,nm1359465,Margarida,actress
+tt1081731,nm1283047,Joana Massissa,actress
+tt1081731,nm1123309,Flor,actress
+tt1081731,nm2259074,Segimon,actor
+tt1081731,nm2407739,Pere,actor
+tt1081731,nm1382695,Guerxo,actor
+tt1081731,nm1591927,Negre,actor
+tt1081731,nm1319891,Fadrí de Sau,actor
+tt0082461,nm0001319,Peter Cabot,actor
+tt0082461,nm0000489,John McKenzie,actor
+tt0082461,nm0000734,Adm. Wiley Sloan,actor
+tt0082461,nm0001017,Ronald Bentley,actor
+tt0082461,nm0179376,Dr. Sam Marlowe,actor
+tt0082461,nm0001233,Cmdr. Jeff Selkirk,actor
+tt0082461,nm0331319,Dan Wesker,actor
+tt0082461,nm0550577,Dr. Goldman,actress
+tt0082461,nm0570615,Sen. Oliver Bartholomew,actor
+tt0082461,nm0634282,Mrs. Sarah Bartholomew,actress
+tt3218680,nm0847594,Red,actress
+tt3218680,nm3414040,Green,actor
+tt3218680,nm0745310,Red,actor
+tt3218680,nm2335252,Blue,actor
+tt3218680,nm6257123,,actor
+tt3218680,nm3514770,,actress
+tt3218680,nm0950830,,actress
+tt3218680,nm5713187,,actress
+tt3218680,nm5713144,,actress
+tt3218680,nm1779692,,actor
+tt3218680,nm1566139,,actor
+tt0898266,nm0301959,Leonard Hofstadter,actor
+tt0898266,nm1433588,Sheldon Cooper,actor
+tt0898266,nm0192505,Penny,actress
+tt0898266,nm0374865,Howard Wolowitz,actor
+tt0898266,nm2471798,Raj Koothrappali,actor
+tt0898266,nm1851981,Bernadette Rostenkowski,actress
+tt0898266,nm0080524,Amy Farrah Fowler,actress
+tt0898266,nm0839934,Stuart Bloom,actor
+tt0898266,nm0839836,Debbie Wolowitz,actress
+tt0898266,nm0101152,Barry Kripke,actor
+tt0072500,nm0000092,Basil Fawlty,actor
+tt0072500,nm0768795,Sybil Fawlty,actress
+tt0072500,nm0755133,Manuel,actor
+tt0072500,nm0095665,Polly Sherman,actress
+tt0072500,nm0075326,Major Gowen,actor
+tt0072500,nm0283148,Miss Agatha Tibbs,actress
+tt0072500,nm0731513,Miss Ursula Gatsby,actress
+tt0072500,nm0355363,Terry,actor
+tt0072500,nm0175560,Mr. Johnston,actor
+tt0072500,nm0072483,Mrs. Heath,actress
+tt0995832,nm0002907,Sgt. Brad 'Iceman' Colbert,actor
+tt0995832,nm0710447,Cpl. Josh Ray Person,actor
+tt0995832,nm0855564,Evan 'Scribe' Wright,actor
+tt0995832,nm0005030,Sgt. Antonio 'Poke' Espera,actor
+tt0995832,nm1197466,Lt. Nathaniel Fick,actor
+tt0995832,nm1312073,Lance Cpl. Harold James Trombley,actor
+tt0995832,nm0521416,Navy Hm2 Robert Timothy 'Doc' Bryan,actor
+tt0995832,nm1569067,Cpl. Evan 'Q-Tip' Stafford,actor
+tt0995832,nm1437733,Cpl. Walt Hasser,actor
+tt0995832,nm0578766,Gunnery Sgt. Mike 'Gunny' Wynn,actor
+tt0219430,nm0470886,Thomas,actor
+tt0219430,nm0439642,Sigge,actor
+tt0219430,nm0845281,Nina,actress
+tt0219430,nm0138120,Olof,actor
+tt0219430,nm0706548,Bergman,actor
+tt0219430,nm0138107,Jenny,actress
+tt0219430,nm0440906,Hanna,actress
+tt0219430,nm0678550,Marit,actress
+tt0219430,nm0090356,Carina,actress
+tt0219430,nm0635030,Chefen,actor
+tt0117547,nm0000454,Generale Tariq,actor
+tt0117547,nm0000167,Delilah,actress
+tt0117547,nm0856908,Samson,actor
+tt0117547,nm0001667,Sansone a 14 anni,actor
+tt0117547,nm0002091,Re Hamun,actor
+tt0117547,nm0001671,Mara,actress
+tt0117547,nm0557292,Ira,actor
+tt0117547,nm0293550,Manoach,actor
+tt0117547,nm0065353,Principe Sidqa,actor
+tt0117547,nm0034823,Noemi,actress
+tt0433722,nm0959936,Keiichi Ikari,actor
+tt0433722,nm0782841,Mitsuhiro Maniwa,actor
+tt0433722,nm1145982,Tsukiko Sagi,actress
+tt0433722,nm0566332,Keiichi Ikari,actor
+tt0433722,nm1240448,Mitsuhiro Maniwa,actor
+tt0433722,nm0756509,Old Man,actor
+tt0433722,nm0741398,Tsukiko Sagi,actress
+tt0433722,nm0292823,Old Man,actor
+tt0433722,nm0422849,Akio Kawazu,actor
+tt0433722,nm1160233,Shonen Bat,actor
+tt0213338,nm0945290,Spike Spiegel,actor
+tt0213338,nm0411167,Jet Black,actor
+tt0213338,nm0370677,Faye Valentine,actress
+tt0213338,nm0089707,Spike Spiegel,actor
+tt0213338,nm0082507,Jet Black,actor
+tt0213338,nm0138233,Additional Voices,actor
+tt0213338,nm0283253,Faye Valentine,actress
+tt0213338,nm0157120,Man 2,actor
+tt0213338,nm0153100,Edward Wong Hau Pepelu Tivruski IV,actress
+tt0213338,nm0846248,Edward Wong Hau Pepelu Tivruski IV,actress
+tt1738340,nm1239499,Rupert Birkin,actor
+tt1738340,nm0830556,Ursula Brangwen,actress
+tt1738340,nm1152798,Gerald Crich,actor
+tt1738340,nm2372275,Hermione Roddice,actress
+tt1738340,nm0683253,Gudrun Brangwen,actress
+tt1738340,nm0529300,Mr. Crich,actor
+tt1738340,nm2033429,Alexander Roddice,actor
+tt1738340,nm0841652,Wolfgang Loerke,actor
+tt1738340,nm0935746,Mr. Sutton,actor
+tt1738340,nm0716293,Anna Brangwen,actress
+tt0974077,nm0001132,Miss Matty Jenkyns,actress
+tt0974077,nm0001767,Miss Pole,actress
+tt0974077,nm0571549,Mrs Forrester,actress
+tt0974077,nm1373096,Mary Smith,actress
+tt0974077,nm0277525,Miss Tomkinson,actress
+tt0974077,nm0283409,Mrs Jamieson,actress
+tt0974077,nm1375020,Harry Gregson,actor
+tt0974077,nm0421105,Reverend Hutton,actor
+tt0974077,nm0141697,Captain Brown,actor
+tt0974077,nm0276133,Miss Galindo,actress
+tt1219817,nm0185404,Moist Von Lipwig,actor
+tt1219817,nm0001097,Lord Vetinari,actor
+tt1219817,nm0837064,Reacher Gilt,actor
+tt1219817,nm2946516,Adora Belle Dearheart,actress
+tt1219817,nm0755133,Groat,actor
+tt1219817,nm0922367,Ridcully,actor
+tt1219817,nm0671487,Drumknott,actor
+tt1219817,nm0053448,Dave Pins,actor
+tt1219817,nm0378132,Mr. Pony,actor
+tt1219817,nm0913116,Priest,actor
+tt3087752,nm0757855,Rosemary Woodhouse,actress
+tt3087752,nm1140666,Guy Woodhouse,actor
+tt3087752,nm0000962,Margaux Castevet,actress
+tt3087752,nm1268047,Julie,actress
+tt3087752,nm0005042,Roman Castevet,actor
+tt3087752,nm0705005,Commissioner Fontaine,actor
+tt3087752,nm2476624,Jacques,actor
+tt3087752,nm0479131,Victoria Plasir,actress
+tt3087752,nm6503714,Laura Veaulieu,actress
+tt3087752,nm0699659,Mr. Wees,actor
+tt1720619,nm0461136,Tinker Bell,actress
+tt1720619,nm1089027,Tinker Bell,actress
+tt1720619,nm0295484,Elizabeth Bonny,actress
+tt1720619,nm2185462,Peter,actor
+tt1720619,nm0001364,Mr. Smee,actor
+tt1720619,nm0031679,Gentleman Starkey,actor
+tt1720619,nm3242463,Tootles,actor
+tt1720619,nm2617600,Curly,actor
+tt1720619,nm0406975,Jimmy Hook,actor
+tt1720619,nm3300069,Nibs,actor
+tt2649522,nm0855039,Will Burton,actor
+tt2649522,nm1527905,Liam Foyle,actor
+tt2649522,nm0107261,Mary,actress
+tt2649522,nm0645683,Maggie Gardner,actress
+tt2649522,nm0504320,Richard Mayfield QC,actor
+tt2649522,nm0307122,Trevor Harris,actor
+tt2649522,nm5591800,Jamie Burton,actor
+tt2649522,nm1643154,Danny Monk,actor
+tt2649522,nm2935576,Tara,actress
+tt2649522,nm0940245,George Balfour QC,actor
+tt0098492,nm0383022,Noriko Takaya,actress
+tt0098492,nm0757290,Kazumi 'One-sama' Amano,actress
+tt0098492,nm0906696,Kôichirô 'Coach' Ôhta,actor
+tt0098492,nm0442844,Jung Freud,actress
+tt0098492,nm0818111,,actor
+tt0098492,nm7112120,Koichiro Ohta,actor
+tt0098492,nm6213833,Observation Department Head,actor
+tt0098492,nm7835030,Noriko Takaya,actress
+tt0098492,nm4408448,Kazumi Amano,actress
+tt0098492,nm11088189,Jung Freud,actress
+tt0856824,nm0298009,Nono,actress
+tt0856824,nm0757087,Lal'C Mellk Mal,actress
+tt0856824,nm1328076,Tycho Science,actress
+tt0856824,nm0412628,Nicholas Vacheron,actor
+tt0856824,nm0945726,Casio Takashirô,actor
+tt0856824,nm1058720,Piaget Serpentine,actress
+tt0856824,nm1124112,LeCoultre Serpentine,actress
+tt0856824,nm0765815,Gouya Reicy,actor
+tt0856824,nm1919164,Roo Soon,actress
+tt0856824,nm0840501,Roy Anyan,actor
+tt0364146,nm0001126,Dr. Samantha Hill,actress
+tt0364146,nm0911542,"Roy Nolan, FEMA Director",actor
+tt0364146,nm0001720,Dr. Zack Nolan,actor
+tt0364146,nm0384211,Dr. Owen Hunter,actor
+tt0364146,nm0000977,President Paul Hollister,actor
+tt0364146,nm0773884,Clark Williams,actor
+tt0364146,nm0192505,Amanda Williams,actress
+tt0364146,nm0420953,Governor Carla Williams,actress
+tt0364146,nm0190931,Dr. Jordan Fisher,actor
+tt0364146,nm0548498,"Daniel, Hollister's Advisor",actor
+tt0284741,nm0005438,Gaius Julius Caesar,actor
+tt0284741,nm0001321,Lucius Cornelius Sulla,actor
+tt0284741,nm0000686,Marcus Portius Cato,actor
+tt0284741,nm0000420,Calpurnia,actress
+tt0284741,nm0636562,Pompey,actor
+tt0284741,nm0272224,Vercingetorix,actor
+tt0284741,nm0604349,Caius Cassius,actor
+tt0284741,nm0824215,Portia,actress
+tt0284741,nm0765010,Cleopatra,actress
+tt0284741,nm0342151,Julia,actress
+tt0076993,nm0000994,Herman Bockweiss,actor
+tt0076993,nm0000324,Clay Basket,actress
+tt0076993,nm0000328,Alexander McKeag,actor
+tt0076993,nm0001066,Pasquinel,actor
+tt0076993,nm0001077,Colonel Frank Skimmerhorn,actor
+tt0076993,nm0263496,Major Maxwell Mercy,actor
+tt0076993,nm0440090,Hans Brumbaugh,actor
+tt0076993,nm0001417,Sheriff Axel Dumire,actor
+tt0076993,nm0001419,Lise Bockweiss,actress
+tt0076993,nm0000587,Sam Purchas,actor
+tt0074621,nm0225191,Vincent Bugliosi,actor
+tt0074621,nm0706883,Charles Manson,actor
+tt0074621,nm0938114,Susan Atkins,actress
+tt0074621,nm0122782,Linda Kasabian,actress
+tt0074621,nm0057651,Patricia Krenwinkel,actress
+tt0074621,nm0656826,Leslie Van Houten,actress
+tt0074621,nm0649178,Aaron Stovitz,actor
+tt0074621,nm0921225,Lt. Brenner,actor
+tt0074621,nm0015826,Phil Cohen,actor
+tt0074621,nm0244170,Tex Watson,actor
+tt0090522,nm0001058,Helene Junot,actress
+tt0090522,nm0001922,Count De Ville,actor
+tt0090522,nm0001943,Luba Tcherina,actress
+tt0090522,nm0000925,Karl Von Eiderfeld,actor
+tt0090522,nm0004767,Steve Bryant,actor
+tt0090522,nm0099953,Jeanne,actress
+tt0090522,nm0101175,Natalie Junot,actress
+tt0090522,nm0001010,Odile,actress
+tt0090522,nm0225698,Hubert De Ville,actor
+tt0090522,nm0267232,David Westfield,actor
+tt0346223,nm0390903,Guy Burgess,actor
+tt0346223,nm0827170,Kim Philby,actor
+tt0346223,nm0672303,Donald Maclean,actor
+tt0346223,nm0922335,Anthony Blunt,actor
+tt0346223,nm0481931,Jack Hewit,actor
+tt0346223,nm0687491,Melinda,actress
+tt0346223,nm0195928,Henry,actor
+tt0346223,nm0681975,Colonel Winter,actor
+tt0346223,nm0411903,Otto,actor
+tt0346223,nm0942202,Guy Liddell,actor
+tt0397501,nm0000664,Allan Quatermain,actor
+tt0397501,nm0233145,Elizabeth Maitland,actress
+tt0397501,nm0550462,Captain Good,actor
+tt0397501,nm0822062,Dr. Sam Maitland,actor
+tt0397501,nm0004303,Bruce McNabb,actor
+tt0397501,nm0648943,Umbopa,actor
+tt0397501,nm0731167,Sir Henry Curtis,actor
+tt0397501,nm0095930,Ivan Fleekov,actor
+tt0397501,nm0434444,Twala,actor
+tt0397501,nm1747851,Gagool,actress
+tt0468988,nm0196592,Ross Duffy,actor
+tt0468988,nm0000153,FEMA Director Judith Carr,actress
+tt0468988,nm0001147,Faith Clavell,actress
+tt0468988,nm0001642,Tornado Tommy Dixon,actor
+tt0468988,nm0001822,Sen. Ryan Carr,actor
+tt0468988,nm0735226,USAF Pilot Ritter,actor
+tt0468988,nm0817819,FPS Agent Gavin Carr,actor
+tt0468988,nm0494774,Monty,actor
+tt0468988,nm0438127,Secretary of Homeland Security Jim Roberts,actor
+tt0468988,nm0095751,Brigid,actress
+tt1883092,nm1432815,Wilhelm Winter,actor
+tt1883092,nm0771713,Friedhelm Winter,actor
+tt1883092,nm0778348,Greta,actress
+tt1883092,nm0825587,Charlotte,actress
+tt1883092,nm0872225,Viktor Goldstein,actor
+tt1883092,nm2409219,Dorn,actor
+tt1883092,nm1007965,Hildegard,actress
+tt1883092,nm0775794,Dr. Jahn,actor
+tt1883092,nm2202601,Oberschwester,actress
+tt1883092,nm0666788,Lilja,actress
+tt0446610,nm0922335,Narrator,actor
+tt0446610,nm0001373,Narrator,actress
+tt0446610,nm0373946,Narrator,actor
+tt0446610,nm0555620,Rudolph Höss,actor
+tt0446610,nm0586657,Henrich Himmler,actor
+tt3012698,nm0000531,Olive Kitteridge,actress
+tt3012698,nm0420955,Henry Kitteridge,actor
+tt3012698,nm0235652,Bonnie Newton,actress
+tt3012698,nm0154914,Harmon Newton,actor
+tt3012698,nm3095117,Doyle Larkin,actor
+tt3012698,nm0593291,Louise Larkin,actress
+tt3012698,nm0906543,Angela O'Meara,actress
+tt3012698,nm0302330,Christopher Kitteridge,actor
+tt3012698,nm0611932,Jim O'Casey,actor
+tt3012698,nm3978372,Mrs. Manhattan,actress
+tt1238834,nm0362766,Heathcliff,actor
+tt1238834,nm2731660,Cathy,actress
+tt1238834,nm0511088,Edgar,actor
+tt1238834,nm0484104,Nelly,actress
+tt1238834,nm1218607,Hindley,actor
+tt1238834,nm1310137,Isabella,actress
+tt1238834,nm2390340,Catherine,actress
+tt1238834,nm2092835,Linton,actor
+tt1238834,nm2959893,Hareton,actor
+tt1238834,nm0573618,Mr. Earnshaw,actor
+tt2944454,nm4331196,Riley Brown,actress
+tt2944454,nm5720886,Jay,actor
+tt2944454,nm2329247,Gail,actress
+tt2944454,nm5721811,Kara,actress
+tt2944454,nm2825203,Angela Vaughn,actress
+tt2944454,nm4198185,Trevor,actor
+tt2944454,nm4723086,Quinn,actor
+tt2944454,nm4440417,Jimmy Natale,actor
+tt2944454,nm5626215,DJ,actor
+tt2944454,nm2452495,Edward,actor
+tt3069212,nm0407033,Gôtetsu,actor
+tt3069212,nm2038226,Ken Masters,actor
+tt3069212,nm2538735,Ryu,actor
+tt3069212,nm2570241,Young Gôken,actor
+tt3069212,nm2859177,Gôki,actor
+tt3069212,nm0463511,Gôken,actor
+tt3069212,nm1438275,Akuma,actor
+tt3069212,nm4114764,Sayaka,actress
+tt3069212,nm0945563,Senzô,actor
+tt3069212,nm2075330,Mr. Masters,actor
+tt1339238,nm2675477,Minato Sahashi,actor
+tt1339238,nm2977461,Musubi,actress
+tt1339238,nm2095800,Tsukiumi,actress
+tt1339238,nm0633989,Kazehana,actress
+tt1339238,nm2594314,Matsu,actress
+tt1339238,nm1131161,Homura,actress
+tt1339238,nm2573928,Kusano,actress
+tt1339238,nm3470960,Musubi,actress
+tt1339238,nm1896066,Minato Sahashi,actor
+tt1339238,nm1513684,Matsu,actress
+tt0095388,nm0000323,Inspector Frederick Abberline,actor
+tt0095388,nm0000800,Richard Mansfield,actor
+tt0095388,nm0564044,Sir William Gull,actor
+tt0095388,nm0172484,Sergeant George Godley,actor
+tt0095388,nm0094297,Robert James Lees,actor
+tt0095388,nm0001265,Catherine Eddowes,actress
+tt0095388,nm0005412,Emma,actress
+tt0095388,nm0028674,Coroner Wynne Baxter,actor
+tt0095388,nm0000771,Mary Jane Kelly,actress
+tt0095388,nm0004355,Rodman,actor
+tt0115392,nm0001251,Wynn Park,actor
+tt0115392,nm0001715,Captain Edward J. Smith,actor
+tt0115392,nm0001876,Isabella Paradine,actress
+tt0115392,nm0001693,Hazel Foley,actress
+tt0115392,nm0000347,Simon Doonan,actor
+tt0115392,nm0715953,J. Bruce Ismay,actor
+tt0115392,nm0468772,Bess Allison,actress
+tt0115392,nm0000447,Molly Brown,actress
+tt0115392,nm0236451,Jamie Perse,actor
+tt0115392,nm0014291,Aase Ludvigsen,actress
+tt3696720,nm1065454,Viondra Denniger,actress
+tt3696720,nm0004743,Harris Enzmann,actor
+tt3696720,nm0887144,Captain William Denninger,actor
+tt3696720,nm0744776,Dr. Juliet Bryce,actress
+tt3696720,nm3133334,Aaron Gault,actor
+tt3696720,nm1859932,Nora Bryce,actress
+tt3696720,nm3941557,Emily Vanderhaus,actress
+tt3696720,nm5120699,James Toback,actor
+tt3696720,nm1012967,John Stokes,actor
+tt3696720,nm0730455,Duke Vanderhaus,actor
+tt0349747,nm0990258,Prince John (younger),actor
+tt0349747,nm0859228,Prince John (older),actor
+tt0349747,nm1309883,Prince George (younger),actor
+tt0349747,nm0917353,Prince George (older),actor
+tt0349747,nm0571160,Lalla,actress
+tt0349747,nm0390903,George V,actor
+tt0349747,nm0001669,Queen Mary,actress
+tt0349747,nm0631490,Stamfordham,actor
+tt0349747,nm0000761,Queen Alexandra,actress
+tt0349747,nm0177267,Lloyd George,actor
+tt3877200,nm0001409,Julien Baptiste,actor
+tt3877200,nm0384826,Celia Baptiste,actress
+tt3877200,nm0626362,Tony Hughes,actor
+tt3877200,nm0640323,Emily Hughes,actress
+tt3877200,nm0369954,Gemma Webster,actress
+tt3877200,nm0607375,Sam Webster,actor
+tt3877200,nm0220183,Laurence Relaud,actress
+tt3877200,nm0002076,Mark Walsh,actor
+tt3877200,nm0292182,Eve Stone,actress
+tt3877200,nm4092854,Alice Webster,actress
+tt1567215,nm0001427,Jack Kennedy,actor
+tt1567215,nm0001608,Bobby Kennedy,actor
+tt1567215,nm0005017,Jackie Kennedy,actress
+tt1567215,nm0929489,Joe Kennedy Sr.,actor
+tt1567215,nm0362051,Rose Kennedy,actress
+tt1567215,nm0095746,Ethel Kennedy,actress
+tt1567215,nm0336923,Agent Abraham Bolden,actor
+tt1567215,nm0404448,Evelyn Lincoln,actress
+tt1567215,nm0933987,Michelle,actress
+tt1567215,nm0396369,Sam Giancana,actor
+tt0090490,nm0000263,Virgilia Hazard,actress
+tt0090490,nm0001016,Justin LaMotte,actor
+tt0090490,nm0143779,Elkanah Bent,actor
+tt0090490,nm0002026,Isabel Hazard,actress
+tt0090490,nm0001153,Madeline LaMotte Main,actress
+tt0090490,nm0000408,Stanley Hazard,actor
+tt0090490,nm0290163,Brett Main Hazard,actress
+tt0090490,nm0304965,Ashton Main Huntoon,actress
+tt0090490,nm0452935,Constance Flynn Hazard,actress
+tt0090490,nm0573896,Augusta Barclay,actress
+tt3132738,nm0004778,Harry Houdini,actor
+tt3132738,nm1393354,Bess Houdini,actress
+tt3132738,nm0428055,Jim Collins,actor
+tt3132738,nm0683116,William Melville,actor
+tt3132738,nm4229417,Dash Houdini,actor
+tt3132738,nm0932143,Riley,actor
+tt3132738,nm0959964,Cecilia Weiss,actress
+tt3132738,nm6207628,Erich Weiss,actor
+tt3132738,nm5552968,Rabbi Weiss,actor
+tt3132738,nm1646092,Sylvia The Bearded Lady,actress
+tt0085106,nm0000826,Diana,actress
+tt0085106,nm0244359,Robert Maxwell,actor
+tt0085106,nm0002109,Juliet Parrish,actress
+tt0085106,nm0625664,Brian,actor
+tt0085106,nm0655478,Daniel Bernstein,actor
+tt0085106,nm0666332,Eleanor Dupres,actress
+tt0085106,nm0676964,Josh Brooks,actor
+tt0085106,nm0001743,Mike Donovan,actor
+tt0085106,nm0039002,Robin Maxwell,actress
+tt0085106,nm0942646,Elias Taylor,actor
+tt0088583,nm0000263,Virgilia Hazard,actress
+tt0088583,nm0113617,Garrison Grady,actor
+tt0088583,nm0001016,Justin LaMotte,actor
+tt0088583,nm0143779,Elkanah Bent,actor
+tt0088583,nm0001153,Madeline Fabray LaMotte,actress
+tt0088583,nm0290163,Brett Main,actress
+tt0088583,nm0304965,Ashton Main Huntoon,actress
+tt0088583,nm0452935,Constance Flynn Hazard,actress
+tt0088583,nm0582773,James Huntoon,actor
+tt0088583,nm0416856,George Hazard,actor
+tt0086823,nm0000826,Diana,actress
+tt0086823,nm0244359,Robert Maxwell,actor
+tt0086823,nm0000387,Willie,actor
+tt0086823,nm0002109,Juliet Parish,actress
+tt0086823,nm0378800,John,actor
+tt0086823,nm0384718,Father Andrew Doyle,actor
+tt0086823,nm0000461,Ham Tyler,actor
+tt0086823,nm0625664,Brian,actor
+tt0086823,nm0655478,Daniel Bernstein,actor
+tt0086823,nm0666332,Eleanor Dupres,actress
+tt0205214,nm0001642,Jack Woods,actor
+tt0205214,nm0000155,The Grand Banshee,actress
+tt0205214,nm0002032,King Boric,actor
+tt0205214,nm0000538,Seamus Muldoon,actor
+tt0205214,nm0001085,Barney O'Grady,actor
+tt0205214,nm0910738,Mary Muldoon,actress
+tt0205214,nm0079418,Mickey Muldoon,actor
+tt0205214,nm0103699,Kathleen Fitzpatrick,actress
+tt0205214,nm0142543,Princess Jessica,actress
+tt0205214,nm0277975,General Bulstrode,actor
+tt0210294,nm0387581,Gerda,actress
+tt0210294,nm0346885,Kai,actor
+tt0210294,nm0936288,Wolfgang,actor
+tt0210294,nm0134281,Minna,actress
+tt0210294,nm0166092,Spring Witch,actress
+tt0210294,nm0165413,Summer Princess,actress
+tt0210294,nm0423296,Autumn Robber,actress
+tt0210294,nm0085428,Robber Girl,actress
+tt0210294,nm0371787,Amy,actress
+tt0210294,nm0000403,Snow Queen,actress
+tt0168355,nm0000685,Noah,actor
+tt0168355,nm0005460,Naamah,actress
+tt0168355,nm0000719,Lot,actor
+tt0168355,nm0001406,Sarah,actress
+tt0168355,nm0063303,Shem,actor
+tt0168355,nm0129160,Japhet,actor
+tt0168355,nm0219206,Ham,actor
+tt0168355,nm0607865,Esther,actress
+tt0168355,nm0688624,Ruth,actress
+tt0168355,nm0907427,Miriam,actress
+tt1127205,nm0038918,Miep Gies,actress
+tt1127205,nm1376985,Peter Van Daan,actor
+tt1127205,nm0177267,Hermann Van Daan,actor
+tt1127205,nm0200579,Mr Kugler,actor
+tt1127205,nm0296563,Mr Kleiman,actor
+tt1127205,nm0268297,Albert Dussel,actor
+tt1127205,nm0322513,Otto Frank,actor
+tt1127205,nm0340067,Edith Frank,actress
+tt1127205,nm0428065,Margot Frank,actress
+tt1127205,nm1697771,Anne Frank,actress
+tt0078672,nm0308789,Miss Elizabeth Bennet,actress
+tt0078672,nm0727778,Mr. Fitzwilliam Darcy,actor
+tt0078672,nm0914810,Mr. Bennet,actor
+tt0078672,nm0604956,Mrs. Bennet,actress
+tt0078672,nm0291596,Miss Jane Bennet,actress
+tt0078672,nm0644740,Miss Lydia Bennet,actress
+tt0078672,nm0668854,Miss Mary Bennet,actress
+tt0078672,nm0383354,Miss Kitty Bennet,actress
+tt0078672,nm0120172,Mr. Bingley,actor
+tt0078672,nm0723814,Charlotte Lucas,actress
+tt0463826,nm1221622,Jack,actor
+tt0463826,nm0651441,Brianna,actress
+tt0463826,nm0000554,Merlin,actor
+tt0463826,nm0001669,Lady of the Lake,actress
+tt0463826,nm0762560,Weston,actor
+tt0463826,nm0413263,Master Burton,actor
+tt0463826,nm0415066,Graham,actor
+tt0463826,nm0609096,Yvonne,actress
+tt0463826,nm0336797,One-Eye,actor
+tt0463826,nm1378650,Young Brianna,actress
+tt0463826,nm0335240,Stromnian,actor
+tt0463826,nm0420345,Arthur,actor
+tt0463826,nm0316515,Gare,actor
+tt0118453,nm0000297,Theodore Roosevelt,actor
+tt0118453,nm0000385,Capt. Bucky O'Neil,actor
+tt0118453,nm0000997,Gen. Joseph Wheeler,actor
+tt0118453,nm0424635,Henry Nash,actor
+tt0118453,nm0001152,Edith Roosevelt,actress
+tt0118453,nm0245653,Col. Leonard Wood,actor
+tt0118453,nm0001417,President William McKinley,actor
+tt0118453,nm0001313,William Randolph Hearst,actor
+tt0118453,nm0000388,Secretary of State John Hay,actor
+tt0118453,nm0157915,Frederick Remington,actor
+tt0222608,nm0809857,Oliver Twist,actor
+tt0222608,nm0743335,Mr Bumble,actor
+tt0222608,nm0910278,Mrs Mann,actress
+tt0222608,nm0188950,Mrs Bedwin,actress
+tt0222608,nm0912938,Monks,actor
+tt0222608,nm0457655,Mr Brownlow,actor
+tt0222608,nm0242026,Elizabeth Leeford,actress
+tt0222608,nm0342038,Mr Grimwig,actor
+tt0222608,nm0501443,Young Rose Fleming,actress
+tt0222608,nm0941056,Nancy,actress
+tt0100361,nm0001632,Christine Daeé,actress
+tt0100361,nm0001097,The Phantom (Erik),actor
+tt0100361,nm0000044,Gérard Carrière,actor
+tt0100361,nm0832531,Count Philippe de Chagny,actor
+tt0100361,nm0007183,Alain Choleti,actor
+tt0100361,nm0275138,Carlotta,actress
+tt0100361,nm0144045,Inspector Ledoux,actor
+tt0100361,nm0745625,Jean-Claude,actor
+tt0100361,nm0154309,Joseph Buguet,actor
+tt0100361,nm0649297,Madame Giry,actress
+tt0289830,nm0266824,Allie Keys,actress
+tt0289830,nm0001242,Dr. Chet Wakeman,actor
+tt0289830,nm0004749,Lisa Clarke - Adult,actress
+tt0289830,nm0231946,Mary Crawford - Adult,actress
+tt0289830,nm0340408,Colonel Owen Crawford,actor
+tt0289830,nm0442066,Charlie Keys - Adult,actor
+tt0289830,nm0370035,Marty Erickson,actor
+tt0289830,nm0403652,Tom Clarke - Adult,actor
+tt0289830,nm0837992,Nina Toth - Adult,actress
+tt0289830,nm0167086,John,actor
+tt0088611,nm0001258,Sen. Norman Grant,actor
+tt0088611,nm0000769,Elinor Grant,actress
+tt0088611,nm0001974,Penny Hardesty Pope,actress
+tt0088611,nm0001136,Stanley Mott,actor
+tt0088611,nm0241232,Leopold Strabismus,actor
+tt0088611,nm0002122,John Pope,actor
+tt0088611,nm0837784,Leisel Kolff,actress
+tt0088611,nm0001868,Dieter Kolff,actor
+tt0088611,nm0840211,Tim Finnerty,actor
+tt0088611,nm0524743,Narrator,actor
+tt0116619,nm0000381,Dick Hickock,actor
+tt0116619,nm0000616,Perry Smith,actor
+tt0116619,nm0000554,Agent Alvin Dewey,actor
+tt0116619,nm0001798,Herbert Clutter,actor
+tt0116619,nm0053390,Bonnie Clutter,actress
+tt0116619,nm0278057,Nancy Clutter,actress
+tt0116619,nm0100907,Kenyon Clutter,actor
+tt0116619,nm0504064,Bess Hartmann,actress
+tt0116619,nm0893862,Sadie Truitt,actress
+tt0116619,nm0744235,Agent Harold Nye,actor
+tt0425674,nm1372823,Daniel Sims,actor
+tt0425674,nm1147488,Narrator,actress
+tt0425674,nm3993311,Terry,actor
+tt0425674,nm3782786,Chun,actor
+tt0425674,nm1674381,Mel,actress
+tt0425674,nm3553887,Brianna,actress
+tt0425674,nm1635858,Emma,actress
+tt0425674,nm3430516,Kerry,actress
+tt0425674,nm3991854,Tyson,actor
+tt0425674,nm2114475,Shelly,actress
+tt0934320,nm1372823,Ja'mie,actor
+tt0934320,nm2837602,Leon,actor
+tt0934320,nm3564500,Joseph,actress
+tt0934320,nm3564684,Thomas,actor
+tt0934320,nm3365810,Ofa,actress
+tt0934320,nm1307510,Doug Peterson,actor
+tt0934320,nm0191497,Sarah Wheatley,actress
+tt0934320,nm1443531,Rodney Parsons,actor
+tt0934320,nm2816553,Margaret Murray,actress
+tt0934320,nm2879377,Toby,actor
+tt0374463,nm0197647,PFC Robert Leckie,actor
+tt0374463,nm0001515,PFC Eugene Sledge,actor
+tt0374463,nm0781218,Sgt. John Basilone,actor
+tt0374463,nm1525948,PFC Sidney Phillips,actor
+tt0374463,nm2890541,PFC Lew 'Chuckler' Juergens,actor
+tt0374463,nm1785339,PFC Merriell 'Snafu' Shelton,actor
+tt0374463,nm0564901,Cpl. R.V. Burgin,actor
+tt0374463,nm0633470,PFC Wilbur 'Runner' Conley,actor
+tt0374463,nm2584861,2nd Lt. Stone,actor
+tt0374463,nm0000158,Narrator,actor
+tt3053694,nm6784013,P'tit Quinquin,actor
+tt3053694,nm6784014,Eve Terrier,actress
+tt3053694,nm6784015,Commandant Van der Weyden,actor
+tt3053694,nm6784016,Lieutenant Carpentier,actor
+tt3053694,nm6784017,Père Quinquin,actor
+tt3053694,nm4283941,Aurélie Terrier,actress
+tt3053694,nm6784018,Kevin,actor
+tt3053694,nm6784019,Jordan,actor
+tt3053694,nm6784021,Mr. Campin,actor
+tt3053694,nm6798365,Dany Lebleu,actor
+tt2044056,nm0098709,Narrator,actor
+tt0317875,nm0000366,Marquise Isabelle de Merteuil,actress
+tt0317875,nm0000391,Vicomte Sébastien de Valmont,actor
+tt0317875,nm0000176,Madame Maria de Tourvel,actress
+tt0317875,nm0201638,Madame de Rosemonde,actress
+tt0317875,nm0005447,Cécile de Volanges,actress
+tt0317875,nm0958558,Antoine Gercourt,actor
+tt0317875,nm0861862,Hugo,actor
+tt0317875,nm0109725,Madame Volanges,actress
+tt0317875,nm1224628,Raphael Danceny,actor
+tt0317875,nm1568989,La pianiste de la fondation,actress
+tt0115288,nm0049049,Richard Mayhew,actor
+tt0115288,nm0292182,Door,actress
+tt0115288,nm0071799,Mr. Croup,actor
+tt0115288,nm0751085,Mr. Vandemar,actor
+tt0115288,nm0430667,Marquis de Carabas,actor
+tt0115288,nm0134922,Islington,actor
+tt0115288,nm0600439,Hunter,actress
+tt0115288,nm0668807,Old Bailey,actor
+tt0115288,nm0549401,Jessica,actress
+tt0115288,nm0340067,Lamia,actress
+tt0420408,nm1533208,Hercules,actor
+tt0420408,nm0001610,Alcmene,actress
+tt0420408,nm0000276,Linus,actor
+tt0420408,nm0909944,Megara,actress
+tt0420408,nm0772703,King Eurystheus,actor
+tt0420408,nm0167649,Tiresias,actor
+tt0420408,nm0188471,Young Hercules,actor
+tt0420408,nm1047329,Iphicles,actor
+tt0420408,nm0541932,Antaeus,actor
+tt0420408,nm0853079,Kiron,actor
+tt1422182,nm0770652,Abe Appenheimer,actor
+tt0427042,nm0855039,Casanova,actor
+tt0427042,nm0126284,Edith,actress
+tt0427042,nm0000564,Older Casanova,actor
+tt0427042,nm0672303,Grimani,actor
+tt0427042,nm0662744,Rocco,actor
+tt0427042,nm0292182,Henriette,actress
+tt0427042,nm0815317,Bellino,actress
+tt0427042,nm6183556,Servant,actor
+tt0427042,nm0383354,Cook,actress
+tt0427042,nm1128256,Jack aged 6,actor
+tt0847150,nm1002641,Willoughby,actor
+tt0847150,nm1564421,Marianne Dashwood,actress
+tt0847150,nm0602455,Elinor Dashwood,actress
+tt0847150,nm0005216,Mrs. Dashwood,actress
+tt0847150,nm2377903,Margaret Dashwood,actress
+tt0847150,nm0607375,Colonel Brandon,actor
+tt0847150,nm0060221,Mrs Jennings,actress
+tt0847150,nm0931247,Sir John Middleton,actor
+tt0847150,nm0804218,Fanny Dashwood,actress
+tt0847150,nm1098145,Lady Middleton,actress
+tt1855924,nm1340363,Narrator,actor
+tt0081443,nm0001113,Lt. Philip 'Phil' Caputo,actor
+tt0081443,nm0001018,Lt. Murph McCoy,actor
+tt0081443,nm0001574,Lt. Walter Cohen,actor
+tt0081443,nm0103071,Gen. Merle Rupert,actor
+tt0081443,nm0001133,Sgt. Ned Coleman,actor
+tt0081443,nm0295440,Cpl. Pascarella,actor
+tt0081443,nm0485878,Woodward,actor
+tt0081443,nm0593844,Capt. Peterson,actor
+tt0081443,nm0794890,Manhole,actor
+tt0081443,nm0809031,Sgt. Willliam Holgren,actor
+tt0115387,nm0827170,Gilbert Markham,actor
+tt0115387,nm0001216,Helen,actress
+tt0115387,nm0001291,Huntingdon,actor
+tt0115387,nm0046002,Rachel,actress
+tt0115387,nm0494828,Arthur,actor
+tt0115387,nm0302491,Hargrave,actor
+tt0115387,nm0129160,Hattersley,actor
+tt0115387,nm0009424,Fergus Markham,actor
+tt0115387,nm0186469,Reverend Millward,actor
+tt0115387,nm0274913,Mrs. Markham,actress
+tt2109059,nm0088144,Elizabeth Allen,actress
+tt2109059,nm0122653,Joe Galloway,actor
+tt2109059,nm0001002,Bob Clewell,actor
+tt2109059,nm0175305,Keith Connolly,actor
+tt2109059,nm1483196,Raymond Torres,actor
+tt2109059,nm0004978,Barry Romo,actor
+tt2109059,nm2309517,Gery Benedetti,actor
+tt2109059,nm0001349,Anne Purcell,actress
+tt2109059,nm1097351,Don Devore,actor
+tt2109059,nm1157048,Karl Marlantes,actor
+tt1489097,nm0515296,Charles Scheffel,actor
+tt1489097,nm0000507,Robert Sherrod,actor
+tt1489097,nm0058581,Jack Werner,actor
+tt1489097,nm0001872,Nolen Marbrey,actor
+tt1489097,nm0005442,June Wandrey,actress
+tt1489097,nm0215229,Richard Tregaskis,actor
+tt1489097,nm1117791,Rockie Blunt,actor
