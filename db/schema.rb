@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_26_130432) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_26_130622) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -44,6 +44,26 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_130432) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["person_id"], name: "index_people_on_person_id", unique: true
+  end
+
+  create_table "tv_shows", force: :cascade do |t|
+    t.string "show_id", null: false
+    t.string "title"
+    t.string "original_title"
+    t.decimal "start_year", precision: 4, scale: 1
+    t.decimal "end_year", precision: 4, scale: 1
+    t.text "description"
+    t.string "content_rating"
+    t.decimal "average_rating", precision: 3, scale: 1
+    t.integer "num_votes"
+    t.decimal "total_seasons", precision: 3, scale: 1
+    t.decimal "total_episodes", precision: 5, scale: 1
+    t.string "primary_image_url"
+    t.string "countries"
+    t.string "show_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["show_id"], name: "index_tv_shows_on_show_id", unique: true
   end
 
   create_table "users", force: :cascade do |t|

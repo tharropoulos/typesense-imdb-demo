@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  show_id: MyString
+  title: MyString
+  original_title: MyString
+  start_year: 9.99
+  end_year: 9.99
+  description: MyText
+  content_rating: MyString
+  average_rating: 9.99
+  num_votes: 1
+  total_seasons: 9.99
+  total_episodes: 9.99
+  primary_image_url: MyString
+  countries: MyString
+  show_type: MyString
+
+two:
+  show_id: MyString
+  title: MyString
+  original_title: MyString
+  start_year: 9.99
+  end_year: 9.99
+  description: MyText
+  content_rating: MyString
+  average_rating: 9.99
+  num_votes: 1
+  total_seasons: 9.99
+  total_episodes: 9.99
+  primary_image_url: MyString
+  countries: MyString
+  show_type: MyString
