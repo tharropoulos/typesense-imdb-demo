@@ -10,11 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_26_130135) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_26_130432) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "movies", force: :cascade do |t|
+    t.string "movie_id", null: false
+    t.string "title"
+    t.string "original_title"
+    t.decimal "release_year", precision: 4, scale: 1
+    t.text "description"
+    t.string "content_rating"
+    t.date "release_date"
+    t.integer "runtime_minutes"
+    t.decimal "average_rating", precision: 1, scale: 1
+    t.integer "num_votes"
+    t.decimal "budget", precision: 15, scale: 2
+    t.decimal "gross_worldwide", precision: 15, scale: 2
+    t.string "primary_image_url"
+    t.string "countries"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["movie_id"], name: "index_movies_on_movie_id", unique: true
   end
 
   create_table "people", force: :cascade do |t|

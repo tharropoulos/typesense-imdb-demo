@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  movie_id: MyString
+  title: MyString
+  original_title: MyString
+  release_year: 9.99
+  description: MyText
+  content_rating: MyString
+  release_date: 2025-02-26
+  runtime_minutes: 1
+  average_rating: 9.99
+  num_votes: 1
+  budget: 9.99
+  gross_worldwide: 9.99
+  primary_image_url: MyString
+  countries: MyString
+
+two:
+  movie_id: MyString
+  title: MyString
+  original_title: MyString
+  release_year: 9.99
+  description: MyText
+  content_rating: MyString
+  release_date: 2025-02-26
+  runtime_minutes: 1
+  average_rating: 9.99
+  num_votes: 1
+  budget: 9.99
+  gross_worldwide: 9.99
+  primary_image_url: MyString
+  countries: MyString
