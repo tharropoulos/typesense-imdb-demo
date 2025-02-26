@@ -10,11 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_26_130830) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_26_130857) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "movie_casts", force: :cascade do |t|
+    t.integer "movie_id", null: false
+    t.integer "person_id", null: false
+    t.string "character_name"
+    t.string "role"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["movie_id"], name: "index_movie_casts_on_movie_id"
+    t.index ["person_id"], name: "index_movie_casts_on_person_id"
   end
 
   create_table "movie_genres", force: :cascade do |t|
@@ -96,6 +107,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_130830) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "movie_casts", "movies"
+  add_foreign_key "movie_casts", "people"
   add_foreign_key "movie_genres", "genres"
   add_foreign_key "movie_genres", "movies"
   add_foreign_key "tv_show_genres", "genres"
