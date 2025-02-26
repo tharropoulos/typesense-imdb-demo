@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_26_130946) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_26_131007) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -44,6 +44,15 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_130946) do
     t.datetime "updated_at", null: false
     t.index ["genre_id"], name: "index_movie_genres_on_genre_id"
     t.index ["movie_id"], name: "index_movie_genres_on_movie_id"
+  end
+
+  create_table "movie_writers", force: :cascade do |t|
+    t.integer "movie_id", null: false
+    t.integer "person_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["movie_id"], name: "index_movie_writers_on_movie_id"
+    t.index ["person_id"], name: "index_movie_writers_on_person_id"
   end
 
   create_table "movies", force: :cascade do |t|
@@ -133,6 +142,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_130946) do
   add_foreign_key "movie_directors", "people"
   add_foreign_key "movie_genres", "genres"
   add_foreign_key "movie_genres", "movies"
+  add_foreign_key "movie_writers", "movies"
+  add_foreign_key "movie_writers", "people"
   add_foreign_key "tv_show_casts", "people"
   add_foreign_key "tv_show_casts", "tv_shows"
   add_foreign_key "tv_show_genres", "genres"
