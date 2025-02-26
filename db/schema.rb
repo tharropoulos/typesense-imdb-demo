@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_26_130754) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_26_130830) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -55,6 +55,15 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_130754) do
     t.index ["person_id"], name: "index_people_on_person_id", unique: true
   end
 
+  create_table "tv_show_genres", force: :cascade do |t|
+    t.integer "tv_show_id", null: false
+    t.integer "genre_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["genre_id"], name: "index_tv_show_genres_on_genre_id"
+    t.index ["tv_show_id"], name: "index_tv_show_genres_on_tv_show_id"
+  end
+
   create_table "tv_shows", force: :cascade do |t|
     t.string "show_id", null: false
     t.string "title"
@@ -89,4 +98,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_130754) do
 
   add_foreign_key "movie_genres", "genres"
   add_foreign_key "movie_genres", "movies"
+  add_foreign_key "tv_show_genres", "genres"
+  add_foreign_key "tv_show_genres", "tv_shows"
 end
