@@ -1,4 +1,6 @@
 class TvShow < ApplicationRecord
+  # Rating association
+  has_many :ratings, as: :ratable, dependent: :destroy
   # Genre associations
   has_many :tv_show_genres, dependent: :destroy
   has_many :genres, through: :tv_show_genres

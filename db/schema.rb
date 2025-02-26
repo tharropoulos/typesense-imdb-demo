@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_26_131051) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_26_153106) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -82,6 +82,19 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_131051) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["person_id"], name: "index_people_on_person_id", unique: true
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "ratable_type", null: false
+    t.integer "ratable_id", null: false
+    t.decimal "score", precision: 2, scale: 1, null: false
+    t.text "review", limit: 355
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ratable_type", "ratable_id"], name: "index_ratings_on_ratable"
+    t.index ["user_id", "ratable_type", "ratable_id"], name: "idx_ratings_on_user_and_ratable", unique: true
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "tv_show_casts", force: :cascade do |t|
@@ -162,6 +175,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_131051) do
   add_foreign_key "movie_genres", "movies"
   add_foreign_key "movie_writers", "movies"
   add_foreign_key "movie_writers", "people"
+  add_foreign_key "ratings", "users"
   add_foreign_key "tv_show_casts", "people"
   add_foreign_key "tv_show_casts", "tv_shows"
   add_foreign_key "tv_show_directors", "people"
