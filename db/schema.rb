@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_26_153106) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_27_135749) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -59,7 +59,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_153106) do
     t.string "movie_id", null: false
     t.string "title"
     t.string "original_title"
-    t.decimal "release_year", precision: 4, scale: 1
     t.text "description"
     t.string "content_rating"
     t.date "release_date"
@@ -72,6 +71,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_26_153106) do
     t.string "countries"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "release_year"
     t.index ["movie_id"], name: "index_movies_on_movie_id", unique: true
   end
 
