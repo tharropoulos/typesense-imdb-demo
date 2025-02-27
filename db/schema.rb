@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_27_135749) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_27_141004) do
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -68,7 +68,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_27_135749) do
     t.decimal "budget", precision: 15, scale: 2
     t.decimal "gross_worldwide", precision: 15, scale: 2
     t.string "primary_image_url"
-    t.string "countries"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "release_year"
