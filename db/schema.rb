@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_27_141256) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_27_142314) do
   create_table "countries", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -162,7 +162,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_27_141256) do
     t.decimal "total_seasons", precision: 3, scale: 1
     t.decimal "total_episodes", precision: 5, scale: 1
     t.string "primary_image_url"
-    t.string "countries"
     t.string "show_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
