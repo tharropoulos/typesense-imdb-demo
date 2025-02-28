@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_27_142314) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_27_153106) do
   create_table "countries", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -122,6 +122,15 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_27_142314) do
     t.index ["tv_show_id"], name: "index_tv_show_casts_on_tv_show_id"
   end
 
+  create_table "tv_show_countries", force: :cascade do |t|
+    t.integer "tv_show_id", null: false
+    t.integer "country_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_tv_show_countries_on_country_id"
+    t.index ["tv_show_id"], name: "index_tv_show_countries_on_tv_show_id"
+  end
+
   create_table "tv_show_directors", force: :cascade do |t|
     t.integer "tv_show_id", null: false
     t.integer "person_id", null: false
@@ -153,18 +162,18 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_27_142314) do
     t.string "show_id", null: false
     t.string "title"
     t.string "original_title"
-    t.decimal "start_year", precision: 4, scale: 1
-    t.decimal "end_year", precision: 4, scale: 1
     t.text "description"
     t.string "content_rating"
     t.decimal "average_rating", precision: 3, scale: 1
     t.integer "num_votes"
-    t.decimal "total_seasons", precision: 3, scale: 1
-    t.decimal "total_episodes", precision: 5, scale: 1
     t.string "primary_image_url"
     t.string "show_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "start_year"
+    t.integer "end_year"
+    t.integer "total_seasons"
+    t.integer "total_episodes"
     t.index ["show_id"], name: "index_tv_shows_on_show_id", unique: true
   end
 
@@ -193,6 +202,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_27_142314) do
   add_foreign_key "ratings", "users"
   add_foreign_key "tv_show_casts", "people"
   add_foreign_key "tv_show_casts", "tv_shows"
+  add_foreign_key "tv_show_countries", "countries"
+  add_foreign_key "tv_show_countries", "tv_shows"
   add_foreign_key "tv_show_directors", "people"
   add_foreign_key "tv_show_directors", "tv_shows"
   add_foreign_key "tv_show_genres", "genres"
