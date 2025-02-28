@@ -1,5 +1,5 @@
 class Movie < ApplicationRecord
-  # Rating association
+  include Typesense
   has_many :ratings, as: :ratable, dependent: :destroy
 
   # Genre associations
@@ -16,8 +16,51 @@ class Movie < ApplicationRecord
   has_many :movie_writers, dependent: :destroy
   has_many :writers, through: :movie_writers, source: :person
 
-  # Validation
+  # Country associations
+  has_many :movie_countries, dependent: :destroy
+  has_many :countries, through: :movie_countries
+
   validates :movie_id, presence: true, uniqueness: true
+
+  typesense per_environment: true do
+    predefined_fields [
+                        { "name" => "movie_id", "type" => "string" },
+                        { "name" => "title", "type" => "string" },
+                        { "name" => "original_title", "type" => "string", "optional" => true },
+                        { "name" => "release_year", "type" => "int32" },
+                        { "name" => "description", "type" => "string", "optional" => true },
+                        { "name" => "content_rating", "type" => "string", "optional" => true },
+                        { "name" => "release_date", "type" => "int64", "optional" => true },
+                        { "name" => "runtime_minutes", "type" => "int32", "optional" => true },
+                        { "name" => "average_rating", "type" => "float", "facet" => true },
+                        { "name" => "num_votes", "type" => "int32", "optional" => true },
+                        { "name" => "genre_names", "type" => "string[]", "optional" => true },
+                        { "name" => "country_names", "type" => "string[]", "optional" => true },
+                        { "name" => "primary_image_url", "type" => "string", "index" => false },
+                      ]
+
+    default_sorting_field "average_rating"
+
+    attribute :genre_names do
+      genres.pluck(:name)
+    end
+
+    attribute :country_names do
+      countries.pluck(:name)
+    end
+
+    attribute :id, :movie_id, :title, :original_title,
+              :description, :content_rating, :release_date, :runtime_minutes,
+              :num_votes, :release_year, :primary_image_url
+
+    attribute :release_date do
+      self.release_date.to_time.to_i if self.release_date.present?
+    end
+
+    attribute :average_rating do
+      self.average_rating.to_f if self.average_rating.present?
+    end
+  end
 
   # Scopes
   scope :by_genre, ->(genre_name) { joins(:genres).where(genres: { name: genre_name }) }
