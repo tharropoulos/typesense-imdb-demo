@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/typesense/typesense-rails.git
+  revision: 61a391d7030145fef104fb5a3cd30077ab0c1de4
+  branch: adaptation
+  specs:
+    typesense-rails (0.0.0)
+      json (>= 1.5.1)
+      typesense (>= 0.13.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -118,6 +127,12 @@ GEM
       tzinfo
     faker (3.5.1)
       i18n (>= 1.8.11, < 2)
+    faraday (2.12.2)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-net_http (3.4.0)
+      net-http (>= 0.5.0)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -164,6 +179,8 @@ GEM
     minitest (5.25.4)
     msgpack (1.8.0)
     mutex_m (0.3.0)
+    net-http (0.6.0)
+      uri
     net-imap (0.5.6)
       date
       net-protocol
@@ -191,6 +208,9 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.3-x86_64-linux-musl)
       racc (~> 1.4)
+    oj (3.16.10)
+      bigdecimal (>= 3.0)
+      ostruct (>= 0.2)
     orm_adapter (0.5.0)
     ostruct (0.6.1)
     overmind (2.5.1)
@@ -337,6 +357,10 @@ GEM
     thruster (0.1.11-aarch64-linux)
     thruster (0.1.11-x86_64-linux)
     timeout (0.4.3)
+    typesense (3.0.1)
+      base64 (~> 0.2.0)
+      faraday (~> 2.8)
+      oj (~> 3.16)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (3.1.4)
@@ -400,6 +424,7 @@ DEPENDENCIES
   solid_queue
   sqlite3 (>= 2.1)
   thruster
+  typesense-rails!
   tzinfo-data
   vite_rails (~> 3.0)
   web-console
