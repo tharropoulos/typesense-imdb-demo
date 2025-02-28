@@ -13,6 +13,9 @@ namespace :imdb do
     MovieGenre.delete_all
     MovieCast.delete_all
     MovieDirector.delete_all
+    MovieCountry.delete_all
+    TvShowCountry.delete_all
+    Country.delete_all
     MovieWriter.delete_all
     TvShowGenre.delete_all
     TvShowCast.delete_all
@@ -46,6 +49,28 @@ namespace :imdb do
       puts "No genres found to import."
     end
 
+    # Import countries
+    puts "\nImporting countries..."
+    country_count = 1
+    country_data = []
+
+    CSV.foreach(Rails.root.join("db/data/countries.csv"), headers: true) do |row|
+      country_data << {
+        id: country_count + 1,  # Use sequential numbering
+        name: row["name"],
+        created_at: Time.current,
+        updated_at: Time.current,
+      }
+      country_count += 1
+    end
+
+    if country_data.any?
+      Country.delete_all  # Clear existing countries
+      Country.insert_all(country_data)
+      puts "Imported #{country_count} countries."
+    else
+      puts "No countries found to import."
+    end
     # Import People
     puts "\nImporting people..."
     total_people = 0
@@ -90,7 +115,6 @@ namespace :imdb do
           budget: row["budget"],
           gross_worldwide: row["gross_worldwide"],
           primary_image_url: row["primary_image_url"],
-          countries: row["countries"],
           created_at: Time.current,
           updated_at: Time.current,
         }
@@ -123,7 +147,6 @@ namespace :imdb do
           total_seasons: row["total_seasons"],
           total_episodes: row["total_episodes"],
           primary_image_url: row["primary_image_url"],
-          countries: row["countries"],
           show_type: "series",
           created_at: Time.current,
           updated_at: Time.current,
@@ -157,7 +180,6 @@ namespace :imdb do
           total_seasons: row["total_seasons"],
           total_episodes: row["total_episodes"],
           primary_image_url: row["primary_image_url"],
-          countries: row["countries"],
           show_type: "miniseries",
           created_at: Time.current,
           updated_at: Time.current,
@@ -482,6 +504,84 @@ namespace :imdb do
     end
     puts "Completed importing #{total_tv_writers} TV writers."
 
+    # Import Movie Countries
+    puts "\nImporting movie countries..."
+    total_movie_countries = 0
+    mc_batches = 0
+    batch_data = []
+
+    CSV.foreach(Rails.root.join("db/data/movie_countries.csv"), headers: true) do |row|
+      movie_id = row["movie_id"]
+      country_id = row["country_id"]
+
+      movie_db_id = movie_id_map[movie_id]
+      country_db_id = Country.find_by(id: country_id)&.id
+
+      if movie_db_id && country_db_id
+        batch_data << {
+          movie_id: movie_db_id,
+          country_id: country_db_id,
+          created_at: Time.current,
+          updated_at: Time.current,
+        }
+
+        if batch_data.size >= batch_size
+          MovieCountry.insert_all(batch_data)
+          total_movie_countries += batch_data.size
+          mc_batches += 1
+          puts "Imported movie countries batch #{mc_batches} (#{total_movie_countries} total)"
+          batch_data = []
+        end
+      end
+    end
+
+    # Insert remaining batch for movie countries
+    if batch_data.any?
+      MovieCountry.insert_all(batch_data)
+      total_movie_countries += batch_data.size
+      puts "Imported final movie countries batch (#{total_movie_countries} total)"
+    end
+    puts "Completed importing #{total_movie_countries} movie countries."
+
+    # Import TV Show Countries
+    puts "\nImporting TV show countries..."
+    total_tv_countries = 0
+    tc_batches = 0
+    batch_data = []
+
+    CSV.foreach(Rails.root.join("db/data/tv_countries.csv"), headers: true) do |row|
+      show_id = row["show_id"]
+      country_id = row["country_id"]
+
+      tv_db_id = tv_show_id_map[show_id]
+      country_db_id = Country.find_by(id: country_id)&.id
+
+      if tv_db_id && country_db_id
+        batch_data << {
+          tv_show_id: tv_db_id,
+          country_id: country_db_id,
+          created_at: Time.current,
+          updated_at: Time.current,
+        }
+
+        if batch_data.size >= batch_size
+          TvShowCountry.insert_all(batch_data)
+          total_tv_countries += batch_data.size
+          tc_batches += 1
+          puts "Imported TV show countries batch #{tc_batches} (#{total_tv_countries} total)"
+          batch_data = []
+        end
+      end
+    end
+
+    # Insert remaining batch for TV show countries
+    if batch_data.any?
+      TvShowCountry.insert_all(batch_data)
+      total_tv_countries += batch_data.size
+      puts "Imported final TV show countries batch (#{total_tv_countries} total)"
+    end
+    puts "Completed importing #{total_tv_countries} TV show countries."
+
     # Print summary
     end_time = Time.now
     duration = (end_time - start_time).to_i
@@ -502,6 +602,9 @@ namespace :imdb do
     puts "  - #{total_tv_directors} TV directors"
     puts "  - #{total_movie_writers} movie writers"
     puts "  - #{total_tv_writers} TV writers"
+    puts "  - #{country_count} countries"
+    puts "  - #{total_movie_countries} movie countries"
+    puts "  - #{total_tv_countries} TV show countries"
     puts "=== Import Complete ==="
   end
 
@@ -521,6 +624,9 @@ namespace :imdb do
     TvShow.delete_all
     Person.delete_all
     Genre.delete_all
+    MovieCountry.delete_all
+    TvShowCountry.delete_all
+    Country.delete_all
 
     puts "All IMDb data has been cleared."
   end
