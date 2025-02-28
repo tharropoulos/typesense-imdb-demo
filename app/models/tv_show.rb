@@ -1,4 +1,6 @@
 class TvShow < ApplicationRecord
+  include Typesense
+
   # Rating association
   has_many :ratings, as: :ratable, dependent: :destroy
   # Genre associations
@@ -17,6 +19,46 @@ class TvShow < ApplicationRecord
 
   # Validation
   validates :show_id, presence: true, uniqueness: true
+
+  has_many :tv_show_countries, dependent: :destroy
+  has_many :countries, through: :tv_show_countries
+
+  typesense per_environment: true do
+    predefined_fields [
+      { "name" => "show_id", "type" => "string" },
+      { "name" => "title", "type" => "string" },
+      { "name" => "original_title", "type" => "string", "optional" => true },
+      { "name" => "start_year", "type" => "int32" },
+      { "name" => "end_year", "type" => "int32" },
+      { "name" => "description", "type" => "string", "optional" => true },
+      { "name" => "content_rating", "type" => "string", "optional" => true },
+      { "name" => "average_rating", "type" => "float", "facet" => true, "optional" => true },
+      { "name" => "num_votes", "type" => "int32", "optional" => true },
+      { "name" => "total_seasons", "type" => "int32", "optional" => true },
+      { "name" => "total_episodes", "type" => "int32", "optional" => true },
+      { "name" => "genre_names", "type" => "string[]", "optional" => true },
+      { "name" => "country_names", "type" => "string[]", "optional" => true },
+      { "name" => "primary_image_url", "type" => "string", "index" => false },
+      { "name" => "show_type", "type" => "string", "facet" => true },
+    ]
+
+    attribute :genre_names do
+      genres.pluck(:name)
+    end
+
+    attribute :country_names do
+      countries.pluck(:name)
+    end
+
+    attribute :id, :show_id, :title, :original_title,
+              :description, :content_rating, :start_year, :end_year,
+              :num_votes, :average_rating, :total_seasons, :total_episodes,
+              :primary_image_url, :show_type
+
+    attribute :average_rating do
+      self.average_rating.to_f if self.average_rating.present?
+    end
+  end
 
   # Scopes
   scope :series, -> { where(show_type: "series") }
