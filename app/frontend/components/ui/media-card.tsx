@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { Link } from "@inertiajs/react";
+import { StarIcon } from "lucide-react";
 
-export interface MediaCardProps {
+export interface MediaCardItem {
   id: string;
   title: string;
   average_rating: number;
@@ -11,14 +13,22 @@ export interface MediaCardProps {
   genre_names: string[];
 }
 
-export function MediaCard({ movie }: { movie: MediaCardProps }) {
-  const { title, average_rating, primary_image_url, release_year, genre_names } = movie;
+export interface MediaCardProps<T extends MediaCardItem> {
+  item: T;
+  getHref: (item: T) => string;
+}
+
+export function MediaCard<T extends MediaCardItem>(media: MediaCardProps<T>) {
+  const { title, average_rating, primary_image_url, release_year, genre_names } = media.item;
   const [imageError, setImageError] = useState(false);
   const handleImageError = () => {
     setImageError(true);
   };
   return (
-    <div className="group relative aspect-2/3 h-96 w-auto cursor-pointer overflow-hidden rounded-lg">
+    <Link
+      href={media.getHref(media.item)}
+      className="group relative aspect-video h-72 cursor-pointer overflow-hidden rounded-lg shadow-sm"
+    >
       <div
         className="absolute inset-0 h-full w-full transform bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:-translate-y-2 group-hover:scale-105"
         style={{
@@ -27,7 +37,6 @@ export function MediaCard({ movie }: { movie: MediaCardProps }) {
           backgroundPosition: "center top",
         }}
       >
-        {/* Hidden image to detect load errors */}
         <img
           src={primary_image_url || "/placeholder.svg"}
           alt=""
@@ -54,35 +63,22 @@ export function MediaCard({ movie }: { movie: MediaCardProps }) {
           {genre_names && genre_names.length > 0 && (
             <div className="mt-2 flex translate-y-4 transform flex-wrap gap-1 opacity-0 transition-all delay-150 duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100">
               {genre_names.slice(0, 1).map((genre) => (
-                <span key={genre} className="bg-primary/80 text-primary-foreground rounded-full px-2 py-0.5 text-xs">
+                <span key={genre} className="bg-muted rounded-full px-2 py-0.5 text-xs">
                   {genre}
                 </span>
               ))}
               {genre_names.length > 1 && (
-                <span className="bg-primary/80 text-primary-foreground rounded-full px-2 py-0.5 text-xs">
-                  +{genre_names.length - 1}
-                </span>
+                <span className="bg-muted rounded-full px-2 py-0.5 text-xs">+{genre_names.length - 1}</span>
               )}
             </div>
           )}
         </div>
       </div>
       {/* Rating Badge */}
-      <div className="absolute right-2 bottom-2 z-10 flex items-center rounded bg-black/80 px-1.5 py-0.5 text-white">
-        <svg
-          className="mr-0.5 h-3 w-3 fill-yellow-400 stroke-yellow-400"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-        </svg>
+      <div className="absolute right-2 bottom-4 z-100 flex items-center rounded bg-zinc-900 px-1.5 py-0.5 text-white">
+        <StarIcon className="mr-0.5 h-3 w-3 fill-yellow-400 stroke-yellow-400" />
         <span className="text-xs font-medium">{average_rating.toFixed(1)}</span>
       </div>
-    </div>
+    </Link>
   );
 }
