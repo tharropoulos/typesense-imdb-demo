@@ -39,3 +39,11 @@ export function urlBuilder(
 
   return baseUrl;
 }
+
+export const ratingToAge: Record<string, number> = {
+  G: 0, // General Audiences - suitable for all ages
+  PG: 7, // Parental Guidance Suggested - some material may not be suitable for young children
+  "PG-13": 13, // Parents Strongly Cautioned - some material may be inappropriate for children under 13
+  R: 17, // Restricted - under 17 requires accompanying parent or adult guardian
+  "NC-17": 18, // Adults Only - no one 17 and under admitted
+};
