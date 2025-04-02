@@ -130,6 +130,11 @@ class Movie < ApplicationRecord
     attribute :average_rating do
       self.average_rating.to_f if self.average_rating.present?
     end
+
+    attribute :primary_genre do
+      self.genres.first[:name] if self.genres.present?
+    end
+
   end
 
   # Scopes
