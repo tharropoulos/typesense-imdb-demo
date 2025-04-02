@@ -21,6 +21,16 @@ const userSchema = z
 
 type UserFormInputs = z.infer<typeof userSchema>;
 
+interface PageProps {
+  errors?: {
+    email?: string[];
+    password?: string[];
+    password_confirmation?: string[];
+    username?: string[];
+    base?: string[];
+  };
+}
+
 export default function SignUp() {
   const form = useForm<UserFormInputs>({
     resolver: zodResolver(userSchema),
