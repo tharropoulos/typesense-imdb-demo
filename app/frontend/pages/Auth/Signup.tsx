@@ -10,8 +10,8 @@ const userSchema = z
   .object({
     user: z.object({
       email: z.string().email("Invalid email address"),
-      password: z.string().min(1, "Password must be at least 1 character"),
-      password_confirmation: z.string().min(1, "Password confirmation must be at least 1 character"),
+      password: z.string().min(6, "Password must be at least 6 characters"),
+      password_confirmation: z.string().min(6, "Password confirmation is required"),
       username: z.string().min(3, "Username is required"),
     }),
   })
