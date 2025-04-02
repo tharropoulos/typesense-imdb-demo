@@ -1,15 +1,15 @@
-import type { Cast, Writer } from "@/pages/Movie/Show";
+import type { Cast, Writer } from "@/lib/types";
 import { useState } from "react";
-import { Arrow } from "@/components/arrow";
+import { Arrow } from "@/components/ui/arrow";
 import { Button } from "@/components/ui/button";
-import { useMediaQuery } from "@/hooks/use-media-query";
+import { useMediaQueries } from "@/hooks/use-media-queries";
 import { cn } from "@/lib/utils";
 import { Link } from "@inertiajs/react";
 
 function CastList<T extends { casts: Cast[]; writers: Writer[] }>({ media: media }: { media: T }) {
   const { writers, casts } = media;
   const [isExpanded, setIsExpanded] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 64rem)");
+  const [isDesktop] = useMediaQueries(["(min-width: 64rem)"]);
   const totalItems = (casts?.length ?? 0) + (writers?.length ?? 0);
   const hasMultipleRows = isDesktop ? totalItems > 6 : totalItems > 3;
 
@@ -27,9 +27,9 @@ function CastList<T extends { casts: Cast[]; writers: Writer[] }>({ media: media
             {casts.map((cast) => (
               <div key={cast.id} className="flex flex-col gap-1">
                 <h2 className="text-muted-foreground">{cast.character_name}</h2>
-                <Link href={`/people/${cast.id}`} className="hover:underline">
+                <div className="hover:underline">
                   {cast.person.full_name}
-                </Link>
+                </div>
               </div>
             ))}
             {writers &&
