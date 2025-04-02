@@ -108,6 +108,9 @@ class Movie < ApplicationRecord
     end
 
     attribute :id, :movie_id, :title, :original_title,
+    attribute :collection_type do
+      "movie"
+    end
               :description, :content_rating, :release_date, :runtime_minutes,
               :num_votes, :release_year, :primary_image_url
 
