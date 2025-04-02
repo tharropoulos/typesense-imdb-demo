@@ -43,6 +43,7 @@ class TvShow < ApplicationRecord
       { "name" => "primary_genre", "type" => "string" },
       { "name" => "secondary_genre", "type" => "string", "optional" => true },
       { "name" => "collection_type", "type" => "string" },
+      { "name" => "cast", "type" => "string[]", "facet" => true },
     ]
 
     attribute :genre_names do
