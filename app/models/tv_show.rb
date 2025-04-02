@@ -102,6 +102,11 @@ class TvShow < ApplicationRecord
     attribute :collection_type do
       "tv_show"
     end
+
+    attribute :cast do
+      cast_members.pluck(:full_name).take(3)
+    end
+
     attribute :id, :show_id, :title, :original_title,
               :description, :content_rating, :start_year, :end_year,
               :num_votes, :average_rating, :total_seasons, :total_episodes,
