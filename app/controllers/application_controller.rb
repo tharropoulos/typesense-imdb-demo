@@ -15,4 +15,14 @@ class ApplicationController < ActionController::Base
                     }
                   end
                 }
+
+  rescue_from StandardError, with: :inertia_error_page
+
+  private
+
+  def inertia_error_page(exception)
+    raise exception if Rails.env.local?
+    status = ActionDispatch::ExceptionWrapper.new(nil, exception).status_code
+    render inertia: "Error", props: { status: }, status:
+  end
 end
