@@ -15,4 +15,10 @@ class MoviesController < ApplicationController
            }
   end
 
+  def index
+    add_breadcrumb("Movies", "/movies")
+    render inertia: "Movie/Index", props: {
+      breadcrumbs: @breadcrumbs,
+    }
+  end
 end
