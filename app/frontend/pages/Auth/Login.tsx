@@ -86,7 +86,7 @@ export default function Login() {
   return (
     <>
       <Head title="Sign in"></Head>
-      <div className="flex min-h-screen justify-center bg-gradient-to-b from-white to-gray-300">
+      <div className="flex min-h-screen items-center justify-center space-x-11 bg-gradient-to-b from-zinc-50 to-zinc-300 dark:from-zinc-900 dark:to-black">
         <div className="flex min-h-screen min-w-[30vw] flex-col justify-center gap-3 p-4">
           <div className="my-4 flex flex-col gap-3">
             <h1 className="text-xl leading-none font-semibold">Welcome back</h1>
