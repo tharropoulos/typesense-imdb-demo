@@ -89,6 +89,7 @@ class TvShow < ApplicationRecord
       } },
     ]
 
+    default_sorting_field "average_rating"
 
     attribute :genres do
       genres.pluck(:name).take(3)
