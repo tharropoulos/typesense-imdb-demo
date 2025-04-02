@@ -10,6 +10,7 @@ interface MediaCarouselProps<T extends MediaCardItem> {
   media: T[];
   getHref: (item: T) => string;
 }
+
 function MediaCarousel<T extends MediaCardItem>(props: MediaCarouselProps<T>) {
   const [carouselAPI, setCarouselAPI] = useState<CarouselApi | null>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -48,7 +49,7 @@ function MediaCarousel<T extends MediaCardItem>(props: MediaCarouselProps<T>) {
         <CarouselNext />
         <CarouselContent>
           {props.media.map((medium) => (
-            <CarouselItem key={medium.id} className="basis-1/4 xl:basis-1/7">
+            <CarouselItem key={medium.id} className="basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/7">
               <div className="flex items-center justify-center">
                 <MediaCard getHref={props.getHref} item={medium} />
               </div>
@@ -62,7 +63,7 @@ function MediaCarousel<T extends MediaCardItem>(props: MediaCarouselProps<T>) {
           <motion.button
             key={index}
             onClick={() => scrollTo(index)}
-            className="bg-muted-foreground h-2 rounded-full"
+            className="bg-muted-foreground/40 h-2 rounded-full"
             initial={false}
             animate={{
               width: selectedIndex === index ? "1rem" : "0.5rem",
