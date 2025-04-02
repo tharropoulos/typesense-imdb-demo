@@ -57,12 +57,9 @@ namespace :db do
     users_created = 0
     batches_processed = 0
 
-    # BCrypt password generation is slow, so let's precompute some passwords
     puts "Precomputing passwords..."
-    # Generate a small set of different password hashes to use
-    # This significantly improves performance while still having realistic data
     password_hashes = 20.times.map do
-      BCrypt::Password.create(Faker::Internet.password(min_length: 8, max_length: 20))
+      BCrypt::Password.create("Super_secret_p@ss")
     end
 
     while users_created < total_users
@@ -99,6 +96,7 @@ namespace :db do
         user_batch << {
           email: email,
           encrypted_password: encrypted_password,
+          username: username,
           created_at: Time.current,
           updated_at: Time.current,
         }
@@ -143,7 +141,7 @@ namespace :db do
     # Generate a single encrypted password to use for all users
     # This dramatically speeds up the process while still being secure
     # In a real app, users would reset their password on first login
-    common_password = BCrypt::Password.create("Password123!")
+    common_password = BCrypt::Password.create("Super_secret_p@ss")
 
     users_created = 0
     batches_processed = 0

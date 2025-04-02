@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  validates :username, presence: true, uniqueness: true, length: { minimum: 3, maximum: 30 }
+
   # Rating association
   has_many :ratings, dependent: :destroy
 
@@ -34,5 +36,11 @@ class User < ApplicationRecord
 
   def rating_for(ratable)
     ratings.find_by(ratable: ratable)
+  end
+
+  def profile_pic
+    user_seed = username.present? ? username[0...3] : id.to_s
+    set_number = (id % 5) + 1
+    "https://robohash.org/#{user_seed}?set=set#{set_number}&size=150x150"
   end
 end
