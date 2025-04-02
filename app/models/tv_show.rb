@@ -160,6 +160,13 @@ class TvShow < ApplicationRecord
     end
   end
 
+  def genres
+    tv_show_genres.limit(4).map do |tv_show_genre|
+      {
+        id: tv_show_genre.id,
+        name: tv_show_genre.genre.name,
+      }
+    end
   end
 
   # Scopes
