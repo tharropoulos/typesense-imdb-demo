@@ -4,7 +4,7 @@ import { useCurrentRefinements } from "react-instantsearch";
 
 import { Button } from "../ui/button";
 
-interface AttributeLabel {
+export interface AttributeLabel {
   attribute: string;
   label: string;
 }
