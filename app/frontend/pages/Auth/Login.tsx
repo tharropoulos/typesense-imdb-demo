@@ -26,6 +26,39 @@ interface PageProps {
   };
 }
 
+const demoUsers = [
+  {
+    name: "Cindi Crooks",
+    credentials: {
+      user: {
+        email: "cindi_crooks@stehr-bradtke.test",
+        password: "Super_secret_p@ss",
+        remember_me: false,
+      },
+    },
+  },
+  {
+    name: "Jeffrey Barton",
+    credentials: {
+      user: {
+        email: "jeffrey@barton.test",
+        password: "Super_secret_p@ss",
+        remember_me: false,
+      },
+    },
+  },
+  {
+    name: "Marinda Hegmann",
+    credentials: {
+      user: {
+        email: "marinda_hegmann@legros.test",
+        password: "Super_secret_p@ss",
+        remember_me: false,
+      },
+    },
+  },
+];
+
 export default function Login() {
   const { errors } = usePage().props as PageProps;
 
@@ -42,6 +75,10 @@ export default function Login() {
 
   const onSubmit = (data: UserFormInputs) => {
     router.post("/login", data);
+  };
+
+  const loginAsDemoUser = (credentials: UserFormInputs) => {
+    router.post("/login", credentials);
   };
 
   const serverError = errors?.base?.[0];
@@ -126,6 +163,24 @@ export default function Login() {
               Sign up
             </Link>
           </div>
+        </div>
+        <div className="flex w-1/4 flex-col items-center gap-4">
+          <h3 className="text-md mb-2 font-medium">Quick Login (Demo Users)</h3>
+          <div className="flex w-full flex-col gap-2">
+            {demoUsers.map((demoUser, index) => (
+              <Button
+                key={index}
+                variant="outline"
+                onClick={() => loginAsDemoUser(demoUser.credentials)}
+                className="w-full"
+              >
+                Login as {demoUser.name}
+              </Button>
+            ))}
+          </div>
+          <p className="mt-2 text-xs text-gray-500">
+            For demo purposes only. Click any button to instantly log in with predefined credentials.
+          </p>
         </div>
       </div>
     </>
