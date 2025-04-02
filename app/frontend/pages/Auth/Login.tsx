@@ -109,7 +109,6 @@ export default function Login() {
                         className={errors?.email ? "border-red-500" : ""}
                       />
                     </FormControl>
-                    {/* Show server-side email errors */}
                     {errors?.email && <p className="mt-1 text-sm font-medium text-red-500">{errors.email[0]}</p>}
                     <FormMessage />
                   </FormItem>
