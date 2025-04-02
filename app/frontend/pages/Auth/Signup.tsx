@@ -12,6 +12,7 @@ const userSchema = z
       email: z.string().email("Invalid email address"),
       password: z.string().min(1, "Password must be at least 1 character"),
       password_confirmation: z.string().min(1, "Password confirmation must be at least 1 character"),
+      username: z.string().min(3, "Username is required"),
     }),
   })
   .refine((data) => data.user.password === data.user.password_confirmation, {
@@ -39,6 +40,7 @@ export default function SignUp() {
         email: "",
         password: "",
         password_confirmation: "",
+        username: "",
       },
     },
   });
@@ -63,6 +65,32 @@ export default function SignUp() {
           </div>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+              <FormField
+                control={form.control}
+                name="user.username"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Username</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="username"
+                        type="text"
+                        {...field}
+                        className={errors?.username ? "border-red-500" : ""}
+                        // Ensure the value is set in the DOM
+                        value={field.value || ""}
+                        onChange={(e) => {
+                          field.onChange(e);
+                          // Log to verify the change is registered
+                          console.log("Username changed to:", e.target.value);
+                        }}
+                      />
+                    </FormControl>
+                    {errors?.username && <p className="mt-1 text-sm font-medium text-red-500">{errors.username[0]}</p>}
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="user.email"
