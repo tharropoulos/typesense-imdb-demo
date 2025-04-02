@@ -150,6 +150,16 @@ class TvShow < ApplicationRecord
       }
     end
   end
+
+  def countries
+    tv_show_countries.map do |tv_show_country|
+      {
+        id: tv_show_country.id,
+        name: tv_show_country.country.name,
+      }
+    end
+  end
+
   end
 
   # Scopes
