@@ -24,4 +24,5 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   resources :movies, only: [:show, :index]
+  resources :tv_shows, only: [:show, :index]
 end
