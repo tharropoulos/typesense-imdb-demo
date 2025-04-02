@@ -40,6 +40,7 @@ class Movie < ApplicationRecord
                         { "name" => "primary_genre", "type" => "string" },
                         { "name" => "secondary_genre", "type" => "string", "optional" => true },
                         { "name" => "cast", "type" => "string[]", "facet" => true },
+                        { "name" => "directors", "type" => "string[]", "facet" => true },
                       ]
 
     default_sorting_field "average_rating"
