@@ -1,4 +1,6 @@
-import { ModeToggle } from "@/components/mode-toggle";
+import { AuthButton } from "@/components/auth-button";
+import { Autocomplete } from "@/components/autocomplete";
+import { client } from "@/lib/typesense";
 import { cn } from "@/lib/utils";
 
 function MainNav() {
@@ -18,7 +20,8 @@ function MainNav() {
         >
           t<b>s</b>|
         </a>
-        <ModeToggle />
+        <Autocomplete client={client} />
+        <AuthButton />
       </div>
     </header>
   );
