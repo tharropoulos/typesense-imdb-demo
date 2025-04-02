@@ -38,6 +38,7 @@ class Movie < ApplicationRecord
                         { "name" => "countries", "type" => "string[]", "optional" => true, "facet" => true },
                         { "name" => "primary_image_url", "type" => "string", "index" => false },
                         { "name" => "primary_genre", "type" => "string" },
+                        { "name" => "secondary_genre", "type" => "string", "optional" => true },
                       ]
 
     default_sorting_field "average_rating"
