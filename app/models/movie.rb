@@ -149,6 +149,15 @@ class Movie < ApplicationRecord
       }
     end
   end
+
+  def genres
+    movie_genres.limit(4).map do |movie_genre|
+      {
+        id: movie_genre.id,
+        name: movie_genre.genre.name,
+      }
+    end
+  end
   scope :by_genre, ->(genre_name) { joins(:genres).where(genres: { name: genre_name }) }
   scope :by_year, ->(year) { where("release_year = ?", year) }
   scope :by_rating, ->(min_rating) { where("average_rating >= ?", min_rating) }
