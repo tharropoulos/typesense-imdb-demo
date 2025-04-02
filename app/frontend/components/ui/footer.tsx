@@ -1,62 +1,41 @@
-import { Footer, FooterBottom, FooterColumn, FooterContent } from "@/components/ui/foot";
-import { ModeToggle } from "@/components/ui/mode-toggle";
+import * as React from "react";
+import { cn } from "@/lib/utils";
 
-export default function FooterSection() {
-  return (
-    <footer className="bg-background w-full px-4">
-      <div className="max-w-container mx-auto">
-        <Footer>
-          <FooterContent>
-            <FooterColumn className="col-span-2 sm:col-span-3 md:col-span-1">
-              <div className="flex items-center gap-2">
-                <LaunchUI />
-                <h3 className="text-xl font-bold">Launch UI</h3>
-              </div>
-            </FooterColumn>
-            <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Product</h3>
-              <a href="/" className="text-muted-foreground text-sm">
-                Changelog
-              </a>
-              <a href="/" className="text-muted-foreground text-sm">
-                Documentation
-              </a>
-            </FooterColumn>
-            <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Company</h3>
-              <a href="/" className="text-muted-foreground text-sm">
-                About
-              </a>
-              <a href="/" className="text-muted-foreground text-sm">
-                Careers
-              </a>
-              <a href="/" className="text-muted-foreground text-sm">
-                Blog
-              </a>
-            </FooterColumn>
-            <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Contact</h3>
-              <a href="/" className="text-muted-foreground text-sm">
-                Discord
-              </a>
-              <a href="/" className="text-muted-foreground text-sm">
-                Twitter
-              </a>
-              <a href="/" className="text-muted-foreground text-sm">
-                Github
-              </a>
-            </FooterColumn>
-          </FooterContent>
-          <FooterBottom>
-            <div>© 2025 Mikołaj Dobrucki. All rights reserved</div>
-            <div className="flex items-center gap-4">
-              <a href="/">Privacy Policy</a>
-              <a href="/">Terms of Service</a>
-              <ModeToggle />
-            </div>
-          </FooterBottom>
-        </Footer>
-      </div>
-    </footer>
-  );
-}
+const Footer = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+  ({ className, ...props }, ref) => (
+    <div ref={ref} className={cn("bg-background text-foreground pt-12 pb-4", className)} {...props} />
+  ),
+);
+Footer.displayName = "Footer";
+
+const FooterContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+  ({ className, ...props }, ref) => (
+    <div
+      ref={ref}
+      className={cn("grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5", className)}
+      {...props}
+    />
+  ),
+);
+FooterContent.displayName = "FooterContent";
+
+const FooterColumn = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+  ({ className, ...props }, ref) => <div ref={ref} className={cn("flex flex-col gap-4", className)} {...props} />,
+);
+FooterColumn.displayName = "FooterColumn";
+
+const FooterBottom = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+  ({ className, ...props }, ref) => (
+    <div
+      ref={ref}
+      className={cn(
+        "text-muted-foreground mt-8 flex flex-col items-center justify-between gap-4 border-t pt-4 text-xs sm:flex-row",
+        className,
+      )}
+      {...props}
+    />
+  ),
+);
+FooterBottom.displayName = "FooterBottom";
+
+export { Footer, FooterColumn, FooterBottom, FooterContent };
