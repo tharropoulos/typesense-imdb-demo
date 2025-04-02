@@ -94,7 +94,7 @@ class TvShow < ApplicationRecord
       genres.pluck(:name).take(3)
     end
 
-    attribute :country_names do
+    attribute :countries do
       countries.pluck(:name)
     end
 
