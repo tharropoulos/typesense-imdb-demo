@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { createElement } from "react";
-import { createInertiaApp } from "@inertiajs/react";
 import { Layout } from "@/components/layout";
+import { createInertiaApp, router } from "@inertiajs/react";
 import { createRoot } from "react-dom/client";
 
 // Temporary type definition, until @inertiajs/react provides one
@@ -9,6 +9,23 @@ interface ResolvedComponent {
   default: ReactNode;
   layout?: (page: ReactNode) => ReactNode;
 }
+
+router.on("navigate", () => {
+  if (window.location.hash) {
+    setTimeout(() => {
+      const id = window.location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (!element) return;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - 50 ;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }, 150);
+  }
+});
 
 void createInertiaApp({
   // Set default page title
