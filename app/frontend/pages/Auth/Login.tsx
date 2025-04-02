@@ -90,7 +90,7 @@ export default function Login() {
         <div className="flex min-h-screen min-w-[30vw] flex-col justify-center gap-3 p-4">
           <div className="my-4 flex flex-col gap-3">
             <h1 className="text-xl leading-none font-semibold">Welcome back</h1>
-            <h2 className="text-lg leading-none">Sign in to your account</h2>
+            <h2 className="text-lg leading-none">We're so happy to see you again!</h2>
           </div>
 
           <Form {...form}>
