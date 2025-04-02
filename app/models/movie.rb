@@ -141,6 +141,14 @@ class Movie < ApplicationRecord
   end
 
   # Scopes
+  def countries
+    movie_countries.map do |movie_country|
+      {
+        id: movie_country.id,
+        name: movie_country.country.name,
+      }
+    end
+  end
   scope :by_genre, ->(genre_name) { joins(:genres).where(genres: { name: genre_name }) }
   scope :by_year, ->(year) { where("release_year = ?", year) }
   scope :by_rating, ->(min_rating) { where("average_rating >= ?", min_rating) }
