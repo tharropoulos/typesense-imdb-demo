@@ -111,6 +111,11 @@ class Movie < ApplicationRecord
     attribute :collection_type do
       "movie"
     end
+
+    attribute :cast do
+      cast_members.pluck(:full_name).take(3)
+    end
+
               :description, :content_rating, :release_date, :runtime_minutes,
               :num_votes, :release_year, :primary_image_url
 
