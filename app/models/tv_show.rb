@@ -32,7 +32,7 @@ class TvShow < ApplicationRecord
       { "name" => "end_year", "type" => "int32" },
       { "name" => "description", "type" => "string", "optional" => true },
       { "name" => "content_rating", "type" => "string", "optional" => true },
-      { "name" => "average_rating", "type" => "float", "facet" => true, "optional" => true },
+      { "name" => "average_rating", "type" => "float", "facet" => true },
       { "name" => "num_votes", "type" => "int32", "optional" => true },
       { "name" => "total_seasons", "type" => "int32", "optional" => true },
       { "name" => "total_episodes", "type" => "int32", "optional" => true },
