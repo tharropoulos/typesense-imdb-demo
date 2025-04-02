@@ -28,7 +28,7 @@ class TvShow < ApplicationRecord
       { "name" => "show_id", "type" => "string" },
       { "name" => "title", "type" => "string" },
       { "name" => "original_title", "type" => "string", "optional" => true },
-      { "name" => "start_year", "type" => "int32" },
+      { "name" => "start_year", "type" => "int32", "facet" => true },
       { "name" => "end_year", "type" => "int32" },
       { "name" => "description", "type" => "string", "optional" => true },
       { "name" => "content_rating", "type" => "string", "optional" => true },
