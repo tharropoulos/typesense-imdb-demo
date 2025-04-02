@@ -1,4 +1,5 @@
 class Person < ApplicationRecord
+  include Typesense
   # Movie relationships
   has_many :movie_casts, dependent: :destroy
   has_many :acted_movies, through: :movie_casts, source: :movie
@@ -21,4 +22,13 @@ class Person < ApplicationRecord
 
   # Validation
   validates :person_id, presence: true, uniqueness: true
+
+  typesense do
+    predefined_fields [
+      { "name" => "person_id", "type" => "string" },
+      { "name" => "full_name", "type" => "string" },
+      { "name" => "url", "type" => "string", "optional" => true, "index" => false },
+    ]
+    attribute :id, :person_id, :full_name, :url
+  end
 end
