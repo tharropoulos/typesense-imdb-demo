@@ -135,6 +135,9 @@ class Movie < ApplicationRecord
       self.genres.first[:name] if self.genres.present?
     end
 
+    attribute :secondary_genre do
+      self.genres.second[:name] if self.genres.size > 1
+    end
   end
 
   # Scopes
