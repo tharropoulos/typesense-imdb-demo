@@ -129,6 +129,27 @@ class TvShow < ApplicationRecord
     end
   end
 
+  def reviews
+    Rating.where(ratable_id: self.id, ratable_type: self.class.name)
+          .with_reviews
+          .recent
+          .limit(4)
+          .includes(:user)
+          .map do |rating|
+      {
+        id: rating.id,
+        score: rating.score,
+        review: rating.review,
+        created_at: rating.created_at,
+        updated_at: rating.updated_at,
+        user: {
+          id: rating.user.id,
+          username: rating.user.username,
+          profile_pic: rating.user.profile_pic,
+        },
+      }
+    end
+  end
   end
 
   # Scopes
