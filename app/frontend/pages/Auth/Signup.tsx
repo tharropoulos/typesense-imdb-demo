@@ -34,7 +34,12 @@ export default function SignUp() {
   });
 
   const onSubmit = (data: UserFormInputs) => {
-    router.post("/signup", data);
+    router.post("/signup", data, {
+      forceFormData: true,
+      onError: (errors) => {
+        console.error("Signup errors:", errors);
+      },
+    });
   };
 
   return (
