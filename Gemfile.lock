@@ -1,7 +1,13 @@
-GIT
-  remote: https://github.com/typesense/typesense-rails.git
-  revision: 61a391d7030145fef104fb5a3cd30077ab0c1de4
-  branch: adaptation
+PATH
+  remote: /home/fanis/code/typesense/ruby
+  specs:
+    typesense (3.0.0.rc1)
+      base64 (~> 0.2.0)
+      faraday (~> 2.8)
+      oj (~> 3.16)
+
+PATH
+  remote: /home/fanis/code/typesense/typesense-rails
   specs:
     typesense-rails (0.0.0)
       json (>= 1.5.1)
@@ -357,10 +363,6 @@ GEM
     thruster (0.1.11-aarch64-linux)
     thruster (0.1.11-x86_64-linux)
     timeout (0.4.3)
-    typesense (3.0.1)
-      base64 (~> 0.2.0)
-      faraday (~> 2.8)
-      oj (~> 3.16)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (3.1.4)
@@ -424,6 +426,7 @@ DEPENDENCIES
   solid_queue
   sqlite3 (>= 2.1)
   thruster
+  typesense!
   typesense-rails!
   tzinfo-data
   vite_rails (~> 3.0)
