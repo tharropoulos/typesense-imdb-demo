@@ -107,7 +107,6 @@ class Movie < ApplicationRecord
       countries.pluck(:name)
     end
 
-    attribute :id, :movie_id, :title, :original_title,
     attribute :collection_type do
       "movie"
     end
@@ -120,6 +119,7 @@ class Movie < ApplicationRecord
       directors.pluck(:full_name).take(3)
     end
 
+    attribute :movie_id, :title, :original_title,
               :description, :content_rating, :release_date, :runtime_minutes,
               :num_votes, :release_year, :primary_image_url
 
@@ -158,6 +158,29 @@ class Movie < ApplicationRecord
       }
     end
   end
+
+  def reviews
+    Rating.where(ratable_id: self.id, ratable_type: self.class.name)
+          .with_reviews
+          .recent
+          .limit(4)
+          .includes(:user)
+          .map do |rating|
+      {
+        id: rating.id,
+        score: rating.score,
+        review: rating.review,
+        created_at: rating.created_at,
+        updated_at: rating.updated_at,
+        user: {
+          id: rating.user.id,
+          username: rating.user.username,
+          profile_pic: rating.user.profile_pic,
+        },
+      }
+    end
+  end
+
   scope :by_genre, ->(genre_name) { joins(:genres).where(genres: { name: genre_name }) }
   scope :by_year, ->(year) { where("release_year = ?", year) }
   scope :by_rating, ->(min_rating) { where("average_rating >= ?", min_rating) }
