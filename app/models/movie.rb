@@ -22,7 +22,7 @@ class Movie < ApplicationRecord
 
   validates :movie_id, presence: true, uniqueness: true
 
-  typesense per_environment: true do
+  typesense do
     predefined_fields [
                         { "name" => "movie_id", "type" => "string" },
                         { "name" => "title", "type" => "string" },
