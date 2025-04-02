@@ -41,6 +41,7 @@ class TvShow < ApplicationRecord
       { "name" => "primary_image_url", "type" => "string", "index" => false },
       { "name" => "show_type", "type" => "string", "facet" => true },
       { "name" => "primary_genre", "type" => "string" },
+      { "name" => "secondary_genre", "type" => "string", "optional" => true },
     ]
 
     attribute :genre_names do
