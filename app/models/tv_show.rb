@@ -45,6 +45,48 @@ class TvShow < ApplicationRecord
       { "name" => "collection_type", "type" => "string" },
       { "name" => "cast", "type" => "string[]", "facet" => true },
       { "name" => "directors", "type" => "string[]", "facet" => true },
+      { "name" => "user_embedding", "type" => "float[]",
+       "embed" => {
+        "from" => [
+          "genres",
+          "title",
+          "cast",
+          "directors",
+        ],
+        "mapping" => [
+          "tv_show_genres",
+          "tv_show_title",
+          "actors",
+          "directors",
+        ],
+        "model_config" => {
+          "model_name" => "ts/tyrec-1",
+          "personalization_type" => "recommendation",
+          "personalization_model_id" => "movie_personalization_model",
+          "personalization_embedding_type" => "user",
+        },
+      } },
+      { "name" => "item_embedding", "type" => "float[]",
+       "embed" => {
+        "from" => [
+          "genres",
+          "title",
+          "cast",
+          "directors",
+        ],
+        "mapping" => [
+          "tv_show_genres",
+          "tv_show_title",
+          "actors",
+          "directors",
+        ],
+        "model_config" => {
+          "model_name" => "ts/tyrec-1",
+          "personalization_type" => "recommendation",
+          "personalization_model_id" => "movie_personalization_model",
+          "personalization_embedding_type" => "item",
+        },
+      } },
     ]
 
     attribute :genre_names do
