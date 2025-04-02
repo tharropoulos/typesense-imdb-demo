@@ -42,6 +42,59 @@ class Movie < ApplicationRecord
                         { "name" => "cast", "type" => "string[]", "facet" => true },
                         { "name" => "directors", "type" => "string[]", "facet" => true },
                         { "name" => "collection_type", "type" => "string" },
+                        {
+                          "name" => "embedding",
+                          "type" => "float[]",
+                          "embed" => {
+                            "from" => ["title"],
+                            "model_config" => {
+                              "model_name" => "ts/snowflake-arctic-embed-m",
+                            },
+                          },
+                        },
+
+                        { "name" => "user_embedding", "type" => "float[]",
+                         "embed" => {
+                          "from" => [
+                            "genres",
+                            "title",
+                            "cast",
+                            "directors",
+                          ],
+                          "mapping" => [
+                            "movie_genres",
+                            "movie_title",
+                            "actors",
+                            "directors",
+                          ],
+                          "model_config" => {
+                            "model_name" => "ts/tyrec-1",
+                            "personalization_type" => "recommendation",
+                            "personalization_model_id" => "movie_personalization_model",
+                            "personalization_embedding_type" => "user",
+                          },
+                        } },
+                        { "name" => "item_embedding", "type" => "float[]",
+                         "embed" => {
+                          "from" => [
+                            "genres",
+                            "title",
+                            "cast",
+                            "directors",
+                          ],
+                          "mapping" => [
+                            "movie_genres",
+                            "movie_title",
+                            "actors",
+                            "directors",
+                          ],
+                          "model_config" => {
+                            "model_name" => "ts/tyrec-1",
+                            "personalization_type" => "recommendation",
+                            "personalization_model_id" => "movie_personalization_model",
+                            "personalization_embedding_type" => "item",
+                          },
+                        } },
                       ]
 
     default_sorting_field "average_rating"
