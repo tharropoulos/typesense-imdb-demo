@@ -27,7 +27,7 @@ class Movie < ApplicationRecord
                         { "name" => "movie_id", "type" => "string" },
                         { "name" => "title", "type" => "string" },
                         { "name" => "original_title", "type" => "string", "optional" => true },
-                        { "name" => "release_year", "type" => "int32" },
+                        { "name" => "release_year", "type" => "int32", "facet" => true },
                         { "name" => "description", "type" => "string", "optional" => true },
                         { "name" => "content_rating", "type" => "string", "optional" => true },
                         { "name" => "release_date", "type" => "int64", "optional" => true },
