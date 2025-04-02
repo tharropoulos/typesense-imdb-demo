@@ -27,6 +27,15 @@ namespace :imdb do
     Genre.delete_all
     puts "All existing data cleared."
 
+    # Reset all sequence counters for all tables
+    ActiveRecord::Base.connection.tables.each do |table|
+      if ActiveRecord::Base.connection.respond_to?(:reset_pk_sequence!)
+        ActiveRecord::Base.connection.reset_pk_sequence!(table)
+      else
+        ActiveRecord::Base.connection.execute("UPDATE sqlite_sequence SET seq = 0 WHERE name = '#{table}'")
+      end
+    end
+
     # Import Genres
     puts "\nImporting genres..."
     genre_count = 0
