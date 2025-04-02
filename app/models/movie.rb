@@ -116,6 +116,10 @@ class Movie < ApplicationRecord
       cast_members.pluck(:full_name).take(3)
     end
 
+    attribute :directors do
+      directors.pluck(:full_name).take(3)
+    end
+
               :description, :content_rating, :release_date, :runtime_minutes,
               :num_votes, :release_year, :primary_image_url
 
