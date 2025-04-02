@@ -40,6 +40,7 @@ class TvShow < ApplicationRecord
       { "name" => "countries", "type" => "string[]", "optional" => true, "facet" => true },
       { "name" => "primary_image_url", "type" => "string", "index" => false },
       { "name" => "show_type", "type" => "string", "facet" => true },
+      { "name" => "primary_genre", "type" => "string" },
     ]
 
     attribute :genre_names do
