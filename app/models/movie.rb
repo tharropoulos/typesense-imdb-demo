@@ -99,8 +99,8 @@ class Movie < ApplicationRecord
 
     default_sorting_field "average_rating"
 
-    attribute :genre_names do
-      genres.pluck(:name)
+    attribute :genres do
+      genres.pluck(:name).take(3)
     end
 
     attribute :country_names do
