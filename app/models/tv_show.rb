@@ -23,7 +23,7 @@ class TvShow < ApplicationRecord
   has_many :tv_show_countries, dependent: :destroy
   has_many :countries, through: :tv_show_countries
 
-  typesense per_environment: true do
+  typesense do
     predefined_fields [
       { "name" => "show_id", "type" => "string" },
       { "name" => "title", "type" => "string" },
