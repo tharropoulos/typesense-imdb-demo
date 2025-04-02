@@ -1,8 +1,9 @@
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Head, Link, router } from "@inertiajs/react";
+import { Head, Link, router, usePage } from "@inertiajs/react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -33,6 +34,8 @@ interface PageProps {
 }
 
 export default function SignUp() {
+  const { errors } = usePage().props as PageProps;
+
   const form = useForm<UserFormInputs>({
     resolver: zodResolver(userSchema),
     defaultValues: {
@@ -53,6 +56,8 @@ export default function SignUp() {
       },
     });
   };
+
+  const serverError = errors?.base?.[0];
 
   return (
     <>
@@ -98,8 +103,14 @@ export default function SignUp() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="your@email.com" type="email" {...field} />
+                      <Input
+                        placeholder="your@email.com"
+                        type="email"
+                        {...field}
+                        className={errors?.email ? "border-red-500" : ""}
+                      />
                     </FormControl>
+                    {errors?.email && <p className="mt-1 text-sm font-medium text-red-500">{errors.email[0]}</p>}
                     <FormMessage />
                   </FormItem>
                 )}
@@ -111,8 +122,14 @@ export default function SignUp() {
                   <FormItem>
                     <FormLabel>Password</FormLabel>
                     <FormControl>
-                      <Input type="password" placeholder="Create a password" {...field} />
+                      <Input
+                        type="password"
+                        placeholder="Create a password"
+                        {...field}
+                        className={errors?.password ? "border-red-500" : ""}
+                      />
                     </FormControl>
+                    {errors?.password && <p className="mt-1 text-sm font-medium text-red-500">{errors.password[0]}</p>}
                     <FormMessage />
                   </FormItem>
                 )}
@@ -124,12 +141,25 @@ export default function SignUp() {
                   <FormItem>
                     <FormLabel>Confirm Password</FormLabel>
                     <FormControl>
-                      <Input type="password" placeholder="Confirm your password" {...field} />
+                      <Input
+                        type="password"
+                        placeholder="Confirm your password"
+                        {...field}
+                        className={errors?.password_confirmation ? "border-red-500" : ""}
+                      />
                     </FormControl>
+                    {errors?.password_confirmation && (
+                      <p className="mt-1 text-sm font-medium text-red-500">{errors.password_confirmation[0]}</p>
+                    )}
                     <FormMessage />
                   </FormItem>
                 )}
               />
+              {serverError && (
+                <Alert variant="destructive" className="flex items-center justify-center outline-none">
+                  <AlertDescription>{serverError}</AlertDescription>
+                </Alert>
+              )}
               <Button type="submit" className="mt-4 w-full cursor-pointer" disabled={form.formState.isSubmitting}>
                 {form.formState.isSubmitting ? "Creating account..." : "Sign up"}
               </Button>
