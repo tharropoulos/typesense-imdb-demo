@@ -34,8 +34,8 @@ class Movie < ApplicationRecord
                         { "name" => "runtime_minutes", "type" => "int32", "optional" => true },
                         { "name" => "average_rating", "type" => "float", "facet" => true },
                         { "name" => "num_votes", "type" => "int32", "optional" => true },
-                        { "name" => "genre_names", "type" => "string[]", "optional" => true },
-                        { "name" => "country_names", "type" => "string[]", "optional" => true },
+                        { "name" => "genres", "type" => "string[]", "facet" => true },
+                        { "name" => "countries", "type" => "string[]", "optional" => true, "facet" => true },
                         { "name" => "primary_image_url", "type" => "string", "index" => false },
                       ]
 
