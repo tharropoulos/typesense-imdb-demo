@@ -21,7 +21,20 @@ export interface Cast {
   role?: string;
 }
 
-export type MediumType = "movie" | "tv_show";
+export const mediums = {
+  movie: {
+    title: "Movies",
+    indexName: "Movie",
+    route: "movies",
+  },
+  tv_show: {
+    title: "TV Shows",
+    indexName: "TvShow",
+    route: "tv-shows",
+  },
+} as const;
+
+export type MediumType = keyof typeof mediums;
 
 export interface Medium<T extends MediumType> {
   id: string;
@@ -40,4 +53,16 @@ export interface Medium<T extends MediumType> {
   directors: Director[];
   writers: Writer[];
   collection_type: T;
+}
+
+export interface Movie extends Medium<"movie"> {
+  release_year: number;
+  runtime_minutes: number;
+}
+
+export interface TvShow extends Medium<"tv_show"> {
+  start_year: number;
+  end_year: number;
+  total_episodes: number;
+  total_seasons: number;
 }
