@@ -129,8 +129,8 @@ importers:
         specifier: ^5.7.3
         version: 5.8.2
       typesense:
-        specifier: file:/home/fanis/code/typesense/js-lib/typesense-2.1.0-2.tgz
-        version: file:../js-lib/typesense-2.1.0-2.tgz(@babel/runtime@7.26.9)
+        specifier: ^2.0.3
+        version: 2.0.3(@babel/runtime@7.26.9)
       typesense-instantsearch-adapter:
         specifier: ^2.8.0
         version: 2.8.0(@babel/runtime@7.26.9)
@@ -1652,9 +1652,6 @@ packages:
   axios@1.8.1:
     resolution: {integrity: sha512-NN+fvwH/kV01dYUQ3PTOZns4LWtWhOFCAhQ/pHb88WQ1hNe5V/dvFwc4VJcDL11LT9xSX0QtsR8sWUuyOuOq7g==}
 
-  axios@1.8.4:
-    resolution: {integrity: sha512-eBSYY4Y68NNlHbHBMdeDmKNtDgXWhQsJcGqzO3iLUM0GraQFSS9cVgPX5I9b3lbdFKyYoAEGAZF1DwhTaljNAw==}
-
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
@@ -2624,9 +2621,8 @@ packages:
     peerDependencies:
       '@babel/runtime': ^7.23.2
 
-  typesense@file:../js-lib/typesense-2.1.0-2.tgz:
-    resolution: {integrity: sha512-Q3WU8SdIjoJeN3CQ6dPbFQ7pViaRXTki9F4w2C8be0VTfW3GHhM2LCoxRw3xBkvTV0J4Uapl46G6G/wfepVXGw==, tarball: file:../js-lib/typesense-2.1.0-2.tgz}
-    version: 2.1.0-2
+  typesense@2.0.3:
+    resolution: {integrity: sha512-fRJjFdDNZn6qF9XzIk+bB8n8cm0fiAx1SGcpLDfNcsGtp8znITfG+SO+l/qk63GCRXZwJGq7wrMDLFUvblJSHA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@babel/runtime': ^7.23.2
@@ -4108,14 +4104,6 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.8.4:
-    dependencies:
-      follow-redirects: 1.15.9
-      form-data: 4.0.2
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-
   balanced-match@1.0.2: {}
 
   brace-expansion@1.1.11:
@@ -5019,10 +5007,10 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  typesense@file:../js-lib/typesense-2.1.0-2.tgz(@babel/runtime@7.26.9):
+  typesense@2.0.3(@babel/runtime@7.26.9):
     dependencies:
       '@babel/runtime': 7.26.9
-      axios: 1.8.4
+      axios: 1.8.1
       loglevel: 1.9.2
       tslib: 2.8.1
     transitivePeerDependencies:
