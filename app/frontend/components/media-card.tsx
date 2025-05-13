@@ -17,6 +17,7 @@ export interface MediaCardItem extends BaseHit {
   release_year: number;
   genre_names: string[];
   total_seasons?: number;
+  start_year?: number;
   collection_type: "tv_show" | "movie";
 }
 
@@ -26,7 +27,8 @@ export interface MediaCardProps<T extends MediaCardItem> {
 }
 
 export function MediaCard<T extends MediaCardItem>(medium: MediaCardProps<T>) {
-  const { title, average_rating, primary_image_url, release_year, genre_names, total_seasons } = medium.item;
+  const { title, average_rating, primary_image_url, release_year, genre_names, total_seasons, start_year } =
+    medium.item;
   const cardRef = useRef<HTMLDivElement>(null);
   const { props } = usePage<PageProps>();
 
@@ -68,7 +70,7 @@ export function MediaCard<T extends MediaCardItem>(medium: MediaCardProps<T>) {
                 </h3>
                 {total_seasons ?
                   <p className="translate-y-4 transform text-xs text-white/80 opacity-0 transition-all delay-75 duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100">
-                    {release_year} • {total_seasons} {total_seasons === 1 ? "Season" : "Seasons"}
+                    {start_year} • {total_seasons} {total_seasons === 1 ? "Season" : "Seasons"}
                   </p>
                 : <p className="translate-y-4 transform text-xs text-white/80 opacity-0 transition-all delay-75 duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100">
                     {release_year}
