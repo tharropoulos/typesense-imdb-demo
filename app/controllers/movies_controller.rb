@@ -11,11 +11,29 @@ class MoviesController < ApplicationController
     add_breadcrumb("Movies", "/movies")
     add_breadcrumb(movie.title)
 
-    render inertia: "Movie/Show", props: {
-             movie: MoviePresenter.new(movie).as_json,
-             suggestions: suggestions,
-             breadcrumbs: @breadcrumbs,
-           }
+    movie_data = {
+      movie: MoviePresenter.new(movie).as_json,
+      suggestions: {
+        similar_to: suggestions[:similar_to].map { |m|
+          if m.is_a?(Movie)
+            MoviePresenter.new(m).as_json
+          else
+            m.merge(collection_type: "movie")
+          end
+        },
+        from_director: suggestions[:from_director].map { |m|
+          if m.is_a?(Movie)
+            MoviePresenter.new(m).as_json
+          else
+            m.merge(collection_type: "movie")
+          end
+        },
+      },
+      breadcrumbs: @breadcrumbs,
+    }
+
+
+    render inertia: "Movie/Show", props: movie_data
   end
 
   def index
