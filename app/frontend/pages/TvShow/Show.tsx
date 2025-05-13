@@ -18,7 +18,7 @@ export interface TvShow extends Medium<"tv_show"> {
   total_seasons: number;
 }
 
-interface TypesenseSimilarTvShows {
+export interface TypesenseSimilarTvShows {
   id: string;
   title: string;
   average_rating: number;
