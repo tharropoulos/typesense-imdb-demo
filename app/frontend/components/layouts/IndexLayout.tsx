@@ -84,7 +84,7 @@ export default function IndexLayout<const T extends MediumType, const A extends 
         </div>
       </InstantSearch>
 
-      <div id="all-movies">
+      <div id={`all-${mediums[medium].route}`}>
         <InstantSearch
           indexName={mediums[medium].indexName}
           searchClient={adapter.searchClient}
@@ -93,7 +93,7 @@ export default function IndexLayout<const T extends MediumType, const A extends 
           }}
           routing={true}
         >
-          <InstantSearchIndex indexName={mediums[medium].indexName} indexId="all-movies">
+          <InstantSearchIndex indexName={mediums[medium].indexName} indexId={`all-${mediums[medium].route}`}>
             <div className="container mx-auto flex flex-col gap-3 px-4 py-8">
               <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">All {mediums[medium].title}</h4>
               <CurrentRefinements attributeLabels={attributeLabels} />
