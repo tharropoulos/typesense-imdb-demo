@@ -30,7 +30,7 @@ export const mediums = {
   tv_show: {
     title: "TV Shows",
     indexName: "TvShow",
-    route: "tv-shows",
+    route: "tv_shows",
   },
 } as const;
 
