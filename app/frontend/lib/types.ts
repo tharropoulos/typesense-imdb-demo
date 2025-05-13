@@ -66,3 +66,7 @@ export interface TvShow extends Medium<"tv_show"> {
   total_episodes: number;
   total_seasons: number;
 }
+
+export function isMovie(medium: Medium<MediumType>): medium is Movie {
+  return medium.collection_type === "movie";
+}
