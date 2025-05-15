@@ -306,7 +306,7 @@ export function Autocomplete({ client }: { client: Client }) {
                         key={`movie-${hit.document.id}`}
                         className={cn(
                           "flex cursor-pointer items-center gap-2 p-2",
-                          selectedIndex === index ? "bg-accent" : "",
+                          selectedIndex === index ? "bg-muted" : "",
                         )}
                       >
                         {hit.document.primary_image_url && (
