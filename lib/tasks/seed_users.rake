@@ -46,6 +46,37 @@ namespace :db do
 
     puts "All users deleted successfully."
 
+    # Create the three demo users first
+    puts "Creating demo users..."
+    demo_password = BCrypt::Password.create("Super_secret_p@ss")
+
+    demo_users = [
+      {
+        email: "cindi_crooks@stehr-bradtke.test",
+        encrypted_password: demo_password,
+        username: "cindi_crooks",
+        created_at: Time.current,
+        updated_at: Time.current,
+      },
+      {
+        email: "jeffrey@barton.test",
+        encrypted_password: demo_password,
+        username: "jeffrey_barton",
+        created_at: Time.current,
+        updated_at: Time.current,
+      },
+      {
+        email: "marinda_hegmann@legros.test",
+        encrypted_password: demo_password,
+        username: "marinda_hegmann",
+        created_at: Time.current,
+        updated_at: Time.current,
+      },
+    ]
+
+    User.insert_all(demo_users)
+    puts "Created 3 demo users successfully."
+
     total_users = 138_493
     batch_size = ENV.fetch("BATCH_SIZE", 5000).to_i
     puts "Starting to generate #{total_users} users in batches of #{batch_size}..."
