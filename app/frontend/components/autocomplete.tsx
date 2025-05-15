@@ -312,6 +312,7 @@ export function Autocomplete({ client }: { client: Client }) {
                         {hit.document.primary_image_url && (
                           <OptimizedImage
                             src={hit.document.primary_image_url}
+                            placeHolder={hit.document.title}
                             alt=""
                             className="aspect-square h-14 rounded-sm object-cover"
                           />
