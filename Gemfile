@@ -29,8 +29,8 @@ gem "kamal", require: false
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
 gem "thruster", require: false
 
-gem 'typesense', path: '/home/fanis/code/typesense/ruby'
-gem 'typesense-rails', path: '/home/fanis/code/typesense/typesense-rails'
+gem 'typesense'
+gem 'typesense-rails', github: 'tharropoulos/typesense-rails', branch: 'ts'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
