@@ -106,7 +106,7 @@ export function OptimizedImage({
 
       {imageError && (
         <div className="bg-muted flex h-full w-full items-center justify-center">
-          <span className="text-muted-foreground">{placeHolder ?? "Image not available"}</span>
+          <span className="text-muted-foreground text-sm">{placeHolder ?? "Image not available"}</span>
         </div>
       )}
     </div>
