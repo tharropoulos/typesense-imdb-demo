@@ -1,230 +1,186 @@
 namespace :imdb do
-  desc "Import ratings from CSV file"
-  task import_ratings: :environment do
-    require "csv"
+  desc "Generate ratings using Faker"
+  task seed_ratings: :environment do
     require "faker"
 
     start_time = Time.now
-    puts "Starting ratings import at #{start_time}"
+    puts "Starting ratings generation at #{start_time}"
 
+    # Get batch size from environment or default
     batch_size = ENV.fetch("BATCH_SIZE", 5000).to_i
-    ratings_file = Rails.root.join("db/data/ratings.csv")
-
-    unless File.exist?(ratings_file)
-      puts "Error: File not found: #{ratings_file}"
-      exit 1
-    end
-
-    # Get the total number of ratings for progress reporting
-    total_lines = `wc -l "#{ratings_file}"`.strip.split(" ")[0].to_i - 1 # Subtract 1 for header
-    puts "Found #{total_lines} ratings to import"
+    total_ratings = ENV.fetch("TOTAL_RATINGS", 100_000).to_i
 
     puts "Deleting existing ratings..."
     Rating.delete_all
     puts "All existing ratings cleared."
 
-    # Build ID maps for faster lookups
-    puts "Building reference maps..."
-    user_id_map = User.pluck(:id).index_by(&:itself)
+    # Get all available users and ratables
+    puts "Building reference data..."
+    user_ids = User.pluck(:id)
+    movie_ids = Movie.pluck(:id)
+    tv_show_ids = TvShow.pluck(:id)
 
-    # IMPORTANT: Changed the pluck fields - This is the key fix
-    # Instead of using movie_id, we're now using the actual primary key 'id'
-    movie_id_map = {}
-    Movie.all.each do |movie|
-      movie_id_map[movie.id.to_s] = movie.id
-    end
-
-    tv_show_id_map = TvShow.pluck(:id).index_by { |id| id.to_s }
-
-    puts "Prepared mapping for #{user_id_map.size} users, #{movie_id_map.size} movies, and #{tv_show_id_map.size} TV shows"
-
-    # Add debugging checks
-    if user_id_map.empty?
-      puts "ERROR: No users found in database. Please ensure User table is populated."
+    # Validation checks
+    if user_ids.empty?
+      puts "ERROR: No users found in database. Run rake db:seed_users first."
       exit 1
     end
 
-    if movie_id_map.empty? && tv_show_id_map.empty?
-      puts "ERROR: No movies or TV shows found in database. Please ensure Movie and TvShow tables are populated."
+    if movie_ids.empty? && tv_show_ids.empty?
+      puts "ERROR: No movies or TV shows found. Please seed movies/TV shows first."
       exit 1
     end
 
-    # Sample first few IDs to confirm mapping correctness
-    puts "Sample user IDs in database: #{user_id_map.keys.first(5).join(", ")}"
-    puts "Sample movie_ids in database: #{movie_id_map.keys.first(5).join(", ")}" unless movie_id_map.empty?
-    puts "Sample show_ids in database: #{tv_show_id_map.keys.first(5).join(", ")}" unless tv_show_id_map.empty?
+    puts "Found #{user_ids.size} users, #{movie_ids.size} movies, #{tv_show_ids.size} TV shows"
 
-    # Get the first few rows from CSV to check what IDs we're expecting
-    sample_rows = []
-    CSV.foreach(ratings_file, headers: true).with_index do |row, index|
-      sample_rows << row
-      break if index >= 4  # Get first 5 rows
-    end
+    # Calculate ratings distribution (70% movies, 30% TV shows if both exist)
+    total_ratables = movie_ids.size + tv_show_ids.size
+    movie_rating_count = if movie_ids.empty?
+        0
+      elsif tv_show_ids.empty?
+        total_ratings
+      else
+        (total_ratings * 0.7).to_i
+      end
+    tv_show_rating_count = total_ratings - movie_rating_count
 
-    puts "First 5 rows from CSV:"
-    sample_rows.each do |row|
-      puts "  user_id: #{row["user_id"]}, movie_id: #{row["movie_id"]}, tv_show_id: #{row["tv_show_id"]}"
-    end
-
-    puts "Starting import in batches of #{batch_size}..."
+    puts "Will generate #{movie_rating_count} movie ratings and #{tv_show_rating_count} TV show ratings"
 
     # Initialize counters
-    processed = 0
-    imported = 0
-    skipped = 0
-    batches = 0
-    skipped_reasons = {
-      missing_user: 0,
-      missing_movie: 0,
-      missing_tv_show: 0,
-      no_media_id: 0,
-    }
+    ratings_created = 0
+    batches_processed = 0
 
-    ratings_batch = []
+    # Create rating combinations to avoid duplicates
+    puts "Preparing rating combinations..."
+    rating_combinations = Set.new
 
-    CSV.foreach(ratings_file, headers: true) do |row|
-      processed += 1
+    # Generate movie ratings
+    movie_rating_count.times do
+      user_id = user_ids.sample
+      movie_id = movie_ids.sample
+      combination = "#{user_id}-Movie-#{movie_id}"
 
-      user_id = row["user_id"].to_i
-      user_db_id = user_id_map[user_id]
-
-      # Debug skipped users
-      if processed <= 100 && user_db_id.nil?
-        puts "DEBUG: User ID #{user_id} not found in database"
+      # Ensure uniqueness (user can only rate each item once)
+      while rating_combinations.include?(combination)
+        user_id = user_ids.sample
+        movie_id = movie_ids.sample
+        combination = "#{user_id}-Movie-#{movie_id}"
       end
 
-      # Determine if this is a movie or TV show rating
-      ratable_db_id = nil
-      ratable_type = nil
-
-      if row["movie_id"].present? && !row["movie_id"].empty?
-        ratable_type = "Movie"
-        ratable_external_id = row["movie_id"]
-        ratable_db_id = movie_id_map[ratable_external_id]
-
-        # Debug skipped movies
-        if processed <= 100 && ratable_db_id.nil?
-          puts "DEBUG: Movie ID #{ratable_external_id} not found in map with keys: #{movie_id_map.keys.first(5)}..."
-          skipped_reasons[:missing_movie] += 1
-        end
-      elsif row["tv_show_id"].present? && !row["tv_show_id"].empty?
-        ratable_type = "TvShow"
-        ratable_external_id = row["tv_show_id"]
-        ratable_db_id = tv_show_id_map[ratable_external_id]
-
-        # Debug skipped tv shows
-        if processed <= 100 && ratable_db_id.nil?
-          puts "DEBUG: TV Show ID #{ratable_external_id} not found in map with keys: #{tv_show_id_map.keys.first(5)}..."
-          skipped_reasons[:missing_tv_show] += 1
-        end
-      else
-        skipped += 1
-        skipped_reasons[:no_media_id] += 1
-        next
-      end
-
-      # Skip if we can't find the user or ratable item
-      unless user_db_id
-        skipped += 1
-        skipped_reasons[:missing_user] += 1
-        next
-      end
-
-      unless ratable_db_id
-        skipped += 1
-        next
-      end
-
-      # Convert rating to 0-5 scale if needed
-      score = row["rating"].to_f
-
-      # Normalize score to nearest 0.5 increment
-      normalized_score = (score * 2).round / 2.0
-
-      # Ensure score is within valid range
-      normalized_score = [0, [5, normalized_score].min].max
-
-      # Generate a fake review (randomly decide if there should be a review)
-      review = nil
-      if rand < 0.7 # 70% chance of having a review
-        review_length = rand(20..355)  # Random length between 20 and 355 characters
-        review = Faker::Lorem.paragraph_by_chars(number: review_length, supplemental: false)
-      end
-
-      # Get timestamp if available, otherwise use current time
-      created_at = if row["timestamp"].present? && !row["timestamp"].empty?
-          # Convert millisecond timestamp to Time object
-          Time.at(row["timestamp"].to_i / 1000.0)
-        else
-          Time.current
-        end
-
-      ratings_batch << {
-        user_id: user_db_id,
-        ratable_id: ratable_db_id,
-        ratable_type: ratable_type,
-        score: normalized_score,
-        review: review, # Randomly generated review
-        created_at: created_at,
-        updated_at: created_at,
-      }
-
-      # Insert batch when it reaches the specified size
-      if ratings_batch.size >= batch_size
-        begin
-          Rating.insert_all(ratings_batch)
-          imported += ratings_batch.size
-          batches += 1
-
-          # Report progress
-          percent_complete = ((processed.to_f / total_lines) * 100).round(2)
-          puts "Processed #{processed}/#{total_lines} (#{percent_complete}%), imported #{imported}, skipped #{skipped}, batch #{batches}"
-
-          # Clear the batch array
-          ratings_batch = []
-        rescue => e
-          puts "Error importing batch: #{e.message}"
-          puts e.backtrace.join("\n")
-          puts "Continuing with next batch..."
-          ratings_batch = []
-        end
-      end
-
-      # Report detailed skip reasons periodically
-      if processed % 500000 == 0
-        puts "Skip reason breakdown:"
-        puts "  Missing users: #{skipped_reasons[:missing_user]}"
-        puts "  Missing movies: #{skipped_reasons[:missing_movie]}"
-        puts "  Missing TV shows: #{skipped_reasons[:missing_tv_show]}"
-        puts "  No media ID: #{skipped_reasons[:no_media_id]}"
-      end
+      rating_combinations.add(combination)
     end
 
-    # Insert any remaining ratings
-    if ratings_batch.any?
+    # Generate TV show ratings
+    tv_show_rating_count.times do
+      user_id = user_ids.sample
+      tv_show_id = tv_show_ids.sample
+      combination = "#{user_id}-TvShow-#{tv_show_id}"
+
+      # Ensure uniqueness
+      while rating_combinations.include?(combination)
+        user_id = user_ids.sample
+        tv_show_id = tv_show_ids.sample
+        combination = "#{user_id}-TvShow-#{tv_show_id}"
+      end
+
+      rating_combinations.add(combination)
+    end
+
+    puts "Generated #{rating_combinations.size} unique rating combinations"
+
+    # Convert combinations to actual rating data
+    puts "Starting to generate ratings in batches of #{batch_size}..."
+
+    rating_combinations.each_slice(batch_size).with_index do |combination_batch, batch_index|
+      puts "Processing batch #{batch_index + 1} (#{ratings_created}/#{total_ratings})..."
+
+      ratings_batch = combination_batch.map do |combination|
+        # Parse the combination string
+        parts = combination.split("-")
+        user_id = parts[0].to_i
+        ratable_type = parts[1]
+        ratable_id = parts[2].to_i
+
+        # Generate score (weighted towards higher ratings)
+        # 20% chance of 0-2, 30% chance of 2.5-3.5, 50% chance of 4-5
+        score = case rand
+          when 0..0.2
+            [0, 0.5, 1.0, 1.5, 2.0].sample
+          when 0.2..0.5
+            [2.5, 3.0, 3.5].sample
+          else
+            [4.0, 4.5, 5.0].sample
+          end
+
+        # Generate review (70% chance)
+        review = if rand < 0.7
+            review_length = rand(20..355)
+            Faker::Lorem.paragraph_by_chars(number: review_length)
+          else
+            nil
+          end
+
+        # Random timestamp in the past year
+        created_at = Faker::Time.between(from: 1.year.ago, to: Time.current)
+
+        {
+          user_id: user_id,
+          ratable_id: ratable_id,
+          ratable_type: ratable_type,
+          score: score,
+          review: review,
+          created_at: created_at,
+          updated_at: created_at,
+        }
+      end
+
+      # Insert the batch
       begin
         Rating.insert_all(ratings_batch)
-        imported += ratings_batch.size
-        batches += 1
+        ratings_created += ratings_batch.size
+        batches_processed += 1
+
+        # Report progress
+        percent_complete = ((ratings_created.to_f / total_ratings) * 100).round(2)
+        puts "Progress: #{ratings_created}/#{total_ratings} ratings (#{percent_complete}%)"
       rescue => e
-        puts "Error importing final batch: #{e.message}"
-        skipped += ratings_batch.size
+        puts "Error inserting batch: #{e.message}"
+        puts "Continuing with next batch..."
       end
     end
 
     end_time = Time.now
     duration = (end_time - start_time).to_i
 
-    puts "\n=== Ratings Import Summary ==="
+    puts "\n=== Ratings Generation Summary ==="
     puts "Completed in: #{duration} seconds"
-    puts "Processed: #{processed} entries"
-    puts "Successfully imported: #{imported} ratings"
-    puts "Skipped: #{skipped} entries"
-    puts "  - Missing users: #{skipped_reasons[:missing_user]}"
-    puts "  - Missing movies: #{skipped_reasons[:missing_movie]}"
-    puts "  - Missing TV shows: #{skipped_reasons[:missing_tv_show]}"
-    puts "  - No media ID: #{skipped_reasons[:no_media_id]}"
-    puts "Total batches: #{batches}"
-    puts "=== Import Complete ==="
+    puts "Successfully generated: #{Rating.count} ratings"
+    puts "Average speed: #{(Rating.count / duration.to_f).round(2)} ratings/second"
+    puts "Movie ratings: #{Rating.where(ratable_type: "Movie").count}"
+    puts "TV show ratings: #{Rating.where(ratable_type: "TvShow").count}"
+    puts "Ratings with reviews: #{Rating.with_reviews.count}"
+    puts "=== Generation Complete ==="
+  end
+
+  desc "Reset ratings table and restart ID sequence"
+  task reset_ratings: :environment do
+    puts "Deleting all ratings and resetting ID sequence..."
+
+    adapter = ActiveRecord::Base.connection.adapter_name.downcase
+
+    case adapter
+    when "postgresql"
+      ActiveRecord::Base.connection.execute("TRUNCATE ratings RESTART IDENTITY;")
+    when "mysql", "mysql2"
+      ActiveRecord::Base.connection.execute("TRUNCATE ratings;")
+    when "sqlite"
+      ActiveRecord::Base.connection.execute("DELETE FROM ratings;")
+      ActiveRecord::Base.connection.execute("DELETE FROM sqlite_sequence WHERE name='ratings';")
+    else
+      puts "Unknown database adapter: #{adapter}"
+      Rating.delete_all
+    end
+
+    puts "Ratings table reset successfully!"
   end
 end
