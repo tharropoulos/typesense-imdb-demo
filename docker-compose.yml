@@ -1,0 +1,13 @@
+services:
+  typesense:
+    image: typesense/typesense:29.0.rc22
+    ports:
+      - "8108:8108"
+    restart: on-failure
+    volumes:
+      - ./typesense-server-data:/data
+      - ./typesense-server-analytics:/analytics
+    command: "--data-dir /data --api-key=xyz --enable-cors --enable-search-analytics=true --analytics-dir=/analytics --analytics-flush-interval=60"
+
+volumes:
+  typesense-data:
